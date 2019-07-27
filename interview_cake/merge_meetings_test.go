@@ -51,18 +51,11 @@ func mergeMeetings(meetings []meeting) []meeting {
 		// if the last merged meeting's end time is greater or equal than the current
 		// one's start time, merge them using the later ending time.
 		if out[len(out)-1].end >= meetings[i].start {
-			out[len(out)-1].end = larger(meetings[i].end, out[len(out)-1].end)
+			_, out[len(out)-1].end = mimax(meetings[i].end, out[len(out)-1].end)
 		} else {
 			out = append(out, meetings[i])
 		}
 	}
 
 	return out
-}
-func larger(a, b int) int {
-	if a > b {
-		return a
-	}
-
-	return b
 }

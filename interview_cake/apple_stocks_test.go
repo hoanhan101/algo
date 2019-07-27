@@ -1,22 +1,21 @@
 package main
 
 import (
-	"math"
 	"reflect"
 	"testing"
 )
 
 func TestGetMaxProfit(t *testing.T) {
 	tests := []struct {
-		in       []float64
-		expected float64
+		in       []int
+		expected int
 	}{
-		{[]float64{}, 0},
-		{[]float64{10}, 0},
-		{[]float64{10, 10}, 0},
-		{[]float64{10, 7, 5, 8, 11, 9}, 6},
-		{[]float64{10, 2, 5, 4, 7, 1}, 5},
-		{[]float64{10, 7, 2, 1}, -1},
+		{[]int{}, 0},
+		{[]int{10}, 0},
+		{[]int{10, 10}, 0},
+		{[]int{10, 7, 5, 8, 11, 9}, 6},
+		{[]int{10, 2, 5, 4, 7, 1}, 5},
+		{[]int{10, 7, 2, 1}, -1},
 	}
 
 	for _, tt := range tests {
@@ -29,7 +28,7 @@ func TestGetMaxProfit(t *testing.T) {
 
 // getMaxProfit returns the max profit from a list of stock price from buying
 // at earlier time and selling at later time.
-func getMaxProfit(stocks []float64) float64 {
+func getMaxProfit(stocks []int) int {
 	// return 0 if the input is invalid
 	if len(stocks) <= 2 {
 		return 0
@@ -43,8 +42,8 @@ func getMaxProfit(stocks []float64) float64 {
 	for i := 1; i < len(stocks); i++ {
 		currentPrice := stocks[i]
 		potentialProfit := currentPrice - minPrice
-		maxProfit = math.Max(potentialProfit, maxProfit)
-		minPrice = math.Min(minPrice, currentPrice)
+		_, maxProfit = mimax(potentialProfit, maxProfit)
+		minPrice, _ = mimax(minPrice, currentPrice)
 	}
 
 	return maxProfit
