@@ -25,6 +25,7 @@ func TestReverseString(t *testing.T) {
 	}
 }
 
+// reverseString takes a list of string and reverse its order.
 func reverseString(list []string) []string {
 	if len(list) == 0 || len(list) == 1 {
 		return list

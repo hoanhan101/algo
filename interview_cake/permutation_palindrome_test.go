@@ -24,10 +24,11 @@ func TestHasPalindromePermutation(t *testing.T) {
 	}
 }
 
+// hasPalindromePermutation checks if a string's permutation is a palindrome.
 func hasPalindromePermutation(in string) bool {
 	m := map[string]int{}
 
-	// delete if we've seen it, else add it
+	// delete if we've seen it, else add it.
 	for _, v := range in {
 		if _, ok := m[string(v)]; ok {
 			delete(m, string(v))
@@ -36,7 +37,7 @@ func hasPalindromePermutation(in string) bool {
 		}
 	}
 
-	// if we're left with less or equal than 1 pair, we have a palindrome
+	// if we're left with less or equal than 1 pair, we have a palindrome.
 	if len(m) <= 1 {
 		return true
 	}

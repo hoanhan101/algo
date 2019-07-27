@@ -41,11 +41,12 @@ func TestMergeSortedArray(t *testing.T) {
 	}
 }
 
+// mergeSOrtedArray merges two sorted array.
 func mergeSortedArray(a1, a2 []int) []int {
 	out := []int{}
 
 	// keep two "pointer" at index 0 and move up accordingly as one get
-	// merged in
+	// merged in.
 	i, j := 0, 0
 	for i < len(a1) && j < len(a2) {
 		if a1[i] < a2[j] {
@@ -57,6 +58,8 @@ func mergeSortedArray(a1, a2 []int) []int {
 		}
 	}
 
+	// if we get here, one array must have bigger size than the other. could
+	// figure out which one is it then copy the rest of its to our final one.
 	if i < len(a1) {
 		out = append(out, a1[i:]...)
 	}

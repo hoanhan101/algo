@@ -26,6 +26,7 @@ func TestBuildWordCloud(t *testing.T) {
 	}
 }
 
+// buildWordCloud takes a sentence and returns its words count map.
 func buildWordCloud(in string) map[string]int {
 	m := map[string]int{}
 

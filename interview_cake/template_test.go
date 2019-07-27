@@ -22,6 +22,7 @@ func TestTemplate(t *testing.T) {
 	}
 }
 
+// isTemplate is just a template function.
 func isTemplate(question string) bool {
 	if question == "is this a template" {
 		return true

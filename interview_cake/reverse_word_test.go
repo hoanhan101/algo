@@ -24,12 +24,16 @@ func TestReverseWord(t *testing.T) {
 	}
 }
 
+// reverseWord takes a sentence which is made up of word in reserve and
+// reverses its order.
 func reverseWord(list []string) []string {
-	// reverse all character in the list
+	// by reversing all character in the list, we end up with a list of words
+	// in the right order but not its characters.
 	reverseChar(list, 0, len(list)-1)
 
 	// start keeps track of the start index for each word. it starts with 0 but
-	// then gets updated once we find the empty string
+	// then gets updated once we find the empty string. then reverse the words
+	// characters.
 	start := 0
 	for i := range list {
 		if i == len(list)-1 {

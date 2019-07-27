@@ -32,22 +32,24 @@ type meeting struct {
 	end   int
 }
 
+// mergeMeetings takes a list of unsorted, independent meetings and merges them
+// into a sorted, continuous ones.
 func mergeMeetings(meetings []meeting) []meeting {
-	// sort the meetings in ascending order
+	// sort the meetings in ascending order.
 	sort.Slice(meetings, func(i, j int) bool {
 		return meetings[i].start < meetings[j].start
 	})
 
 	out := []meeting{}
 	for i := range meetings {
-		// push the first one to the list so we can have a start
+		// push the first one to the list so we can have a start.
 		if i == 0 {
 			out = append(out, meetings[i])
 			continue
 		}
 
-		// if the last merged one end time is greater or equal than the current
-		// one start time, merge them using the later ending time
+		// if the last merged meeting's end time is greater or equal than the current
+		// one's start time, merge them using the later ending time.
 		if out[len(out)-1].end >= meetings[i].start {
 			out[len(out)-1].end = larger(meetings[i].end, out[len(out)-1].end)
 		} else {
@@ -57,7 +59,6 @@ func mergeMeetings(meetings []meeting) []meeting {
 
 	return out
 }
-
 func larger(a, b int) int {
 	if a > b {
 		return a
