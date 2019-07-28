@@ -72,5 +72,6 @@ func findRotationPoint(words []string) int {
 		}
 	}
 
-	return ceilingIndex
+	// FIXME - returns 0 if there is no rotation point.
+	return 0
 }
