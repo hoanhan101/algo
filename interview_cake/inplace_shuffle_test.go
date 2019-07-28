@@ -23,6 +23,7 @@ func TestInplaceShuffle(t *testing.T) {
 	}
 }
 
+// inplaceShuffle takes a list of numbers and shuffle its location.
 func inplaceShuffle(list []int) []int {
 	if len(list) <= 1 {
 		return list
