@@ -23,7 +23,9 @@ func TestInplaceShuffle(t *testing.T) {
 	}
 }
 
-// inplaceShuffle takes a list of numbers and shuffle its location.
+// inplaceShuffle takes a list of numbers and shuffle its location. We walk
+// through the list one time, the time complexity is O(n). We also allocate no
+// new space and return the input so the space complexity is O(1).
 func inplaceShuffle(list []int) []int {
 	if len(list) <= 1 {
 		return list

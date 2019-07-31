@@ -25,6 +25,10 @@ func TestHasPalindromePermutation(t *testing.T) {
 }
 
 // hasPalindromePermutation checks if a string's permutation is a palindrome.
+// Since we make one iteration through the string, the time complexity is O(n).
+// We could say the space complexity is O(n) due to the hashmap, but since
+// there are only a constant number of characters in Unicode, we could treat it
+// as O(1).
 func hasPalindromePermutation(in string) bool {
 	m := map[string]int{}
 

@@ -27,7 +27,9 @@ func TestGetMaxProfit(t *testing.T) {
 }
 
 // getMaxProfit returns the max profit from a list of stock price from buying
-// at earlier time and selling at later time.
+// at earlier time and selling at later time. Since we're using a greedy
+// approach by keeping a minimum and maximum price, its space complexity is
+// O(1), time complexity is O(n).
 func getMaxProfit(stocks []int) int {
 	// return 0 if the input is invalid
 	if len(stocks) <= 2 {

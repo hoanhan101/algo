@@ -24,6 +24,8 @@ func TestHighestProductOfThree(t *testing.T) {
 }
 
 // highestProductOfThree returns the highest product of three number of a list.
+// Since we use a greedy approach to keep track the high and low values, the
+// space complexity is only O(1), time complexity is O(n).
 func highestProductOfThree(list []int) int {
 	if len(list) <= 3 {
 		return 0

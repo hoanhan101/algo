@@ -26,7 +26,9 @@ func TestBuildWordCloud(t *testing.T) {
 	}
 }
 
-// buildWordCloud takes a sentence and returns its words count map.
+// buildWordCloud takes a sentence and returns its words count map. The time
+// and space complexity in this case is both O(n) since we walk through the
+// string one time, allocate and return a hashmap as a result.
 func buildWordCloud(in string) map[string]int {
 	m := map[string]int{}
 

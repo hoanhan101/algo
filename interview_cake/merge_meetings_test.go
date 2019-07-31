@@ -33,7 +33,9 @@ type meeting struct {
 }
 
 // mergeMeetings takes a list of unsorted, independent meetings and merges them
-// into a sorted, continuous ones.
+// into a sorted, continuous ones. Since we sort the list first, it gives us a
+// runtime of O(nlogn). And because we create a new list of meeting times, the
+// worst case space cost is O(n).
 func mergeMeetings(meetings []meeting) []meeting {
 	// sort the meetings in ascending order.
 	sort.Slice(meetings, func(i, j int) bool {

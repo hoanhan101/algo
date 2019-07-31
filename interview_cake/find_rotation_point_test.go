@@ -49,7 +49,9 @@ func TestFindRotationPoint(t *testing.T) {
 }
 
 // findRotationPoint returns the index of the rotation point from a list of
-// words.
+// words. We use binary search approach and end up with O(logn) time
+// complexity. We use O(1) space to store the first word and the floor and
+// ceiling indices.
 func findRotationPoint(words []string) int {
 	firstWord := words[0]
 	floorIndex := 0

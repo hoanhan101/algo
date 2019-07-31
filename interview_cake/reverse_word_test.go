@@ -25,7 +25,9 @@ func TestReverseWord(t *testing.T) {
 }
 
 // reverseWord takes a sentence which is made up of word in reserve and
-// reverses its order.
+// reverses its order. Since we walk through the list one time only and
+// allocate no new space, the time complexity is O(n), space complexity is
+// O(1).
 func reverseWord(list []string) []string {
 	// by reversing all character in the list, we end up with a list of words
 	// in the right order but not its characters.

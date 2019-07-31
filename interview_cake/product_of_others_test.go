@@ -26,7 +26,9 @@ func TestGetProductOfOthers(t *testing.T) {
 
 // getProductOfOthers takes a list of numbers and returns a corresponding list
 // where every index holds the product of every other values except the value
-// in that index.
+// in that index. We make two passes through our input list so the time
+// complexity is O(n). We return a list of products as a result so the space
+// complexity is O(n).
 func getProductOfOthers(list []int) []int {
 	if len(list) < 2 {
 		return []int{}

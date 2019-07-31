@@ -28,7 +28,8 @@ func TestFillFlight(t *testing.T) {
 }
 
 // fillFlight determines if there are two movies in movieLengths that their
-// length could add up to the flightLength.
+// length could add up to the flightLength. Since we walk through the list one
+// time, the time complexity is O(n). The hashmap costs us O(n) space.
 func fillFlight(movieLengths []int, flightLength int) bool {
 	movies := map[int]int{}
 
