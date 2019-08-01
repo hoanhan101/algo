@@ -17,6 +17,7 @@ func TestMergeMeetings(t *testing.T) {
 		{[]meeting{{1, 2}, {4, 5}}, []meeting{{1, 2}, {4, 5}}},
 		{[]meeting{{1, 2}, {2, 3}, {4, 5}}, []meeting{{1, 3}, {4, 5}}},
 		{[]meeting{{1, 6}, {2, 3}, {4, 5}}, []meeting{{1, 6}}},
+		{[]meeting{{4, 5}, {2, 3}, {1, 6}}, []meeting{{1, 6}}},
 	}
 
 	for _, tt := range tests {
