@@ -1,3 +1,13 @@
+// Problem:
+// Given a list of movie lengths (integer), determine if there exist two movies
+// that add up to the total flight length.
+//
+// Solution:
+// Use a hashmap to keep track of movie lengths that we've seen so we can look
+// up the difference faster as we iterate through the list.
+//
+// Cost: O(n) time, O(n) space.
+
 package main
 
 import (
@@ -27,9 +37,6 @@ func TestFillFlight(t *testing.T) {
 	}
 }
 
-// fillFlight determines if there are two movies in movieLengths that their
-// length could add up to the flightLength. Since we walk through the list one
-// time, the time complexity is O(n). The hashmap costs us O(n) space.
 func fillFlight(movieLengths []int, flightLength int) bool {
 	movies := map[int]int{}
 

@@ -1,3 +1,12 @@
+// Problem:
+// Given a sentence (string), return its word count map.
+//
+// Solution:
+// Get rid of special characters using regex then split the sentence by space.
+// Use a hashmap to keep counts.
+//
+// Cost: O(n) time, O(n) space.
+
 package main
 
 import (
@@ -26,9 +35,6 @@ func TestBuildWordCloud(t *testing.T) {
 	}
 }
 
-// buildWordCloud takes a sentence and returns its words count map. The time
-// and space complexity in this case is both O(n) since we walk through the
-// string one time, allocate and return a hashmap as a result.
 func buildWordCloud(in string) map[string]int {
 	m := map[string]int{}
 

@@ -1,3 +1,14 @@
+// Problem:
+// Given a list of string that is made up of word but in reverse, return the
+// correct order.
+//
+// Solution:
+// The first pass, we reverse all characters so that we end up with a list of
+// words in the right order, but not its characters. The second pass, we keep
+// reverse the orders of its characters.
+//
+// Cost: O(n) time, O(1) space.
+
 package main
 
 import (
@@ -24,10 +35,6 @@ func TestReverseWord(t *testing.T) {
 	}
 }
 
-// reverseWord takes a sentence which is made up of word in reserve and
-// reverses its order. Since we walk through the list one time only and
-// allocate no new space, the time complexity is O(n), space complexity is
-// O(1).
 func reverseWord(list []string) []string {
 	// by reversing all character in the list, we end up with a list of words
 	// in the right order but not its characters.

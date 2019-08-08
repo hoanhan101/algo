@@ -1,3 +1,12 @@
+// Problem:
+// Merge two sorted arrays.
+//
+// Solution:
+// Use two pointers approach to iterate through the list and keep appending the
+// smaller value to a new list.
+//
+// Cost: O(n) time, O(n) space.
+
 package main
 
 import (
@@ -41,9 +50,6 @@ func TestMergeSortedArray(t *testing.T) {
 	}
 }
 
-// mergeSOrtedArray merges two sorted array. Since we use the two "pointer"
-// approach and walk through the list one time, the time complexity is O(n). We
-// have to allocate and return a new merged array so space complexity is O(n).
 func mergeSortedArray(a1, a2 []int) []int {
 	out := []int{}
 

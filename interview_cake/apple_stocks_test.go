@@ -1,3 +1,13 @@
+// Problem:
+// Given a list of stock prices (integer) in chronological order, return the
+// max profit from buying at earlier time and selling at later time.
+//
+// Solution:
+// Use a greedy approach to keep a minimum and maximum price while iterating
+// through the list.
+//
+// Cost: O(1) time, O(n) space.
+
 package main
 
 import (
@@ -26,10 +36,6 @@ func TestGetMaxProfit(t *testing.T) {
 	}
 }
 
-// getMaxProfit returns the max profit from a list of stock price from buying
-// at earlier time and selling at later time. Since we're using a greedy
-// approach by keeping a minimum and maximum price, its space complexity is
-// O(1), time complexity is O(n).
 func getMaxProfit(stocks []int) int {
 	// return 0 if the input is invalid
 	if len(stocks) <= 2 {

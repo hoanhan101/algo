@@ -1,3 +1,12 @@
+// Problem:
+// Given a list of integers, shuffle its location in-place.
+//
+// Solution:
+// Iterate through the list, swap current value with a value in a randomized
+// index that is between the current and last index.
+//
+// Cost: O(n) time, O(1) space.
+
 package main
 
 import (
@@ -23,9 +32,6 @@ func TestInplaceShuffle(t *testing.T) {
 	}
 }
 
-// inplaceShuffle takes a list of numbers and shuffle its location. We walk
-// through the list one time, the time complexity is O(n). We also allocate no
-// new space and return the input so the space complexity is O(1).
 func inplaceShuffle(list []int) []int {
 	if len(list) <= 1 {
 		return list

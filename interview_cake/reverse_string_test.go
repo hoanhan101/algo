@@ -1,3 +1,12 @@
+// Problem:
+// Given a list of string, reverse its order.
+//
+// Solution:
+// Use two pointers approach to swap two values on both ends as we move toward
+// the middle.
+//
+// Cost: O(n) time, O(1) space.
+
 package main
 
 import (
@@ -25,9 +34,6 @@ func TestReverseString(t *testing.T) {
 	}
 }
 
-// reverseString takes a list of string and reverse its order. Since we walk
-// through the list one time and allocate no new space, the time complexity
-// is O(n) and space complexity is O(1).
 func reverseString(list []string) []string {
 	if len(list) == 0 || len(list) == 1 {
 		return list

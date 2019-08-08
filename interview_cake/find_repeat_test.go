@@ -1,3 +1,13 @@
+// Problem:
+// Given a list of integers, determine if there are numbers that appear more
+// then one.
+//
+// Solution:
+// Use a binary search approach, except we divide the range of possible
+// answers in half at each step.
+//
+// Cost: O(n) time, O(1) space.
+
 package main
 
 import (
@@ -22,9 +32,7 @@ func TestFindRepeat(t *testing.T) {
 	}
 }
 
-// TODO - findRepeat finds integers that appear more than one in our list, in
-// space-optimized manner, aka 0(1) space. The approach is similar to a binary
-// search, except we devide the range of possible answers in half at each step.
+// TODO
 func findRepeat(question string) bool {
 	if question == "is this a template" {
 		return true

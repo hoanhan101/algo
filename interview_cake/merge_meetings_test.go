@@ -1,3 +1,14 @@
+// Problem:
+// Given a list of unsorted, independent meetings, returns a list of merged
+// one.
+//
+// Solution:
+// Sort the list in ascending order, iterate through the list and check if the
+// last merged meeting end time is greater or equal then the current one start
+// time, merge them using the later end time.
+//
+// Cost: O(nlogn) time, O(n) space.
+
 package main
 
 import (
@@ -33,10 +44,6 @@ type meeting struct {
 	end   int
 }
 
-// mergeMeetings takes a list of unsorted, independent meetings and merges them
-// into a sorted, continuous ones. Since we sort the list first, it gives us a
-// runtime of O(nlogn). And because we create a new list of meeting times, the
-// worst case space cost is O(n).
 func mergeMeetings(meetings []meeting) []meeting {
 	// sort the meetings in ascending order.
 	sort.Slice(meetings, func(i, j int) bool {

@@ -1,3 +1,14 @@
+// Problem:
+// Given an unsorted list scores (integer) and a highest possible score, return
+// a sorted list.
+//
+// Solution:
+// Build a list of scores where their indices represent the scores itself and
+// their values represent how many time the score appear in the list. Iterate
+// backward through that list and add them back in order.
+//
+// Cost: O(n) time, O(n) space.
+
 package main
 
 import (
@@ -24,10 +35,6 @@ func TestSortScores(t *testing.T) {
 	}
 }
 
-// sortScores takes an unsorted list of integers and the highest possible score
-// and returns a sorted list. Since we build a list of socres where indices
-// represent scores and values represent how many time the score appears, the
-// space complexity is O(n). The time complexity is O(n).
 func sortScores(scores []int, highestPossibleScore int) []int {
 	counts := make([]int, highestPossibleScore+1)
 	out := make([]int, 0)
