@@ -43,13 +43,13 @@ func TestBuildWordCloud(t *testing.T) {
 func buildWordCloud(in string) map[string]int {
 	m := map[string]int{}
 
-	// get rid of all special characters and numbers using regex
+	// get rid of all special characters and numbers using regex.
 	s := regexp.MustCompile(`[^a-zA-Z]+`).ReplaceAllString(in, " ")
 
-	// split it by space
+	// split it by space.
 	words := strings.Split(s, " ")
 
-	// FIXME - there is a space in the end for some reasons
+	// iterate through the word list and update its count.
 	for _, v := range words[:len(words)-1] {
 		if _, ok := m[strings.ToLower(v)]; ok {
 			m[strings.ToLower(v)] += 1
