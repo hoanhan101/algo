@@ -8,8 +8,8 @@
 //
 // Solution:
 // The first pass, we reverse all characters so that we end up with a list of
-// words in the right order, but not its characters. The second pass, we keep
-// reverse the orders of its characters.
+// words in the right order, but not its characters. The second pass, we
+// reverse the order of its characters.
 //
 // Cost:
 // O(n) time, O(1) space.
@@ -63,7 +63,7 @@ func reverseWord(list []string) []string {
 	return list
 }
 
-// reverseChar reverses the list of character for a given start and end index
+// reverseChar reverses the list of character for a given start and end index.
 func reverseChar(list []string, start int, end int) {
 	for start < end {
 		tmp := list[start]
