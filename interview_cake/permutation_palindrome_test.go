@@ -6,7 +6,7 @@
 // Return: true
 //
 // Solution:
-// Use a hashmap to keep add a character if we haven't seen it or delete it
+// Use a hashmap to add a character if we haven't seen it or delete it
 // otherwise. The space complexity is O(n) due to the hashmap, but since
 // there are only a constant number of characters in Unicode, we could treat it
 // as O(1).
