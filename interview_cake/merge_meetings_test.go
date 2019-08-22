@@ -2,12 +2,17 @@
 // Given a list of unsorted, independent meetings, returns a list of merged
 // one.
 //
+// Example:
+// Given:  []meeting{{1, 2}, {2, 3}, {4, 5}}
+// Return: []meeting{{1, 3}, {4, 5}}
+//
 // Solution:
 // Sort the list in ascending order, iterate through the list and check if the
 // last merged meeting end time is greater or equal then the current one start
 // time, merge them using the later end time.
 //
-// Cost: O(nlogn) time, O(n) space.
+// Cost:
+// O(nlogn) time, O(n) space.
 
 package main
 
@@ -39,6 +44,7 @@ func TestMergeMeetings(t *testing.T) {
 	}
 }
 
+// meeting has a start and end time.
 type meeting struct {
 	start int
 	end   int

@@ -2,12 +2,17 @@
 // Given a list of string that is made up of word but in reverse, return the
 // correct order.
 //
+// Example:
+// Given:  []string{"w", "o", "r", "l", "d", "", "h", "e", "l", "l", "o", "", "s", "a", "y"}
+// Return: []string{"s", "a", "y", "", "h", "e", "l", "l", "o", "", "w", "o", "r", "l", "d"}
+//
 // Solution:
 // The first pass, we reverse all characters so that we end up with a list of
 // words in the right order, but not its characters. The second pass, we keep
 // reverse the orders of its characters.
 //
-// Cost: O(n) time, O(1) space.
+// Cost:
+// O(n) time, O(1) space.
 
 package main
 

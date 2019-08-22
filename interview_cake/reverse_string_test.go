@@ -1,11 +1,16 @@
 // Problem:
 // Given a list of string, reverse its order.
 //
+// Example:
+// Given:  []string{"a", "b", "c", "d"},
+// Return: []string{"d", "c", "b", "a"}
+//
 // Solution:
 // Use two pointers approach to swap two values on both ends as we move toward
 // the middle.
 //
-// Cost: O(n) time, O(1) space.
+// Cost:
+// O(n) time, O(1) space.
 
 package main
 
@@ -35,6 +40,7 @@ func TestReverseString(t *testing.T) {
 }
 
 func reverseString(list []string) []string {
+	// check edge cases.
 	if len(list) == 0 || len(list) == 1 {
 		return list
 	}
@@ -43,12 +49,12 @@ func reverseString(list []string) []string {
 	end := len(list) - 1
 
 	for start < end {
-		// swap 2 character using a temp variable
+		// swap 2 character using a temp variable.
 		tmp := list[start]
 		list[start] = list[end]
 		list[end] = tmp
 
-		// move the cursor toward the middle
+		// move the cursor toward the middle.
 		start += 1
 		end -= 1
 	}

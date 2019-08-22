@@ -1,11 +1,16 @@
 // Problem:
 // Merge two sorted arrays.
 //
+// Example:
+// Given:  []int{1, 3, 5} and []int{2, 4, 6}
+// Return: []int{1, 2, 3, 4, 5, 6}
+//
 // Solution:
 // Use two pointers approach to iterate through the list and keep appending the
 // smaller value to a new list.
 //
-// Cost: O(n) time, O(n) space.
+// Cost:
+// O(n) time, O(n) space.
 
 package main
 
