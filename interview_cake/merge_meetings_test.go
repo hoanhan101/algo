@@ -1,5 +1,5 @@
 // Problem:
-// Given a list of unsorted, independent meetings, returns a list of merged
+// Given a list of unsorted, independent meetings, returns a list of a merged
 // one.
 //
 // Example:
@@ -58,14 +58,14 @@ func mergeMeetings(meetings []meeting) []meeting {
 
 	out := []meeting{}
 	for i := range meetings {
-		// push the first one to the list so we can have a start.
+		// push the first meeting to the list so we can have a start.
 		if i == 0 {
 			out = append(out, meetings[i])
 			continue
 		}
 
 		// if the last merged meeting's end time is greater or equal than the current
-		// one's start time, merge them using the later ending time.
+		// one's start time, merge them by using the later ending time.
 		if out[len(out)-1].end >= meetings[i].start {
 			_, out[len(out)-1].end = mimax(meetings[i].end, out[len(out)-1].end)
 		} else {
