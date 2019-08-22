@@ -1,10 +1,15 @@
 // Problem:
 // Given X, solve Y.
 //
+// Example:
+// Given:  input X
+// Return: output Y
+//
 // Solution:
 // Use Z approach.
 //
-// Cost: O(?) time, O(?) space.
+// Cost:
+// O(?) time, O(?) space.
 
 package main
 

@@ -1,14 +1,16 @@
 // Problem:
 // Given a list of integers, return the highest product of three numbers.
 //
+// Example:
+// Given:  []int{-10, -10, 1, 3, 2}
+// Return: 300
+//
 // Solution:
 // Use a greedy approach to keep track of the current highest, current lowest,
 // highest of three, highest of two, lowest of two.
 //
-// Cost: O(X) time, O(X) space.
-// highestProductOfThree returns the highest product of three number of a list.
-// Since we use a greedy approach to keep track the high and low values, the
-// space complexity is only O(1), time complexity is O(n).
+// Cost:
+// O(n) time, O(1) space.
 
 package main
 

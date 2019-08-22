@@ -2,11 +2,16 @@
 // Given a list of integers, determine if there are numbers that appear more
 // then one.
 //
+// Example:
+// Given:  TODO
+// Return: TODO
+//
 // Solution:
 // Use a binary search approach, except we divide the range of possible
 // answers in half at each step.
 //
-// Cost: O(n) time, O(1) space.
+// Cost:
+// O(n) time, O(1) space.
 
 package main
 

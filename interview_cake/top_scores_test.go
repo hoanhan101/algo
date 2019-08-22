@@ -2,12 +2,17 @@
 // Given an unsorted list scores (integer) and a highest possible score, return
 // a sorted list.
 //
+// Example:
+// Given:  []int{37, 89, 41, 65, 91, 53}, 100
+// Return: []int{91, 89, 65, 53, 41, 37}
+//
 // Solution:
 // Build a list of scores where their indices represent the scores itself and
 // their values represent how many time the score appear in the list. Iterate
 // backward through that list and add them back in order.
 //
-// Cost: O(n) time, O(n) space.
+// Cost:
+// O(n) time, O(n) space.
 
 package main
 

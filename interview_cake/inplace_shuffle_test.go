@@ -1,11 +1,16 @@
 // Problem:
 // Given a list of integers, shuffle its location in-place.
 //
+// Example:
+// Given:  []int{1, 2, 3, 4, 5}
+// Return: []int{2, 1, 4, 3, 5}
+//
 // Solution:
 // Iterate through the list, swap current value with a value in a randomized
 // index that is between the current and last index.
 //
-// Cost: O(n) time, O(1) space.
+// Cost:
+// O(n) time, O(1) space.
 
 package main
 

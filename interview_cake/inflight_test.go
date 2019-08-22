@@ -2,11 +2,16 @@
 // Given a list of movie lengths (integer), determine if there exist two movies
 // that add up to the total flight length.
 //
+// Example:
+// Given:  []int{2, 3, 4}, 6
+// Return: true
+//
 // Solution:
 // Use a hashmap to keep track of movie lengths that we've seen so we can look
 // up the difference faster as we iterate through the list.
 //
-// Cost: O(n) time, O(n) space.
+// Cost:
+// O(n) time, O(n) space.
 
 package main
 

@@ -2,11 +2,16 @@
 // Given a list of integers, return a corresponding list where every index
 // holds the product of every other values except the value in that index.
 //
+// Example:
+// Given:  []int{1, 7, 3, 4}
+// Return: []int{84, 12, 28, 21}
+//
 // Solution:
 // Make two passes to get the products of all other numbers before and after
 // their indices.
 //
-// Cost: O(n) time, O(n) space.
+// Cost:
+// O(n) time, O(n) space.
 
 package main
 

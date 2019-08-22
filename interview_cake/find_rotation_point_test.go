@@ -1,11 +1,29 @@
 // Problem:
 // Given a list of words, return an index of a rotation point.
 //
+// Example:
+// Given:
+//        []string{
+// 	       "ptolemaic",
+// 	       "retrograde",
+// 	       "supplant",
+// 	       "undulate",
+// 	       "xenoepist",
+// 	       "asymptote", // <-- rotates here!
+// 	       "babka",
+// 	       "banoffee",
+// 	       "engender",
+// 	       "karpatka",
+// 	       "othellolagkage",
+//        },
+// Return: 5
+//
 // Solution:
 // Use a binary search approach to search for word. The rotation point is
 // converged in the middle.
 //
-// Cost: O(logn) time, O(1) space.
+// Cost:
+// O(logn) time, O(1) space.
 
 package main
 

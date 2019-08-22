@@ -2,11 +2,16 @@
 // Given a list of stock prices (integer) in chronological order, return the
 // max profit from buying at earlier time and selling at later time.
 //
+// Example:
+// Given:  []int{10, 7, 5, 8, 11, 9}
+// Return: 6
+//
 // Solution:
 // Use a greedy approach to keep a minimum and maximum price while iterating
 // through the list.
 //
-// Cost: O(1) time, O(n) space.
+// Cost:
+// O(1) time, O(n) space.
 
 package main
 
