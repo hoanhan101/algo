@@ -6,13 +6,15 @@
 // Return: true
 //
 // Solution:
-// Use a hashmap to add a character if we haven't seen it or delete it
-// otherwise. The space complexity is O(n) due to the hashmap, but since
-// there are only a constant number of characters in Unicode, we could treat it
-// as O(1).
+// Use a hashmap to add a character if we haven't seen it and delete it
+// otherwise. If we're left with less or equal than a pair, we have a 
+// palindrome.
 //
 // Cost:
 // O(n) time, O(1) space.
+// The space complexity is O(n) due to the hashmap, but since there are
+// only a constant number of characters in Unicode, we could treat it
+// as O(1).
 
 package main
 
@@ -52,7 +54,7 @@ func hasPalindromePermutation(in string) bool {
 		}
 	}
 
-	// if we're left with less or equal than 1 pair, we have a palindrome.
+	// if we're left with less or equal than a pair, we have a palindrome.
 	if len(m) <= 1 {
 		return true
 	}
