@@ -6,9 +6,12 @@
 // Return: true
 //
 // Solution:
+// To determine if a permutation is a palindrome, need to check if each
+// character appears an even number of times, allowing for only one character
+// to appear an odd time - the middle one.
 // Use a hashmap to add a character if we haven't seen it and delete it
-// otherwise. If we're left with less or equal than a pair, we have a 
-// palindrome.
+// otherwise.
+// If we're left with less or equal than a pair, we have a palindrome.
 //
 // Cost:
 // O(n) time, O(1) space.

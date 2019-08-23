@@ -1,10 +1,10 @@
 // Problem:
-// Given a list of movie lengths (integer), determine if there exist two movies
-// that add up to the total flight length.
+// Given a list of movie lengths (integer) and a flight length (integer), determine if
+// there exist two movies that add up to the total length.
 //
 // Example:
 // Given:  []int{2, 3, 4}, 6
-// Return: true, because 2 + 4 = 6
+// Return: true, because there exists 2 and 4 that add up to 6
 //
 // Solution:
 // Use a hashmap to keep track of movie lengths that we've seen so far.
@@ -53,9 +53,9 @@ func fillFlight(movieLengths []int, flightLength int) bool {
 		matchLength := flightLength - v
 		if _, ok := movies[matchLength]; ok {
 			return true
-		} else {
-			movies[v] = 1
 		}
+
+		movies[v] = 1
 	}
 
 	return false

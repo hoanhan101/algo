@@ -1,5 +1,5 @@
 // Problem:
-// Given a list of string, reverse its order.
+// Given a list of string, reverse its order in place.
 //
 // Example:
 // Given:  []string{"a", "b", "c", "d"},
@@ -45,6 +45,7 @@ func reverseString(list []string) []string {
 		return list
 	}
 
+	// initialize start and end index pointer.
 	start := 0
 	end := len(list) - 1
 
@@ -55,8 +56,8 @@ func reverseString(list []string) []string {
 		list[end] = tmp
 
 		// move the cursor toward the middle.
-		start += 1
-		end -= 1
+		start++
+		end--
 	}
 
 	return list

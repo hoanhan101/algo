@@ -52,7 +52,7 @@ func buildWordCloud(in string) map[string]int {
 	// iterate through the word list and update its count.
 	for _, v := range words[:len(words)-1] {
 		if _, ok := m[strings.ToLower(v)]; ok {
-			m[strings.ToLower(v)] += 1
+			m[strings.ToLower(v)]++
 		} else {
 			m[strings.ToLower(v)] = 1
 		}

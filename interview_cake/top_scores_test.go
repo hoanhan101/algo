@@ -1,6 +1,6 @@
 // Problem:
-// Given an unsorted list scores (integer) and a highest possible score, return
-// a sorted list.
+// Given an unsorted list scores (integer) and a highest possible score
+// (integer), return a sorted list utilizing that fact.
 //
 // Example:
 // Given:  []int{37, 89, 41, 65, 91, 53}, 100
@@ -8,8 +8,8 @@
 //
 // Solution:
 // Build a list of scores where their indices represent the scores itself and
-// their values represent how many time the score appear in the list. Iterate
-// backward through that list and add them back in order.
+// their values represent how many time the score appear in the list.
+// Iterate backward through that list and add them back in order.
 //
 // Cost:
 // O(n) time, O(n) space.
@@ -41,13 +41,14 @@ func TestSortScores(t *testing.T) {
 }
 
 func sortScores(scores []int, highestPossibleScore int) []int {
+	// utilize highest score to create a fix-sized list of score counts.
 	counts := make([]int, highestPossibleScore+1)
 	out := make([]int, 0)
 
-	// populate the scores where indeices represent scores and values represent
+	// populate the scores where indices represent scores and values represent
 	// how many time the score appears.
 	for _, score := range scores {
-		counts[score] += 1
+		counts[score]++
 	}
 
 	// iterate backward and add the score to the output list so that it is
