@@ -8,7 +8,7 @@
 // Solution:
 // To determine if a permutation is a palindrome, need to check if each
 // character in the string appears an even number of times, allowing for
-// only one character to appear an odd time, which is the middle one.
+// only one character to appear an odd time, that is the middle one.
 // Use a hashmap to add a character if we haven't seen it and remove it
 // if it's already there.
 // After the iteration, if we're left with less or equal than a character in
@@ -53,7 +53,7 @@ func TestHasPalindromePermutation(t *testing.T) {
 func hasPalindromePermutation(in string) bool {
 	m := map[string]int{}
 
-	// delete if we've seen it, else add it.
+	// delete if we've seen it, else add it with a count 1.
 	for _, v := range in {
 		if _, ok := m[string(v)]; ok {
 			delete(m, string(v))

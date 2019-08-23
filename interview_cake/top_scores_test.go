@@ -11,8 +11,10 @@
 // their values represent how many time the score appear in the list.
 // Utilize the highest score to allocate that fix-sized list ahead of time.
 // Iterate backward through that list and add them back in order.
+// This method is also called counting sort.
 //
-// Cost: // O(n) time, O(n) space.
+// Cost:
+// O(n) time, O(n) space.
 
 package main
 

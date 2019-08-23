@@ -8,9 +8,10 @@
 // Solution:
 // Get rid of special characters using regex then split the sentence by space.
 // Choose to count the uppercase word only if it is uppercase in the original
-// string. It's reasonable, but not perfect since proper nouns like Bill and
-// bill have the same meaning.
-// Use a hashmap to keep counts
+// string. It's a reasonable approach, but not perfect one since proper nouns
+// like "Bill" and "bill" point to the same meaning and are placed in a
+// different place of a sentence - one in the front, other in the middle.
+// Use a hashmap to keep counts of words.
 //
 // Cost:
 // O(n) time, O(n) space.
@@ -54,7 +55,7 @@ func buildWordCloud(in string) map[string]int {
 	// get rid of all special characters and numbers using regex.
 	s := regexp.MustCompile(`[^a-zA-Z]+`).ReplaceAllString(in, " ")
 
-	// immediately return if the string contains nohthing but specical
+	// immediately return if the string contains no word but special
 	// characters and numbers.
 	if s == " " {
 		return m
