@@ -4,11 +4,13 @@
 //
 // Example:
 // Given:  []int{2, 3, 4}, 6
-// Return: true
+// Return: true, because 2 + 4 = 6
 //
 // Solution:
-// Use a hashmap to keep track of movie lengths that we've seen so we can look
-// up the difference faster as we iterate through the list.
+// Use a hashmap to keep track of movie lengths that we've seen so far.
+// As we iterate through the list, we calculate the difference for each value and check
+// if the difference is equal to the movie length that we've seen.
+// Return true if that's the case.
 //
 // Cost:
 // O(n) time, O(n) space.
