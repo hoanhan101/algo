@@ -1,6 +1,7 @@
 // Problem:
 // Given a list of movie lengths (integer) and a flight length (integer), determine if
-// there exist two movies that add up to the total length.
+// there exist two movies that add up to the total length. Assume that an user
+// watch exactly two movies, but not the same one twice.
 //
 // Example:
 // Given:  []int{2, 3, 4}, 6
@@ -8,8 +9,9 @@
 //
 // Solution:
 // Use a hashmap to keep track of movie lengths that we've seen so far.
-// As we iterate through the list, we calculate the difference for each value and check
-// if the difference is equal to the movie length that we've seen.
+// As we iterate through the list, we calculate the difference for each value
+// (total length - current movie length) and check if the difference is equal
+// to the movie length that we've seen.
 // Return true if that's the case.
 //
 // Cost:

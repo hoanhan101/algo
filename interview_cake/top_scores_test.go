@@ -9,10 +9,10 @@
 // Solution:
 // Build a list of scores where their indices represent the scores itself and
 // their values represent how many time the score appear in the list.
+// Utilize the highest score to allocate that fix-sized list ahead of time.
 // Iterate backward through that list and add them back in order.
 //
-// Cost:
-// O(n) time, O(n) space.
+// Cost: // O(n) time, O(n) space.
 
 package main
 

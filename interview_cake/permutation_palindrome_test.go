@@ -2,16 +2,17 @@
 // Given a string, check if its permutation is a palindrome.
 //
 // Example:
-// Given: "ivicc"
+// Given: "ivicc" or "civic"
 // Return: true
 //
 // Solution:
 // To determine if a permutation is a palindrome, need to check if each
-// character appears an even number of times, allowing for only one character
-// to appear an odd time - the middle one.
-// Use a hashmap to add a character if we haven't seen it and delete it
-// otherwise.
-// If we're left with less or equal than a pair, we have a palindrome.
+// character in the string appears an even number of times, allowing for
+// only one character to appear an odd time, which is the middle one.
+// Use a hashmap to add a character if we haven't seen it and remove it
+// if it's already there.
+// After the iteration, if we're left with less or equal than a character in
+// the map, we have a palindrome.
 //
 // Cost:
 // O(n) time, O(1) space.
@@ -31,6 +32,10 @@ func TestHasPalindromePermutation(t *testing.T) {
 		in       string
 		expected bool
 	}{
+		{"", true},
+		{"c", true},
+		{"cc", true},
+		{"ca", false},
 		{"civic", true},
 		{"ivicc", true},
 		{"civil", false},
