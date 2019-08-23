@@ -7,7 +7,7 @@
 // Return: []meeting{{1, 3}, {4, 5}}
 //
 // Solution:
-// Sort the list in ascending order so any meetings that might need to be
+// Sort the list in ascending order so that meetings that might need to be
 // merged are next to each other.
 // Iterate through the list and check if the last merged meeting end time
 // is greater or equal then the current one start time, merge them using the
