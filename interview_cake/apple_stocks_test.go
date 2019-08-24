@@ -4,11 +4,11 @@
 //
 // Example:
 // Given:  []int{10, 7, 5, 8, 11, 9}
-// Return: 6
+// Return: 6, because one can buy at 5 and sell at 11
 //
 // Solution:
-// Use a greedy approach to keep a minimum and maximum price while iterating
-// through the list.
+// Use a greedy approach to keep track of the minimum price and the maximum
+// profit for each value while iterating through the list.
 //
 // Cost:
 // O(1) time, O(n) space.
