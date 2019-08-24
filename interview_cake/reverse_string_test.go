@@ -2,7 +2,7 @@
 // Given a list of string, reverse its order in place.
 //
 // Example:
-// Given:  []string{"a", "b", "c", "d"},
+// Given:  []string{"a", "b", "c", "d"}
 // Return: []string{"d", "c", "b", "a"}
 //
 // Solution:
