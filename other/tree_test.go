@@ -1,5 +1,8 @@
 // Problem:
-// Implement DFS and BFS to traverse a tree.
+// Implement tree's depth first search (inorder, preorder, postorder) and
+// breath-first search (levelorder)
+//
+// The solution uses a channel to send value over as we traverse the tree.
 
 package main
 
@@ -9,6 +12,7 @@ import (
 )
 
 func TestTreeTraverse(t *testing.T) {
+	// initialize a test tree.
 	tree := &Tree{nil, 1, nil}
 	tree.left = &Tree{nil, 2, nil}
 	tree.right = &Tree{nil, 3, nil}
@@ -16,6 +20,7 @@ func TestTreeTraverse(t *testing.T) {
 	tree.left.right = &Tree{nil, 5, nil}
 	tree.right.right = &Tree{nil, 6, nil}
 
+	// use 4 different channels for 4 different methods.
 	c1 := make(chan int)
 	c2 := make(chan int)
 	c3 := make(chan int)
@@ -41,28 +46,22 @@ func TestTreeTraverse(t *testing.T) {
 		close(c4)
 	}()
 
-	r1 := []int{4, 2, 5, 1, 3, 6}
-	e1 := chanToSlice(c1)
-	if !reflect.DeepEqual(r1, e1) {
-		t.Errorf("should be %v instead %v", e1, r1)
+	// define test cases accordingly.
+	tests := []struct {
+		c        chan int
+		expected []int
+	}{
+		{c1, []int{4, 2, 5, 1, 3, 6}},
+		{c2, []int{1, 2, 4, 5, 3, 6}},
+		{c3, []int{4, 5, 2, 6, 3, 1}},
+		{c4, []int{1, 2, 3, 4, 5, 6}},
 	}
 
-	r2 := []int{1, 2, 4, 5, 3, 6}
-	e2 := chanToSlice(c2)
-	if !reflect.DeepEqual(r2, e2) {
-		t.Errorf("should be %v instead %v", e2, r2)
-	}
-
-	r3 := []int{4, 5, 2, 6, 3, 1}
-	e3 := chanToSlice(c3)
-	if !reflect.DeepEqual(r3, e3) {
-		t.Errorf("should be %v instead %v", e3, r3)
-	}
-
-	r4 := []int{1, 2, 3, 4, 5, 6}
-	e4 := chanToSlice(c4)
-	if !reflect.DeepEqual(r4, e4) {
-		t.Errorf("should be %v instead %v", e4, r4)
+	for _, tt := range tests {
+		result := chanToSlice(tt.c)
+		if !reflect.DeepEqual(result, tt.expected) {
+			t.Errorf("should be %v instead %v", tt.expected, result)
+		}
 	}
 }
 
@@ -105,7 +104,7 @@ func postorderTraverse(t *Tree, ch chan int) {
 	ch <- t.value
 }
 
-// BFS traverse.
+// levelorder BFS traverse.
 func levelorderTraverse(t *Tree, ch chan int) {
 	if t == nil {
 		return
@@ -132,6 +131,7 @@ func levelorderTraverse(t *Tree, ch chan int) {
 	}
 }
 
+// chanToSlice pushes values from a channel to a slice.
 func chanToSlice(ch chan int) []int {
 	out := []int{}
 
