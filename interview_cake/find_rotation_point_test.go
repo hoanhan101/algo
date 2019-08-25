@@ -19,8 +19,11 @@
 // Return: 5
 //
 // Solution:
-// Use a binary search approach to search for word. The rotation point is
-// converged in the middle.
+// Use a binary search approach to search for word, to either go right or go
+// left because they are in order alphabetically.
+// Keep track of the lower and upper bounds and so that when they are next
+// to each other, the floor is the last item while the ceiling is the rotation
+// point.
 //
 // Cost:
 // O(logn) time, O(1) space.
@@ -38,6 +41,49 @@ func TestFindRotationPoint(t *testing.T) {
 		expected int
 	}{
 		{
+			[]string{}, 0,
+		},
+		{
+			[]string{
+				"xenoepist",
+				"asymptote", // <-- rotates here!
+			},
+			1,
+		},
+		{
+			[]string{
+				"xenoepist",
+				"asymptote", // <-- rotates here!
+				"babka",
+				"banoffee",
+				"engender",
+				"karpatka",
+				"othellolagkage",
+			},
+			1,
+		},
+		{
+			[]string{
+				"asymptote",
+				"babka",
+				"banoffee",
+				"engender",
+				"karpatka",
+				"othellolagkage",
+			},
+			5, // returns the last index if there's no rotation
+		},
+		{
+			[]string{
+				"ptolemaic",
+				"retrograde",
+				"supplant",
+				"undulate",
+				"xenoepist",
+			},
+			4, // returns the last index if there's no rotation
+		},
+		{
 			[]string{
 				"ptolemaic",
 				"retrograde",
@@ -53,18 +99,6 @@ func TestFindRotationPoint(t *testing.T) {
 			},
 			5,
 		},
-		{
-			[]string{
-				"xenoepist",
-				"asymptote", // <-- rotates here!
-				"babka",
-				"banoffee",
-				"engender",
-				"karpatka",
-				"othellolagkage",
-			},
-			1,
-		},
 	}
 
 	for _, tt := range tests {
@@ -76,6 +110,12 @@ func TestFindRotationPoint(t *testing.T) {
 }
 
 func findRotationPoint(words []string) int {
+	// if there is only on word in the list, return 0
+	if len(words) <= 1 {
+		return 0
+	}
+
+	// keep track of the lower and upper bounds on the rotation points.
 	firstWord := words[0]
 	floorIndex := 0
 	ceilingIndex := len(words) - 1
@@ -91,12 +131,13 @@ func findRotationPoint(words []string) int {
 			ceilingIndex = guessIndex
 		}
 
-		// floorIndex and ceilingIndex have converged at rotation point.
+		// when the floorIndex and ceilingIndex have converged, the ceiling is
+		// the rotation point. it also means that, if there is no rotation
+		// point, the last index will be returned.
 		if floorIndex+1 == ceilingIndex {
 			return ceilingIndex
 		}
 	}
 
-	// FIXME - returns 0 if there is no rotation point.
-	return 0
+	return -1
 }
