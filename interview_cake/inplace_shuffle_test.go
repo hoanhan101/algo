@@ -38,14 +38,17 @@ func TestInplaceShuffle(t *testing.T) {
 }
 
 func inplaceShuffle(list []int) []int {
+	// check edge case.
 	if len(list) <= 1 {
 		return list
 	}
 
 	lastIndex := len(list) - 1
 	for i := 0; i < len(list); i++ {
+		// get a andomized index that is between the current and last index.
 		randomIndex := random(i, lastIndex)
 
+		// swap current value.
 		if i != randomIndex {
 			tmp := list[i]
 			list[i] = list[randomIndex]

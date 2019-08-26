@@ -2,8 +2,8 @@
 // Given a sentence (string), return its word count map.
 //
 // Example:
-// Given: "Cliff finished his cake and paid the bill. Bill finished his cake at the edge of the cliff.",
-// Return: map[string]int{"cliff": 1, "Cliff": 1, "finished": 2, "his": 2, "cake": 2, "and": 1, "paid": 1, "the": 3, "bill": 1, "Bill": 1, "at": 1, "edge": 1, "of": 1},
+// Given: "Cliff finished his cake and paid the bill. Bill finished his cake at the edge of the cliff."
+// Return: map[string]int{"cliff": 1, "Cliff": 1, "finished": 2, "his": 2, "cake": 2, "and": 1, "paid": 1, "the": 3, "bill": 1, "Bill": 1, "at": 1, "edge": 1, "of": 1}
 //
 // Solution:
 // Get rid of special characters using regex then split the sentence by space.

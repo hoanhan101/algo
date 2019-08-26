@@ -3,11 +3,16 @@
 //
 // Example:
 // Given:  []int{-10, -10, 1, 3, 2}
-// Return: 300
+// Return: 300, because -10.-10.3 gives the highest product
 //
 // Solution:
 // Use a greedy approach to keep track of the current highest, current lowest,
-// highest of three, highest of two, lowest of two.
+// highest of three, highest of two and lowest of two for every value as we
+// iterate through the list.
+// Make sure to update these in the right order, in which the highest product
+// of three must be calculated first using the highest and lowest product of
+// two, then the highest product of two, lowest product of two, current highest
+// and current lowest.
 //
 // Cost:
 // O(n) time, O(1) space.
@@ -51,6 +56,7 @@ func highestProductOfThree(list []int) int {
 	for i := 2; i < len(list); i++ {
 		current := list[i]
 
+		// make sure to update each variable in the right order.
 		_, highestThree = mimax(highestThree, current*highestTwo, current*lowestTwo)
 		_, highestTwo = mimax(highestTwo, current*highest, current*lowest)
 		lowestTwo, _ = mimax(lowestTwo, current*highest, current*lowest)

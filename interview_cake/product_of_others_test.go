@@ -1,14 +1,16 @@
 // Problem:
 // Given a list of integers, return a corresponding list where every index
 // holds the product of every other values except the value in that index.
+// And, you can't use division!
 //
 // Example:
 // Given:  []int{1, 7, 3, 4}
 // Return: []int{84, 12, 28, 21}
 //
 // Solution:
-// Make two passes to get the products of all other numbers before and after
-// their indices.
+// Iterate through the list and at each step, calculate the product of all
+// the integers before each index and the product of all the integers after
+// each index.
 //
 // Cost:
 // O(n) time, O(n) space.
@@ -46,14 +48,14 @@ func getProductOfOthers(list []int) []int {
 
 	out := make([]int, len(list))
 
-	// get product of all other numbers before their indexes.
+	// get product of all other numbers before their indices.
 	start1 := 1
 	for i := 0; i < len(list); i++ {
 		out[i] = start1
 		start1 *= list[i]
 	}
 
-	// get product of all other numbers after their indexes then multiply them
+	// get product of all other numbers after their indices then multiply them
 	// with their corresponding values.
 	start2 := 1
 	for i := len(list) - 1; i > -1; i-- {
