@@ -11,7 +11,7 @@
 // profit for each value while iterating through the list.
 //
 // Cost:
-// O(1) time, O(n) space.
+// O(n) time, O(1) space.
 
 package main
 
