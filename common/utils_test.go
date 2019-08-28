@@ -84,3 +84,22 @@ func TestIsMoreThan1Apart(t *testing.T) {
 		}
 	}
 }
+
+func TestIsLessThan1Apart(t *testing.T) {
+	tests := []struct {
+		in1      int
+		in2      int
+		expected bool
+	}{
+		{1, 1, true},
+		{1, 2, true},
+		{1, 3, false},
+	}
+
+	for _, tt := range tests {
+		result := IsLessThan1Apart(tt.in1, tt.in2)
+		if !reflect.DeepEqual(result, tt.expected) {
+			t.Errorf("should be %v instead %v", tt.expected, result)
+		}
+	}
+}

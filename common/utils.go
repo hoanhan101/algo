@@ -61,3 +61,12 @@ func IsMoreThan1Apart(a, b int) bool {
 
 	return false
 }
+
+// IsLessThan1Apart checks if two integers are less or equal than 1 apart.
+func IsLessThan1Apart(a, b int) bool {
+	if math.Abs(float64(a)-float64(b)) <= 1 {
+		return true
+	}
+
+	return false
+}
