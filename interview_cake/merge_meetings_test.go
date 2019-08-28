@@ -24,6 +24,8 @@ import (
 	"reflect"
 	"sort"
 	"testing"
+
+	"github.com/hoanhan101/algo/common"
 )
 
 func TestMergeMeetings(t *testing.T) {
@@ -72,7 +74,7 @@ func mergeMeetings(meetings []meeting) []meeting {
 		// one's start time, merge them by using the later ending time. else,
 		// leave them separate and push it to the output list.
 		if out[len(out)-1].end >= meetings[i].start {
-			_, out[len(out)-1].end = mimax(meetings[i].end, out[len(out)-1].end)
+			_, out[len(out)-1].end = common.Mimax(meetings[i].end, out[len(out)-1].end)
 		} else {
 			out = append(out, meetings[i])
 		}

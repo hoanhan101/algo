@@ -18,6 +18,8 @@ package main
 import (
 	"reflect"
 	"testing"
+
+	"github.com/hoanhan101/algo/common"
 )
 
 func TestGetMaxProfit(t *testing.T) {
@@ -55,8 +57,8 @@ func getMaxProfit(stocks []int) int {
 	for i := 1; i < len(stocks); i++ {
 		currentPrice := stocks[i]
 		potentialProfit := currentPrice - minPrice
-		_, maxProfit = mimax(potentialProfit, maxProfit)
-		minPrice, _ = mimax(minPrice, currentPrice)
+		_, maxProfit = common.Mimax(potentialProfit, maxProfit)
+		minPrice, _ = common.Mimax(minPrice, currentPrice)
 	}
 
 	return maxProfit

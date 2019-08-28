@@ -29,9 +29,10 @@
 package main
 
 import (
-	"math"
 	"reflect"
 	"testing"
+
+	"github.com/hoanhan101/algo/common"
 )
 
 func TestIsSuperBalanced(t *testing.T) {
@@ -101,24 +102,6 @@ type treeDepth struct {
 	depth int
 }
 
-func contains(s []int, target int) bool {
-	for _, v := range s {
-		if v == target {
-			return true
-		}
-	}
-
-	return false
-}
-
-func is1Apart(a, b int) bool {
-	if math.Abs(float64(a)-float64(b)) > 1 {
-		return true
-	}
-
-	return false
-}
-
 func isSuperBalanced(t *BinaryTree) bool {
 	// return true if the tree has no leaf.
 	if t == nil {
@@ -139,14 +122,14 @@ func isSuperBalanced(t *BinaryTree) bool {
 
 		// if we found a leaf, add the new depth to the list if we haven't seen it.
 		if current.tree.left == nil && current.tree.right == nil {
-			if !contains(depths, current.depth) {
+			if !common.Contain(depths, current.depth) {
 				depths = append(depths, current.depth)
 			}
 
 			// short-circuit to determine if the tree is unbalanced:
 			// - more than 2 different leaf depths
 			// - 2 leaf depths that are more than 1 apart
-			if (len(depths) > 2) || (len(depths) == 2 && is1Apart(depths[1], depths[0])) {
+			if (len(depths) > 2) || (len(depths) == 2 && common.IsMoreThan1Apart(depths[1], depths[0])) {
 				return false
 			}
 		}

@@ -9,6 +9,8 @@ package main
 import (
 	"reflect"
 	"testing"
+
+	"github.com/hoanhan101/algo/common"
 )
 
 func TestBinaryTreeTraverse(t *testing.T) {
@@ -58,7 +60,7 @@ func TestBinaryTreeTraverse(t *testing.T) {
 	}
 
 	for _, tt := range tests {
-		result := chanToSlice(tt.c)
+		result := common.ChanToSlice(tt.c)
 		if !reflect.DeepEqual(result, tt.expected) {
 			t.Errorf("should be %v instead %v", tt.expected, result)
 		}
@@ -129,15 +131,4 @@ func levelorderTraverse(t *BinaryTree, ch chan int) {
 			queue = append(queue, current.right)
 		}
 	}
-}
-
-// chanToSlice pushes values from a channel to a slice.
-func chanToSlice(ch chan int) []int {
-	out := []int{}
-
-	for v := range ch {
-		out = append(out, v)
-	}
-
-	return out
 }

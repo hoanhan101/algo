@@ -17,6 +17,8 @@ package main
 import (
 	"reflect"
 	"testing"
+
+	"github.com/hoanhan101/algo/common"
 )
 
 func TestInplaceShuffle(t *testing.T) {
@@ -46,7 +48,7 @@ func inplaceShuffle(list []int) []int {
 	lastIndex := len(list) - 1
 	for i := 0; i < len(list); i++ {
 		// get a andomized index that is between the current and last index.
-		randomIndex := random(i, lastIndex)
+		randomIndex := common.Random(i, lastIndex)
 
 		// swap current value.
 		if i != randomIndex {

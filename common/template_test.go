@@ -1,17 +1,18 @@
 // Problem:
-// Given X, solve Y.
+// TODO
 //
 // Example:
-// Given:  input X
-// Return: output Y
+// Input: TODO
+// Output: TODO
 //
 // Solution:
-// Use Z approach.
+// TODO
 //
 // Cost:
 // O(?) time, O(?) space.
+// TODO
 
-package main
+package common
 
 import (
 	"reflect"

@@ -22,6 +22,8 @@ package main
 import (
 	"reflect"
 	"testing"
+
+	"github.com/hoanhan101/algo/common"
 )
 
 func TestHighestProductOfThree(t *testing.T) {
@@ -47,8 +49,8 @@ func highestProductOfThree(list []int) int {
 		return 0
 	}
 
-	_, highest := mimax(list[0], list[1])
-	lowest, _ := mimax(list[0], list[1])
+	_, highest := common.Mimax(list[0], list[1])
+	lowest, _ := common.Mimax(list[0], list[1])
 	highestTwo := list[0] * list[1]
 	lowestTwo := list[0] * list[1]
 	highestThree := list[0] * list[1] * list[2]
@@ -57,11 +59,11 @@ func highestProductOfThree(list []int) int {
 		current := list[i]
 
 		// make sure to update each variable in the right order.
-		_, highestThree = mimax(highestThree, current*highestTwo, current*lowestTwo)
-		_, highestTwo = mimax(highestTwo, current*highest, current*lowest)
-		lowestTwo, _ = mimax(lowestTwo, current*highest, current*lowest)
-		_, highest = mimax(highest, current)
-		lowest, _ = mimax(lowest, current)
+		_, highestThree = common.Mimax(highestThree, current*highestTwo, current*lowestTwo)
+		_, highestTwo = common.Mimax(highestTwo, current*highest, current*lowest)
+		lowestTwo, _ = common.Mimax(lowestTwo, current*highest, current*lowest)
+		_, highest = common.Mimax(highest, current)
+		lowest, _ = common.Mimax(lowest, current)
 	}
 
 	return highestThree
