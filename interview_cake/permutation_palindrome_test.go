@@ -20,7 +20,7 @@
 // only a constant number of characters in Unicode, we could treat it
 // as O(1).
 
-package main
+package interview_cake
 
 import (
 	"reflect"

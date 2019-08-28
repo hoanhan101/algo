@@ -26,7 +26,7 @@
 // complexity is O(n). For space complexity, we have to keep track of the all
 // the nodes at every depth. Hence, it is O(n).
 
-package main
+package interview_cake
 
 import (
 	"reflect"

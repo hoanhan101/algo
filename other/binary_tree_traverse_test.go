@@ -4,7 +4,7 @@
 //
 // The solution uses a channel to send value over as we traverse the tree.
 
-package main
+package other
 
 import (
 	"reflect"
@@ -15,6 +15,9 @@ import (
 
 func TestBinaryTreeTraverse(t *testing.T) {
 	// initialize a test tree.
+	//         1
+	//      2     3
+	//    4   5     6
 	tree := &BinaryTree{nil, 1, nil}
 	tree.left = &BinaryTree{nil, 2, nil}
 	tree.right = &BinaryTree{nil, 3, nil}

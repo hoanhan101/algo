@@ -12,7 +12,7 @@
 // Cost:
 // O(n) time, O(1) space.
 
-package main
+package interview_cake
 
 import (
 	"reflect"
