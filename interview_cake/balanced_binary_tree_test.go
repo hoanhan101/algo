@@ -1,10 +1,16 @@
 // Problem:
-// Given a binary tree, determine if it's "superbalanced" - difference between
-// the depths of any two leaf nodes is no greater than one.
+// Given a binary tree, determine if it is "superbalanced" - the difference
+// between the depths of any two leaf nodes is no greater than 1.
 //
 // Example:
-// Given:
-// Return: true
+// Input:
+//          1
+//       2     3
+//     4   5      7
+//           6  8   9
+//                    10
+// Output: false
+// Even though this tree is balanced by definition, it is not "superbalanced".
 //
 // Solution:
 // Use a depth-first walk through the tree and keep track of the depth as we
@@ -50,6 +56,17 @@ func TestIsSuperBalanced(t *testing.T) {
 	t5.right.right = &BinaryTree{nil, 4, nil}
 	t5.right.right.right = &BinaryTree{nil, 5, nil}
 
+	t6 := &BinaryTree{nil, 1, nil}
+	t6.left = &BinaryTree{nil, 2, nil}
+	t6.left.left = &BinaryTree{nil, 4, nil}
+	t6.left.right = &BinaryTree{nil, 5, nil}
+	t6.left.right.right = &BinaryTree{nil, 6, nil}
+	t6.right = &BinaryTree{nil, 3, nil}
+	t6.right.right = &BinaryTree{nil, 7, nil}
+	t6.right.right.left = &BinaryTree{nil, 8, nil}
+	t6.right.right.right = &BinaryTree{nil, 9, nil}
+	t6.right.right.right.right = &BinaryTree{nil, 10, nil}
+
 	// define their outputs.
 	tests := []struct {
 		in       *BinaryTree
@@ -60,6 +77,7 @@ func TestIsSuperBalanced(t *testing.T) {
 		{t3, true},
 		{t4, true},
 		{t5, false},
+		{t6, false},
 	}
 
 	for _, tt := range tests {
