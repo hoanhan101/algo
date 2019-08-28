@@ -114,7 +114,7 @@ func levelorderTraverse(t *BinaryTree, ch chan int) {
 	queue := []*BinaryTree{t}
 
 	for len(queue) > 0 {
-		// print front of queue and remove it.
+		// send the front of the queue and dequeue it.
 		current := queue[0]
 		ch <- current.value
 		queue = queue[1:]
