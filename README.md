@@ -7,9 +7,7 @@
 [![r/golang](https://img.shields.io/badge/r/golang-92%2B-orange)](https://www.reddit.com/r/golang/comments/ctyw0l/is_anyone_interested_in_weekly_coding_interview/?utm_source=share&utm_medium=web2x)
 
 
-```
-[Subscribe for the newsletter here →](https://www.getrevue.co/profile/hoanhan101)
-```
+> [Subscribe for the newsletter here →](https://www.getrevue.co/profile/hoanhan101)
 
 
 ## Table of Contents 
