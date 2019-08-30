@@ -18,7 +18,7 @@
 // Because we sort all meeting first, the runtime is O(nlogn). We create a new
 // list of merged meeting times, so the space cost is O(n).
 
-package interview_cake
+package interviewcake
 
 import (
 	"reflect"
