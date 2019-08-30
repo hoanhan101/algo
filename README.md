@@ -13,6 +13,44 @@
 
 [→ Newsletter](https://www.getrevue.co/profile/hoanhan101)
 
+## Table of Contents 
+
+- **Interview Cake**
+  - Array and string manipulation
+    - [Merge meeting times]()
+    - [Reverse string in place]()
+    - [Reverse words]()
+    - [Merge sorted arrays]()
+  - Hashing and hash tables
+    - [Inflight entertainment]()
+    - [Permutation palindrome]()
+    - [Word cloud data]()
+    - [Top scores]()
+  - Greedy algorithms
+    - [Apple stocks]()
+    - [Highest product of 3]()
+    - [Product of all other numbers]()
+    - [Inplace shuffle]()
+  - Sorting, searching, and logarithms
+    - [Find rotation point]()
+    - [Top scores]()
+    - [Merge meeting times]()
+  - Trees and graphs
+    - [Balanced binary tree]()
+    - [Binary search tree checker]()
+    - [2nd largest item in a binary search tree]()
+    - [Graph coloring]()
+    - [MeshMessage]()
+  - Dynamic programming and recursion
+  - Queues and stacks
+  - Linked lists
+  - General programming
+  - Bit manipulation
+  - Combinatorics, probability, and other math
+- **LeetCode**
+- **Cracking the Coding Interviews**
+- **Elements of Programming Interviews**
+
 ## Testing
 ```
 make test
