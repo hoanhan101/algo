@@ -20,6 +20,10 @@
 //
 // Cost:
 // O(n) time, O(n) space.
+// The worst case is that we have to iterate all nodes in the tree so the time
+// complexity is O(n). For space complexity, we have to keep track of the lower
+// bound and upper bound as we traverse the tree via a stack. Hence, the worst
+// case is O(n).
 
 package interviewcake
 
