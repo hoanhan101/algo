@@ -143,5 +143,7 @@ func isSuperBalanced(t *BinaryTree) bool {
 		}
 	}
 
+	// at this point we've checked all nodes and since they are all valid, the
+	// tree is "superbalanced".
 	return true
 }
