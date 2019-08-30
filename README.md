@@ -7,11 +7,8 @@
 [![r/golang](https://img.shields.io/badge/r/golang-92%2B-orange)](https://www.reddit.com/r/golang/comments/ctyw0l/is_anyone_interested_in_weekly_coding_interview/?utm_source=share&utm_medium=web2x)
 
 
-## Links
+[→ Subscribe for weekly coding interview problems with detailed solutions newsletter here →](https://www.getrevue.co/profile/hoanhan101)
 
-[→ Medium](https://medium.com/@hoanhan101/i-am-making-ultimate-study-guides-for-mastering-coding-interview-challenges-3f88a228441a?source=friends_link&sk=999d12c966d910736764fefbc9b8a0d3)
-
-[→ Newsletter](https://www.getrevue.co/profile/hoanhan101)
 
 ## Table of Contents 
 
@@ -50,6 +47,7 @@
 - **LeetCode**
 - **Cracking the Coding Interviews**
 - **Elements of Programming Interviews**
+
 
 ## Testing
 ```
