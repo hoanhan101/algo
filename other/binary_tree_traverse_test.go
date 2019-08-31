@@ -25,7 +25,7 @@ func TestBinaryTreeTraverse(t *testing.T) {
 	tree.left.right = &BinaryTree{nil, 5, nil}
 	tree.right.right = &BinaryTree{nil, 6, nil}
 
-	// use 4 different channels for 4 different methods the send and receive
+	// use 4 different channels for 4 different methods to send and receive
 	// values as we traverse the tree.
 	c1 := make(chan int)
 	c2 := make(chan int)
