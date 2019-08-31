@@ -31,7 +31,7 @@ import (
 	"github.com/hoanhan101/algo/common"
 )
 
-func TestHeight(t *testing.T) {
+func TestIsBalanced(t *testing.T) {
 	t1 := &BinaryTree{nil, 1, nil}
 
 	t2 := &BinaryTree{nil, 1, nil}
