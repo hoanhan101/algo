@@ -20,7 +20,7 @@ test:  ## Run unit tests
 	go test -short -race -coverprofile=coverage.out -covermode=atomic ./...
 
 .PHONY: test-verbose
-test-verbose:  ## Run test verbosely
+test-verbose:  ## Run tests verbosely
 	go test -v ./...
 
 .PHONY: help
