@@ -56,3 +56,8 @@
 ```
 make test
 ```
+
+For more information,
+```
+make help
+```
