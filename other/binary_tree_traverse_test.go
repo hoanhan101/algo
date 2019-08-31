@@ -14,7 +14,7 @@ import (
 )
 
 func TestBinaryTreeTraverse(t *testing.T) {
-	// initialize a test tree.
+	// predefine a test tree that has the following structure.
 	//         1
 	//      2     3
 	//    4   5     6
@@ -25,12 +25,14 @@ func TestBinaryTreeTraverse(t *testing.T) {
 	tree.left.right = &BinaryTree{nil, 5, nil}
 	tree.right.right = &BinaryTree{nil, 6, nil}
 
-	// use 4 different channels for 4 different methods.
+	// use 4 different channels for 4 different methods the send and receive
+	// values as we traverse the tree.
 	c1 := make(chan int)
 	c2 := make(chan int)
 	c3 := make(chan int)
 	c4 := make(chan int)
 
+	// close the channels after sending values.
 	go func() {
 		inorderTraverse(tree, c1)
 		close(c1)
@@ -51,15 +53,16 @@ func TestBinaryTreeTraverse(t *testing.T) {
 		close(c4)
 	}()
 
-	// define test cases accordingly.
+	// push the values from channels to slices and define test cases against
+	// them.
 	tests := []struct {
 		c        chan int
 		expected []int
 	}{
-		{c1, []int{4, 2, 5, 1, 3, 6}},
-		{c2, []int{1, 2, 4, 5, 3, 6}},
-		{c3, []int{4, 5, 2, 6, 3, 1}},
-		{c4, []int{1, 2, 3, 4, 5, 6}},
+		{c1, []int{4, 2, 5, 1, 3, 6}}, // inorder
+		{c2, []int{1, 2, 4, 5, 3, 6}}, // preorder
+		{c3, []int{4, 5, 2, 6, 3, 1}}, // postorder
+		{c4, []int{1, 2, 3, 4, 5, 6}}, // breath-search, aka levelorder
 	}
 
 	for _, tt := range tests {
