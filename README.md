@@ -35,7 +35,7 @@
   - Trees and graphs
     - [Balanced binary tree](https://github.com/hoanhan101/algo/blob/master/interviewcake/balanced_binary_tree_test.go)
     - [Binary search tree checker](https://github.com/hoanhan101/algo/blob/master/interviewcake/binary_search_tree_test.go)
-    - 2nd largest item in a binary search tree
+    - [2nd largest item in a binary search tree](https://github.com/hoanhan101/algo/blob/master/interviewcake/2nd_largest_item_bst_test.go)
     - Graph coloring
     - MeshMessage
   - Dynamic programming and recursion
