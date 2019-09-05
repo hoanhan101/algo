@@ -1,6 +1,7 @@
 package common
 
 import (
+	"fmt"
 	"math"
 	"math/rand"
 )
@@ -27,7 +28,6 @@ func Random(min, max int) int {
 	if min == max {
 		return min
 	}
-
 	return rand.Intn(max-min) + min
 }
 
@@ -69,4 +69,11 @@ func IsLessThan1Apart(a, b int) bool {
 	}
 
 	return false
+}
+
+// Log prints out the map of logging context and value.
+func Log(m map[string]interface{}) {
+	for k, v := range m {
+		fmt.Printf("[debug] context: %v, value: %v\n", k, v)
+	}
 }
