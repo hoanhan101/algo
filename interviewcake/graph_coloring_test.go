@@ -3,13 +3,20 @@
 // using at most d + 1 colors. Assume that there is no node with a loop.
 //
 // Example:
-// TODO
+// For a graph with degree 3, we could use at most 4 colors.
 //
 // Solution:
-// TODO
+// Use a greedy approach to iterate over the graph and assign each node the
+// first non-taken color that we found.
 //
 // Cost:
-// TODO
+// O(m) time and O(d) space, where m is sum of all the nodes and edges, d is
+// the number of all colors.
+// Even though it seems like we have an outer and inner loop, we carefully walk
+// through the graph one node at a time and stop checking for colors as soon as
+// we found one that is non-taken.
+// About the space complexity, it makes sense that we have to store all
+// available colors in the worst case. Hence it takes up O(d) space.
 
 package interviewcake
 
