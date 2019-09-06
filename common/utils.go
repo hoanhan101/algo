@@ -53,6 +53,17 @@ func Contain(s []int, target int) bool {
 	return false
 }
 
+// ContainString checks if the target is in a slice.
+func ContainString(s []string, target string) bool {
+	for _, v := range s {
+		if v == target {
+			return true
+		}
+	}
+
+	return false
+}
+
 // IsMoreThan1Apart checks if two integers are more than 1 apart.
 func IsMoreThan1Apart(a, b int) bool {
 	if math.Abs(float64(a)-float64(b)) > 1 {
@@ -74,6 +85,6 @@ func IsLessThan1Apart(a, b int) bool {
 // Log prints out the map of logging context and value.
 func Log(m map[string]interface{}) {
 	for k, v := range m {
-		fmt.Printf("[debug] context: %v, value: %v\n", k, v)
+		fmt.Printf("[debug] context: %v, value: %+v\n", k, v)
 	}
 }
