@@ -23,6 +23,9 @@ test:  ## Run unit tests
 test-verbose:  ## Run tests verbosely
 	go test -v ./...
 
+.PHONY: push-ready
+push-ready: clean lint test  ## Clean up, lint source files, run tests and be ready for a push
+
 .PHONY: help
 help:  ## Print usage information
 	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z_-]+:.*?## / {printf "\033[36m%-16s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST) | sort
