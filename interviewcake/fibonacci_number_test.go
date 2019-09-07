@@ -4,7 +4,7 @@
 //
 // Example:
 // Input: 4
-// Output: 3, because the 4th Fibonacci of the sequence 0, 1, 1, 2, 3 is 3
+// Output: 3, because the 4th Fibonacci of the sequence [0, 1, 1, 2, 3] is 3
 //
 // Solution:
 // Instead of using a recursive approach, use a bottom-up approach and
