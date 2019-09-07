@@ -44,7 +44,7 @@
   - Dynamic programming and recursion
     - [Recursive string permutations](https://github.com/hoanhan101/algo/blob/master/interviewcake/recursive_string_permutation_test.go)
     - [Compute nth Fibonacci number](https://github.com/hoanhan101/algo/blob/master/interviewcake/fibonacci_number_test.go)
-    - Making change
+    - [Making change](https://github.com/hoanhan101/algo/blob/master/interviewcake/making_change_test.go)
     - The cake thief
   - Queues and stacks
     - Largest stack
