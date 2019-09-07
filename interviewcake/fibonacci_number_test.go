@@ -1,5 +1,5 @@
 // Problem:
-// Write a function that takes an integer n and return the nth Fibonacci
+// Given an integer n, write a function to return the nth Fibonacci
 // number. Assume that n is a positive integer.
 //
 // Example:
