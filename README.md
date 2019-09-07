@@ -18,20 +18,21 @@
     - [Reverse string in place](https://github.com/hoanhan101/algo/blob/master/interviewcake/reverse_string_test.go)
     - [Reverse words](https://github.com/hoanhan101/algo/blob/master/interviewcake/reverse_word_test.go)
     - [Merge sorted arrays](https://github.com/hoanhan101/algo/blob/master/interviewcake/merge_sorted_arrays_test.go)
+    - Single riffle shuffle
   - Hashing and hash tables
-    - [Inflight entertainment](https://github.com/hoanhan101/algo/blob/master/interviewcake/inflight_test.go)
+    - [In-flight entertainment](https://github.com/hoanhan101/algo/blob/master/interviewcake/inflight_test.go)
     - [Permutation palindrome](https://github.com/hoanhan101/algo/blob/master/interviewcake/permutation_palindrome_test.go)
     - [Word cloud data](https://github.com/hoanhan101/algo/blob/master/interviewcake/word_cloud_test.go)
     - [Top scores](https://github.com/hoanhan101/algo/blob/master/interviewcake/top_scores_test.go)
+    - Find duplicate files
   - Greedy algorithms
     - [Apple stocks](https://github.com/hoanhan101/algo/blob/master/interviewcake/apple_stocks_test.go)
     - [Highest product of three](https://github.com/hoanhan101/algo/blob/master/interviewcake/highest_product_of_three_test.go)
     - [Product of all other numbers](https://github.com/hoanhan101/algo/blob/master/interviewcake/product_of_others_test.go)
-    - [Inplace shuffle](https://github.com/hoanhan101/algo/blob/master/interviewcake/inplace_shuffle_test.go)
+    - [In-place shuffle](https://github.com/hoanhan101/algo/blob/master/interviewcake/inplace_shuffle_test.go)
   - Sorting, searching, and logarithms
     - [Find rotation point](https://github.com/hoanhan101/algo/blob/master/interviewcake/find_rotation_point_test.go)
-    - [Top scores](https://github.com/hoanhan101/algo/blob/master/interviewcake/top_scores_test.go)
-    - [Merge meeting times](https://github.com/hoanhan101/algo/blob/master/interviewcake/merge_meetings_test.go)
+    - Find repeat
   - Trees and graphs
     - [Balanced binary tree](https://github.com/hoanhan101/algo/blob/master/interviewcake/balanced_binary_tree_test.go)
     - [Binary search tree checker](https://github.com/hoanhan101/algo/blob/master/interviewcake/binary_search_tree_test.go)
@@ -39,11 +40,31 @@
     - [Graph coloring](https://github.com/hoanhan101/algo/blob/master/interviewcake/graph_coloring_test.go)
     - MeshMessage
   - Dynamic programming and recursion
+    - Recursive string permutations
+    - Compute nth fibonacci number
+    - Making change
+    - The cake thief
   - Queues and stacks
+    - Largest stack
+    - A queue with two stacks
+    - Parenthesis matching
+    - Bracket validator
   - Linked lists
+    - Delete node
+    - Linked list has a cycle
+    - Reverse a linked list
+    - Kth to last node
   - General programming
+    - Rectangular love
+    - Temperature tracker
   - Bit manipulation
+    - The stolen breakfast drone
   - Combinatorics, probability, and other math
+    - Which appears twice
+    - Find in ordered set
+    - Simulate 5-sided die
+    - Simulate 7-sided die
+    - Two egg problem
 - **LeetCode**
 - **Cracking the Coding Interviews**
 - **Elements of Programming Interviews**
