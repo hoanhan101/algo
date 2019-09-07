@@ -149,7 +149,6 @@ func colorGraph(graph []*GraphNode, colors []string) {
 				taken = append(taken, neighbor.color)
 			}
 		}
-		common.Log(map[string]interface{}{"node": node, "taken": taken})
 
 		// assign the first color in the given colors list that is not already
 		// taken.
