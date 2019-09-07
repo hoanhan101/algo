@@ -40,7 +40,7 @@
     - [Graph coloring](https://github.com/hoanhan101/algo/blob/master/interviewcake/graph_coloring_test.go)
     - MeshMessage
   - Dynamic programming and recursion
-    - Recursive string permutations
+    - [Recursive string permutations](https://github.com/hoanhan101/algo/blob/master/interviewcake/recursive_string_permutation_test.go)
     - Compute nth fibonacci number
     - Making change
     - The cake thief
