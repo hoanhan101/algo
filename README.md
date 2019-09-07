@@ -43,7 +43,7 @@
     - MeshMessage
   - Dynamic programming and recursion
     - [Recursive string permutations](https://github.com/hoanhan101/algo/blob/master/interviewcake/recursive_string_permutation_test.go)
-    - Compute nth fibonacci number
+    - [Compute nth Fibonacci number](https://github.com/hoanhan101/algo/blob/master/interviewcake/fibonacci_number_test.go)
     - Making change
     - The cake thief
   - Queues and stacks
