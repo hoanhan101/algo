@@ -9,6 +9,8 @@
 
 > [Subscribe for the newsletter here →](https://www.getrevue.co/profile/hoanhan101)
 
+> [Thank you for your support!](https://www.buymeacoffee.com/aHjIWu6Ck)
+
 
 ## Table of Contents 
 
