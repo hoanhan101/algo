@@ -84,7 +84,9 @@ func IsLessThan1Apart(a, b int) bool {
 
 // Log prints out the map of logging context and value.
 func Log(m map[string]interface{}) {
+	fmt.Println("[debug] →")
 	for k, v := range m {
-		fmt.Printf("[debug] context: %v, value: %+v\n", k, v)
+		fmt.Printf("\t%v: %+v\n", k, v)
 	}
+	fmt.Println("[debug] □")
 }
