@@ -47,7 +47,7 @@
     - [Making change](https://github.com/hoanhan101/algo/blob/master/interviewcake/making_change_test.go)
     - The cake thief
   - Queues and stacks
-    - Largest stack
+    - [Largest stack](https://github.com/hoanhan101/algo/blob/master/interviewcake/largest_stack_test.go)
     - A queue with two stacks
     - Parenthesis matching
     - Bracket validator
