@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"math"
 	"math/rand"
+	"reflect"
+	"testing"
 )
 
 // Mimax returns min and max from a list of numbers.
@@ -89,4 +91,11 @@ func Log(m map[string]interface{}) {
 		fmt.Printf("\t%v: %+v\n", k, v)
 	}
 	fmt.Println("[debug] □")
+}
+
+// Equal checks if two input are deeply equal.
+func Equal(t *testing.T, expected, result interface{}) {
+	if !reflect.DeepEqual(result, expected) {
+		t.Errorf("should be %v instead %v", expected, result)
+	}
 }
