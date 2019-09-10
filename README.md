@@ -1,5 +1,7 @@
 # Weekly coding interview problems with detailed solutions
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/hoanhan101/algo)
+](https://goreportcard.com/report/github.com/hoanhan101/algo)
 
 [![hackernews](https://img.shields.io/badge/hackernews-22%2B-orange)](https://news.ycombinator.com/item?id=20769685)
 [![r/learnprogramming](https://img.shields.io/badge/r/programming-1.4k%2B-orange)](https://www.reddit.com/r/learnprogramming/comments/ctyvbc/is_anyone_interested_in_weekly_coding_interview/?utm_source=share&utm_medium=web2x)
