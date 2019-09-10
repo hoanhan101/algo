@@ -21,7 +21,7 @@
 // The largest item in a binary search tree is the rightmost item. Can
 // simply traverse down the tree recursively to find one.
 // The 2nd largest item could be the parent of the largest but it's not
-// neccessary since the largest could have a left subtree and there might exist
+// necessary since the largest could have a left subtree and there might exist
 // one there.
 // Still, the second largest one when the largest has a left subtree is basically
 // the largest one in that left subtree.
