@@ -1,9 +1,11 @@
 package common
 
+// Stack represent a stack data structure.
 type Stack struct {
 	Items []interface{}
 }
 
+// NewStack return a new Stack.
 func NewStack() *Stack {
 	items := []interface{}{}
 	return &Stack{Items: items}
@@ -39,6 +41,7 @@ func (s *Stack) Peek() interface{} {
 	return s.Items[len(s.Items)-1]
 }
 
+// Size return the Stack's size.
 func (s *Stack) Size() int {
 	return len(s.Items)
 }
