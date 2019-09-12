@@ -49,7 +49,7 @@
     - The cake thief
   - Queues and stacks
     - [Largest stack](https://github.com/hoanhan101/algo/blob/master/interviewcake/largest_stack_test.go)
-    - A queue with two stacks
+    - [A queue with two stacks](https://github.com/hoanhan101/algo/blob/master/interviewcake/queue_two_stacks_test.go)
     - Parenthesis matching
     - Bracket validator
   - Linked lists
