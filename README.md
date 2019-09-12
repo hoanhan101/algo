@@ -50,7 +50,7 @@
   - Queues and stacks
     - [Largest stack](https://github.com/hoanhan101/algo/blob/master/interviewcake/largest_stack_test.go)
     - [A queue with two stacks](https://github.com/hoanhan101/algo/blob/master/interviewcake/queue_two_stacks_test.go)
-    - Parenthesis matching
+    - [Parenthesis matching](https://github.com/hoanhan101/algo/blob/master/interviewcake/parenthesis_matching_test.go)
     - Bracket validator
   - Linked lists
     - Delete node
