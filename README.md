@@ -51,7 +51,7 @@
     - [Largest stack](https://github.com/hoanhan101/algo/blob/master/interviewcake/largest_stack_test.go)
     - [A queue with two stacks](https://github.com/hoanhan101/algo/blob/master/interviewcake/queue_two_stacks_test.go)
     - [Parenthesis matching](https://github.com/hoanhan101/algo/blob/master/interviewcake/parenthesis_matching_test.go)
-    - Bracket validator
+    - [Bracket validator](https://github.com/hoanhan101/algo/blob/master/interviewcake/bracket_validator_test.go)
   - Linked lists
     - Delete node
     - Linked list has a cycle
