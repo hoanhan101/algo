@@ -77,6 +77,7 @@
     - [Binary tree traversals](https://github.com/hoanhan101/algo/blob/master/other/binary_tree_traverse_test.go)
   - Sorting
     - [Selection sort](https://github.com/hoanhan101/algo/blob/master/other/selection_sort_test.go)
+    - [Insertion sort](https://github.com/hoanhan101/algo/blob/master/other/insertion_sort_test.go)
 
 ## Testing
 ```
