@@ -72,9 +72,11 @@
 - **Cracking the Coding Interviews**
 - **Elements of Programming Interviews**
 - **Other**
-  - [Balanced binary tree](https://github.com/hoanhan101/algo/blob/master/other/balanced_binary_tree_test.go)
-  - [Binary tree traversals](https://github.com/hoanhan101/algo/blob/master/other/binary_tree_traverse_test.go)
-
+  - Trees
+    - [Balanced binary tree](https://github.com/hoanhan101/algo/blob/master/other/balanced_binary_tree_test.go)
+    - [Binary tree traversals](https://github.com/hoanhan101/algo/blob/master/other/binary_tree_traverse_test.go)
+  - Sorting
+    - [Selection sort](https://github.com/hoanhan101/algo/blob/master/other/selection_sort_test.go)
 
 ## Testing
 ```
