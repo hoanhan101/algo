@@ -1,4 +1,6 @@
 // Implement selection sort.
+// It repeatedly selects the next smallest element from the unsorted array and
+// moving it to the front.
 
 package other
 
