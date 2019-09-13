@@ -1,6 +1,8 @@
+// Problem:
 // Implement selection sort.
-// It repeatedly selects the next smallest element from the unsorted array and
-// moving it to the front.
+//
+// Cost:
+// O(n^2) time and O(1) space.
 
 package other
 
@@ -33,6 +35,8 @@ func TestSelectionSort(t *testing.T) {
 	}
 }
 
+// selectionSort repeatedly selects the next smallest element from the unsorted
+// array and moving it to the front.
 func selectionSort(in []int) {
 	minIndex := 0
 	for i := 0; i < len(in)-1; i++ {
