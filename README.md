@@ -93,3 +93,6 @@ For more information,
 ```
 make help
 ```
+
+## References
+- [Sorting algorithm cheat sheet](https://www.interviewcake.com/sorting-algorithm-cheat-sheet)
