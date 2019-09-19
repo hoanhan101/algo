@@ -3,7 +3,7 @@
 //
 // Mechanic:
 // It repeatedly selects the next smallest element from the unsorted array and
-// moving it to the front.
+// moves it to the front.
 //
 // Cost:
 // O(n^2) time and O(1) space.
