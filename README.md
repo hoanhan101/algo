@@ -79,7 +79,7 @@
     - [Selection sort](https://github.com/hoanhan101/algo/blob/master/other/selection_sort_test.go)
     - [Insertion sort](https://github.com/hoanhan101/algo/blob/master/other/insertion_sort_test.go)
     - [Merge Sort](https://github.com/hoanhan101/algo/blob/master/other/merge_sort_test.go)
-    - Quicksort
+    - [Quicksort](https://github.com/hoanhan101/algo/blob/master/other/quicksort_test.go)
     - Heapsort
     - Counting sort
     - Radix Sort
