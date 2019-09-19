@@ -7,8 +7,8 @@
 // Return: []int{91, 89, 65, 53, 41, 37}
 //
 // Solution:
-// Build a list of scores where their indices represent the scores itself and
-// their values represent how many time the score appear in the list.
+// Build a list of scores where its indices represent the scores themselves and
+// its values represent how many time these scores appear in the list.
 // Utilize the highest score to allocate that fix-sized list ahead of time.
 // Iterate backward through that list and add them back in order.
 // This method is also called counting sort.
