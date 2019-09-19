@@ -2,7 +2,7 @@
 // Implement insertion sort.
 //
 // Mechanic:
-// It inserts elements from an unsorted array into a sorted subsection of the
+// Insert elements from an unsorted array into a sorted subsection of the
 // array, one item at a time.
 //
 // Cost:

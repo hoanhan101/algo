@@ -2,7 +2,7 @@
 // Implement merge sort.
 //
 // Mechanic:
-// It splits the input in half, recursively sorts each half, then merges the
+// Split the input in half, recursively sorts each half, then merge the
 // sorted halves back together.
 //
 // Cost:

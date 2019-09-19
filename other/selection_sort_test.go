@@ -2,8 +2,8 @@
 // Implement selection sort.
 //
 // Mechanic:
-// It repeatedly selects the next smallest element from the unsorted array and
-// moves it to the front.
+// Repeatedly select the next smallest element from the unsorted array and
+// move it to the front.
 //
 // Cost:
 // O(n^2) time and O(1) space.
