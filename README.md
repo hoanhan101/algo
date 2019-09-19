@@ -81,7 +81,7 @@
     - [Merge Sort](https://github.com/hoanhan101/algo/blob/master/other/merge_sort_test.go)
     - [Quicksort](https://github.com/hoanhan101/algo/blob/master/other/quicksort_test.go)
     - Heapsort
-    - Counting sort
+    - [Counting Sort](https://github.com/hoanhan101/algo/blob/master/other/counting_sort_test.go)
     - Radix Sort
 
 ## Testing
