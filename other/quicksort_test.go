@@ -17,7 +17,7 @@ import (
 	"github.com/hoanhan101/algo/common"
 )
 
-func TestQuickSort(t *testing.T) {
+func TestQuicksort(t *testing.T) {
 	tests := []struct {
 		in       []int
 		expected []int
@@ -35,19 +35,19 @@ func TestQuickSort(t *testing.T) {
 	}
 
 	for _, tt := range tests {
-		selectionSort(tt.in)
+		quicksort(tt.in, 0, len(tt.in)-1)
 		common.Equal(t, tt.expected, tt.in)
 	}
 }
 
-func quickSort(in []int, start, end int) {
+func quicksort(in []int, start, end int) {
 	if start < end {
 		// pi is the pivot/partition index.
 		pi := partition(in, start, end)
 
 		// sort the items before and after partition.
-		quickSort(in, start, pi-1)
-		quickSort(in, pi+1, end)
+		quicksort(in, start, pi-1)
+		quicksort(in, pi+1, end)
 	}
 }
 
