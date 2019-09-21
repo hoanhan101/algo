@@ -14,7 +14,6 @@
 
 
 ## Table of Contents 
-
 - **Interview Cake**
   - Array and string manipulation
     - [Merge meeting times](https://github.com/hoanhan101/algo/blob/master/interviewcake/merge_meetings_test.go)
@@ -72,9 +71,19 @@
 - **Cracking the Coding Interviews**
 - **Elements of Programming Interviews**
 - **Other**
-  - Trees
-    - [Balanced binary tree](https://github.com/hoanhan101/algo/blob/master/other/balanced_binary_tree_test.go)
-    - [Binary tree traversals](https://github.com/hoanhan101/algo/blob/master/other/binary_tree_traverse_test.go)
+  - Data structures
+    - Linked List
+    - Queue
+    - Stack
+    - Tree
+      - [Balanced binary tree](https://github.com/hoanhan101/algo/blob/master/other/balanced_binary_tree_test.go)
+      - [Binary tree traversals](https://github.com/hoanhan101/algo/blob/master/other/binary_tree_traverse_test.go)
+    - Graph
+    - Trie
+    - Heap
+    - Priority Queue
+    - Bloom filter
+    - LRU cache
   - Sorting
     - [Selection sort](https://github.com/hoanhan101/algo/blob/master/other/selection_sort_test.go)
     - [Insertion sort](https://github.com/hoanhan101/algo/blob/master/other/insertion_sort_test.go)
