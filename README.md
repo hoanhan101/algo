@@ -85,6 +85,7 @@
     - Bloom filter
     - LRU cache
   - Sorting
+    - [Bubble sort](https://github.com/hoanhan101/algo/blob/master/other/bubble_sort_test.go)
     - [Selection sort](https://github.com/hoanhan101/algo/blob/master/other/selection_sort_test.go)
     - [Insertion sort](https://github.com/hoanhan101/algo/blob/master/other/insertion_sort_test.go)
     - [Merge Sort](https://github.com/hoanhan101/algo/blob/master/other/merge_sort_test.go)
