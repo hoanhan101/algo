@@ -3,7 +3,7 @@
 //
 // Mechanic:
 // Similar to selection sort, repeatedly choose the largest item and move it to
-// the end of the array using a heap.
+// the end of the array using a max heap.
 //
 // Cost:
 // O(nlogn) time and O(1) space.
@@ -40,19 +40,68 @@ func TestHeapsort(t *testing.T) {
 }
 
 func heapsort(in []int) {
-	minIndex := 0
-	for i := 0; i < len(in)-1; i++ {
-		minIndex = i
-		// find the minimum in the rest of the array.
-		for j := i + 1; j < len(in); j++ {
-			if in[j] < in[minIndex] {
-				minIndex = j
-			}
+	heapify(in)
+
+	size := len(in)
+	for size > 0 {
+		// repeatedly remove the largest item.
+		largest := removeLargest(in, size)
+
+		// update the heap size.
+		size--
+
+		// store the removed value at the end of the list.
+		in[size] = largest
+	}
+}
+
+// heapify transform the input into a max heap.
+func heapify(in []int) {
+	for i := len(in) - 1; i > -1; i-- {
+		bubbleDown(in, len(in), i)
+	}
+}
+
+// bubbleDown allow larger values to reach the top.
+func bubbleDown(heap []int, heapSize int, index int) {
+	for index < heapSize {
+		// fast-calculate the children left and right index.
+		left := index*2 + 1
+		right := index*2 + 2
+
+		// stop if there is no child node.
+		if left >= heapSize {
+			break
 		}
 
-		// swap the minimum value with the first value.
-		tmp := in[i]
-		in[i] = in[minIndex]
-		in[minIndex] = tmp
+		// find the larger index
+		larger := left
+		if right < heapSize && heap[left] < heap[right] {
+			larger = right
+		}
+
+		// if the current item is larger than both children, we're done.
+		// if not, swap with the larger child.
+		if heap[index] < heap[larger] {
+			tmp := heap[index]
+			heap[index] = heap[larger]
+			heap[larger] = tmp
+		} else {
+			break
+		}
 	}
+}
+
+// removeLargest remove and return the largest item from the heap.
+func removeLargest(heap []int, heapSize int) int {
+	// largest item is at the top of our max heap.
+	largest := heap[0]
+
+	// move the last item into the root position.
+	heap[0] = heap[heapSize-1]
+
+	// bubble down from the root to restore the heap.
+	bubbleDown(heap, heapSize-1, 0)
+
+	return largest
 }
