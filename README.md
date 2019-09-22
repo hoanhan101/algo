@@ -89,7 +89,7 @@
     - [Insertion sort](https://github.com/hoanhan101/algo/blob/master/other/insertion_sort_test.go)
     - [Merge Sort](https://github.com/hoanhan101/algo/blob/master/other/merge_sort_test.go)
     - [Quicksort](https://github.com/hoanhan101/algo/blob/master/other/quicksort_test.go)
-    - Heapsort
+    - [Heapsort](https://github.com/hoanhan101/algo/blob/master/other/heapsort_test.go)
     - [Counting Sort](https://github.com/hoanhan101/algo/blob/master/other/counting_sort_test.go)
     - Radix Sort
 
