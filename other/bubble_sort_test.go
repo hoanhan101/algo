@@ -2,7 +2,7 @@
 // Implement bubble sort.
 //
 // Mechanic:
-// Repeatedly swap the adjacent elements if they are in the wrong order.
+// Repeatedly swap the adjacent elements if they are in the wrong order in the
 // array, one item at a time.
 //
 // Cost:
@@ -42,8 +42,10 @@ func TestBubbleSort(t *testing.T) {
 func bubbleSort(in []int) {
 	length := len(in)
 
+	// for each element in the list, check it with almost every other element.
 	for i := 0; i < length; i++ {
-		// last i element is already in place.
+		// since the last i element is already in place, only iterate through
+		// the item before the last one.
 		for j := 0; j < length-i-1; j++ {
 			// swap the adjacent elements if they are not in ascending order,
 			if in[j] > in[j+1] {
