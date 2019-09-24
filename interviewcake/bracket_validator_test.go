@@ -28,7 +28,7 @@ import (
 )
 
 func TestValidateBracket(t *testing.T) {
-	// define test cases..
+	// define test cases.
 	tests := []struct {
 		sentence string
 		expected bool
