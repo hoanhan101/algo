@@ -52,7 +52,7 @@
     - [Parenthesis matching](https://github.com/hoanhan101/algo/blob/master/interviewcake/parenthesis_matching_test.go)
     - [Bracket validator](https://github.com/hoanhan101/algo/blob/master/interviewcake/bracket_validator_test.go)
   - Linked lists
-    - Delete node
+    - [Delete node](https://github.com/hoanhan101/algo/blob/master/interviewcake/delete_node_test.go)
     - Linked list has a cycle
     - Reverse a linked list
     - Kth to last node
