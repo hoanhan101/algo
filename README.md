@@ -53,7 +53,7 @@
     - [Bracket validator](https://github.com/hoanhan101/algo/blob/master/interviewcake/bracket_validator_test.go)
   - Linked lists
     - [Delete node](https://github.com/hoanhan101/algo/blob/master/interviewcake/delete_node_test.go)
-    - Linked list has a cycle
+    - [Linked list has a cycle](https://github.com/hoanhan101/algo/blob/master/interviewcake/linked_list_cycle_test.go)
     - Reverse a linked list
     - Kth to last node
   - General programming
