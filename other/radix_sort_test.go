@@ -82,7 +82,7 @@ func sortingBit(in []int, bit int) []int {
 
 // bitValue returns the value of the bit at index bit in number.
 func bitValue(number int, bit int) uint {
-	// shift left a number of bit.
+	// shift left a number of bit to create a masking bit at that index.
 	mask := 1 << uint(bit)
 	if number&mask != 0 {
 		return 1
