@@ -47,7 +47,7 @@ func bubbleSort(in []int) {
 		// since the last i element is already in place, only iterate through
 		// the item before the last one.
 		for j := 0; j < length-i-1; j++ {
-			// swap the adjacent elements if they are not in ascending order,
+			// swap the adjacent elements if they are not in ascending order.
 			if in[j] > in[j+1] {
 				tmp := in[j]
 				in[j] = in[j+1]
