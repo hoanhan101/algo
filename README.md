@@ -56,7 +56,6 @@
     - [Linked list has a cycle](https://github.com/hoanhan101/algo/blob/master/interviewcake/linked_list_cycle_test.go)
     - [Reverse a linked list](https://github.com/hoanhan101/algo/blob/master/interviewcake/reverse_linked_list_test.go)
     - [Kth to last node](https://github.com/hoanhan101/algo/blob/master/interviewcake/kth_to_last_test.go)
-  - System Design *TODO*
   - General programming
     - Rectangular love
     - Temperature tracker
@@ -68,6 +67,7 @@
     - Simulate 5-sided die
     - Simulate 7-sided die
     - Two egg problem
+  - *TODO: System Design*
 - **[Practical Algorithms and Data Structures](https://bradfieldcs.com/algos/)**
 - **[LeetCode](https://leetcode.com/)**
 - **Cracking the Coding Interviews**
