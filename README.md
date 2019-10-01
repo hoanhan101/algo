@@ -14,7 +14,7 @@
 
 
 ## Table of Contents 
-- **Interview Cake**
+- **[Interview Cake](https://www.interviewcake.com/)**
   - Array and string manipulation
     - [Merge meeting times](https://github.com/hoanhan101/algo/blob/master/interviewcake/merge_meetings_test.go)
     - [Reverse string in place](https://github.com/hoanhan101/algo/blob/master/interviewcake/reverse_string_test.go)
@@ -67,7 +67,8 @@
     - Simulate 5-sided die
     - Simulate 7-sided die
     - Two egg problem
-- **LeetCode**
+- **[Practical Algorithms and Data Structures](https://bradfieldcs.com/algos/)**
+- **[LeetCode](https://leetcode.com/)**
 - **Cracking the Coding Interviews**
 - **Elements of Programming Interviews**
 - **Other**
