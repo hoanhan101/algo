@@ -60,7 +60,7 @@
     - Rectangular love
     - Temperature tracker
   - Bit manipulation
-    - The stolen breakfast drone
+    - [The stolen breakfast drone](https://github.com/hoanhan101/algo/blob/master/interviewcake/stolen_breakfast_drone_test.go)
   - Combinatorics, probability, and other math
     - Which appears twice
     - Find in ordered set
