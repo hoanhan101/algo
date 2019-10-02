@@ -2,11 +2,12 @@
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/hoanhan101/algo)
 ](https://goreportcard.com/report/github.com/hoanhan101/algo)
+![](https://img.shields.io/github/stars/hoanhan101/algo?color=success)
+![](https://img.shields.io/github/forks/hoanhan101/algo?color=success)
 [![hackernews](https://img.shields.io/badge/hackernews-22%2B-orange)](https://news.ycombinator.com/item?id=20769685)
 [![r/learnprogramming](https://img.shields.io/badge/r/programming-1.4k%2B-orange)](https://www.reddit.com/r/learnprogramming/comments/ctyvbc/is_anyone_interested_in_weekly_coding_interview/?utm_source=share&utm_medium=web2x)
 [![r/compsci](https://img.shields.io/badge/r/compsci-310%2B-orange)](https://www.reddit.com/r/compsci/comments/ctyy0o/is_anyone_interested_in_weekly_coding_interview/?utm_source=share&utm_medium=web2x)
 [![r/golang](https://img.shields.io/badge/r/golang-92%2B-orange)](https://www.reddit.com/r/golang/comments/ctyw0l/is_anyone_interested_in_weekly_coding_interview/?utm_source=share&utm_medium=web2x)
-
 
 > [Subscribe for the newsletter here →](https://www.getrevue.co/profile/hoanhan101)
 
