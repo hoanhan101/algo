@@ -43,11 +43,13 @@ func TestFindUniqueID(t *testing.T) {
 }
 
 func findUniqueID(list []int) int {
-	uniqueID := 0
+	// ones represents the number that appears only 1 time.
+	ones := 0
 
+	// XOR all integers together.
 	for _, id := range list {
-		uniqueID ^= id
+		ones ^= id
 	}
 
-	return uniqueID
+	return ones
 }
