@@ -70,6 +70,9 @@
   - *TODO: System Design*
 - **[Practical Algorithms and Data Structures](https://bradfieldcs.com/algos/)**
 - **[LeetCode](https://leetcode.com/)**
+  - Bit manipulation
+    - [Single Number](https://github.com/hoanhan101/algo/blob/master/interviewcake/stolen_breakfast_drone_test.go)
+    - [Single Number II](https://github.com/hoanhan101/algo/blob/master/leetcode/single_number_ii_test.go)
 - **Cracking the Coding Interviews**
 - **Elements of Programming Interviews**
 - **Other**
