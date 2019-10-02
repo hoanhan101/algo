@@ -1,6 +1,6 @@
 // Problem:
-// Given a list of integer that contains many even duplicates and only one
-// unique integer, find the unique one in O(1) space.
+// Given a list of integer where every element appears even number of time
+// except for one, find that unique one in O(1) space.
 //
 // Example:
 // Input: []int{1, 1, 2, 4, 2, 1, 4, 6, 1}
@@ -8,8 +8,9 @@
 //
 // Solution:
 // Bitwise XOR all integers in the list.
-// XOR-ing with the same ID again would cancel out the earlier change and leave
-// us the one that appears one.
+// Since XOR-ing a number with itself is zero, we could cancel out all the even
+// duplicates.
+// That leaves us the one that appears one time only.
 //
 // Cost:
 // O(n) time, O(1) space.
