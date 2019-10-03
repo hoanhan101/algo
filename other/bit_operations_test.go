@@ -76,6 +76,27 @@ func TestClearBit(t *testing.T) {
 	}
 }
 
+func TestClearBitMSBToI(t *testing.T) {
+	tests := []struct {
+		in1      int
+		in2      int
+		expected int
+	}{
+		{6, 0, 0},
+		{6, 1, 0},
+		{6, 2, 2},
+		{6, 3, 6},
+		{6, 4, 6},
+		{6, 5, 6},
+		{6, 6, 6},
+	}
+
+	for _, tt := range tests {
+		result := clearBitMSBToI(tt.in1, tt.in2)
+		common.Equal(t, tt.expected, result)
+	}
+}
+
 // getBit returns the value of bit ith for a given number.
 func getBit(number, i int) uint {
 	// shift 1 over by i bits, creating a bitmask value.
@@ -106,5 +127,16 @@ func clearBit(number, i int) int {
 	mask := ^(1 << uint(i))
 
 	// perform an AND with number to clear out all the bits 1.
+	return number & mask
+}
+
+// clearBitMSBToI clears all bits from the most significant bit to i for a
+// given number.
+func clearBitMSBToI(number, i int) int {
+	// shift 1 over by i bits, creating a bitmask value and subtract 1 from it
+	// to get a sequence of 0s followed by i 1s.
+	mask := 1<<uint(i) - 1
+
+	// perform an AND with number to leave the last i bits.
 	return number & mask
 }
