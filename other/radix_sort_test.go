@@ -79,17 +79,3 @@ func sortingBit(in []int, bit int) []int {
 
 	return sorted
 }
-
-// getBit returns the value of bit ith for a given number.
-func getBit(number, i int) uint {
-	// perform an AND with number to clear all bits other than the one at bit
-	// i.
-	mask := 1 << uint(i)
-
-	// if the value is not 0, bit 1 must have a 1.
-	if number&mask != 0 {
-		return 1
-	}
-
-	return 0
-}
