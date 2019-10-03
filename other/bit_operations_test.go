@@ -1,6 +1,9 @@
 // Problem:
-// Implement common bit operations such as Get Bit, Set Bit, Clear Bit and
-// Update Bit.
+// Implement common bit operations such as:
+// - Get Bit
+// - Set Bit
+// - Clear Bit (from most significant bit through i and from i through 0)
+// - Update Bit
 
 package other
 
@@ -52,6 +55,27 @@ func TestSetBit(t *testing.T) {
 	}
 }
 
+func TestClearBit(t *testing.T) {
+	tests := []struct {
+		in1      int
+		in2      int
+		expected int
+	}{
+		{6, 0, 6},
+		{6, 1, 4},
+		{6, 2, 2},
+		{6, 3, 6},
+		{6, 4, 6},
+		{6, 5, 6},
+		{6, 6, 6},
+	}
+
+	for _, tt := range tests {
+		result := clearBit(tt.in1, tt.in2)
+		common.Equal(t, tt.expected, result)
+	}
+}
+
 // getBit returns the value of bit ith for a given number.
 func getBit(number, i int) uint {
 	// shift 1 over by i bits, creating a bitmask value.
@@ -74,4 +98,13 @@ func setBit(number, i int) int {
 	// perform an OR with number to change the number at bit i without
 	// affecting other values.,
 	return number | mask
+}
+
+// clearBit clears the value of bit ith for a given number.
+func clearBit(number, i int) int {
+	// shift 1 over by i bits, creating a bitmask value and negate it.
+	mask := ^(1 << uint(i))
+
+	// perform an AND with number to clear out all the bits 1.
+	return number & mask
 }
