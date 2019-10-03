@@ -1,9 +1,6 @@
 // Problem:
 // Implement radix sort.
-//
-// Mechanic:
-// Sort the input numbers one digit at a time.
-//
+// // Mechanic: // Sort the input numbers one digit at a time.  //
 // Cost:
 // O(n) time and O(n) space.
 
@@ -35,6 +32,27 @@ func TestRadixSort(t *testing.T) {
 		// FIXME - radix sort is not working yet. use countingSort to pass
 		// the test for now.
 		result := countingSort(tt.in, len(tt.in))
+		common.Equal(t, tt.expected, result)
+	}
+}
+
+func TestGetBit(t *testing.T) {
+	tests := []struct {
+		in1      int
+		in2      int
+		expected uint
+	}{
+		{6, 0, 0},
+		{6, 1, 1},
+		{6, 2, 1},
+		{6, 3, 0},
+		{6, 4, 0},
+		{6, 5, 0},
+		{6, 6, 0},
+	}
+
+	for _, tt := range tests {
+		result := getBit(tt.in1, tt.in2)
 		common.Equal(t, tt.expected, result)
 	}
 }
@@ -78,4 +96,18 @@ func sortingBit(in []int, bit int) []int {
 	}
 
 	return sorted
+}
+
+// getBit returns the value of ith bit for a given number.
+func getBit(number, i int) uint {
+	// shift 1 over by i bits, creating a bitmask value.
+	mask := 1 << uint(i)
+
+	// perform an AND with number to clear all bits other than the one at bit i.
+	// if the value is not 0, bit 1 must have a 1.
+	if number&mask != 0 {
+		return 1
+	}
+
+	return 0
 }
