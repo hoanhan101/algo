@@ -1,8 +1,8 @@
 // Problem:
-// Implement common bit operations such as:
+// Implement common Bit operations such as:
 // - Get Bit
 // - Set Bit
-// - Clear Bit (from most significant bit through i and from i through 0)
+// - Clear Bit (from most significant bit to i and from i to the least significant bit)
 // - Update Bit
 
 package other
@@ -97,6 +97,27 @@ func TestClearBitMSBToI(t *testing.T) {
 	}
 }
 
+func TestClearBitIToLSB(t *testing.T) {
+	tests := []struct {
+		in1      int
+		in2      int
+		expected int
+	}{
+		{6, 0, 6},
+		{6, 1, 4},
+		{6, 2, 0},
+		{6, 3, 0},
+		{6, 4, 0},
+		{6, 5, 0},
+		{6, 6, 0},
+	}
+
+	for _, tt := range tests {
+		result := clearBitIToLSB(tt.in1, tt.in2)
+		common.Equal(t, tt.expected, result)
+	}
+}
+
 // getBit returns the value of bit ith for a given number.
 func getBit(number, i int) uint {
 	// shift 1 over by i bits, creating a bitmask value.
@@ -138,5 +159,16 @@ func clearBitMSBToI(number, i int) int {
 	mask := 1<<uint(i) - 1
 
 	// perform an AND with number to leave the last i bits.
+	return number & mask
+}
+
+// clearBitIToLSB clears all bits from bit i to the least significant bit
+// for a given number.
+func clearBitIToLSB(number, i int) int {
+	// shift 1 over by i + 1 bits from a sequence of all 1s(which is -1) to get
+	// a sequence of 1s followed by i 0 bits.
+	mask := -1 << uint(i+1)
+
+	// perform an AND with number to cancel out the rest of 1 bits.
 	return number & mask
 }
