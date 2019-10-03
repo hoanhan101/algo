@@ -118,7 +118,37 @@ func TestClearBitIToLSB(t *testing.T) {
 	}
 }
 
-// getBit returns the value of bit ith for a given number.
+func TestUpdateBit(t *testing.T) {
+	tests := []struct {
+		in1      int
+		in2      int
+		in3      bool
+		expected int
+	}{
+		{6, 0, true, 7},
+		{6, 1, true, 6},
+		{6, 2, true, 6},
+		{6, 3, true, 14},
+		{6, 4, true, 22},
+		{6, 5, true, 38},
+		{6, 6, true, 70},
+
+		{6, 0, false, 6},
+		{6, 1, false, 4},
+		{6, 2, false, 2},
+		{6, 3, false, 6},
+		{6, 4, false, 6},
+		{6, 5, false, 6},
+		{6, 6, false, 6},
+	}
+
+	for _, tt := range tests {
+		result := updateBit(tt.in1, tt.in2, tt.in3)
+		common.Equal(t, tt.expected, result)
+	}
+}
+
+// getBit returns the value of ith bit for a given number.
 func getBit(number, i int) uint {
 	// shift 1 over by i bits, creating a bitmask value.
 	mask := 1 << uint(i)
@@ -132,7 +162,7 @@ func getBit(number, i int) uint {
 	return 0
 }
 
-// setBit sets the value of bit ith for a given number.
+// setBit sets the value of ith bit for a given number.
 func setBit(number, i int) int {
 	// shift 1 over by i bits, creating a bitmask value.
 	mask := 1 << uint(i)
@@ -142,7 +172,7 @@ func setBit(number, i int) int {
 	return number | mask
 }
 
-// clearBit clears the value of bit ith for a given number.
+// clearBit clears the value of ith bit for a given number.
 func clearBit(number, i int) int {
 	// shift 1 over by i bits, creating a bitmask value and negate it.
 	mask := ^(1 << uint(i))
@@ -151,8 +181,8 @@ func clearBit(number, i int) int {
 	return number & mask
 }
 
-// clearBitMSBToI clears all bits from the most significant bit to i for a
-// given number.
+// clearBitMSBToI clears all bits from the most significant bit to ith bit
+// for a given number.
 func clearBitMSBToI(number, i int) int {
 	// shift 1 over by i bits, creating a bitmask value and subtract 1 from it
 	// to get a sequence of 0s followed by i 1s.
@@ -162,7 +192,7 @@ func clearBitMSBToI(number, i int) int {
 	return number & mask
 }
 
-// clearBitIToLSB clears all bits from bit i to the least significant bit
+// clearBitIToLSB clears all bits from ith bit to the least significant bit
 // for a given number.
 func clearBitIToLSB(number, i int) int {
 	// shift 1 over by i + 1 bits from a sequence of all 1s(which is -1) to get
@@ -171,4 +201,22 @@ func clearBitIToLSB(number, i int) int {
 
 	// perform an AND with number to cancel out the rest of 1 bits.
 	return number & mask
+}
+
+// updateBit updates the value of ith bit to either 1 or 0 for a given number.
+func updateBit(number, i int, isOne bool) int {
+	value := 0
+	if isOne {
+		value = 1
+	}
+
+	// shift 1 over by i bits, creating a bitmask value and negate it.
+	mask := ^(1 << uint(i))
+
+	// shift the value over by i bits to create a number with bit i equal to
+	// the value while other bits equal to 0.
+	n := value << uint(i)
+
+	// perform an OR with number to update the ith bit if the value is 1, or 0 otherwise.
+	return number&mask | n
 }
