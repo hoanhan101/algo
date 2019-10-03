@@ -83,6 +83,8 @@
   - Dynamic programming
   - Binary search
 - **Cracking the Coding Interviews**
+  - Bit manipulation
+    - [Bit operation](https://github.com/hoanhan101/algo/blob/master/ctci/bit_operation_test.go)
 - **Elements of Programming Interviews**
 - **Other**
   - Data structures
