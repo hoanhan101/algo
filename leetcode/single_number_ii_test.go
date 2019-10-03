@@ -1,5 +1,5 @@
 // Problem:
-// Given a list of integer where every element appears three time expect for
+// Given a list of integer where every element appears three time except for
 // one, find that unique one in O(1) space.
 //
 // Example:
