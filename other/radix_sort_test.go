@@ -57,7 +57,7 @@ func sortingBit(in []int, bit int) []int {
 	// counts[1] stores the number of items with a 1 in this bit.
 	counts := []int{0, 0}
 	for item := range in {
-		counts[bitValue(item, bit)]++
+		counts[getBit(item, bit)]++
 	}
 
 	// indices[0] stores the index where we should put the next item with a 0
@@ -68,7 +68,7 @@ func sortingBit(in []int, bit int) []int {
 
 	sorted := make([]int, len(in))
 	for item := range in {
-		v := bitValue(item, bit)
+		v := getBit(item, bit)
 
 		// place the item at the next open index for its bit value.
 		sorted[indices[v]] = item
@@ -80,10 +80,13 @@ func sortingBit(in []int, bit int) []int {
 	return sorted
 }
 
-// bitValue returns the value of the bit at index bit in number.
-func bitValue(number int, bit int) uint {
-	// shift left a number of bit to create a masking bit at that index.
-	mask := 1 << uint(bit)
+// getBit returns the value of bit ith for a given number.
+func getBit(number, i int) uint {
+	// perform an AND with number to clear all bits other than the one at bit
+	// i.
+	mask := 1 << uint(i)
+
+	// if the value is not 0, bit 1 must have a 1.
 	if number&mask != 0 {
 		return 1
 	}
