@@ -96,6 +96,6 @@ func Log(m map[string]interface{}) {
 // Equal checks if two input are deeply equal.
 func Equal(t *testing.T, expected, result interface{}) {
 	if !reflect.DeepEqual(result, expected) {
-		t.Errorf("should be %v instead %v", expected, result)
+		t.Errorf("should be %v instead of %v", expected, result)
 	}
 }
