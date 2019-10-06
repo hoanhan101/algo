@@ -168,7 +168,7 @@ func setBit(number, i int) int {
 	mask := 1 << uint(i)
 
 	// perform an OR with number to change the number at bit i without
-	// affecting other values.,
+	// affecting other values.
 	return number | mask
 }
 
