@@ -1,9 +1,13 @@
 // Problem:
-// Implement common Bit operations such as:
-// - Get Bit
-// - Set Bit
-// - Clear Bit (from most significant bit to i and from i to the least significant bit)
-// - Update Bit
+// Implement some common bitwise operations as follow:
+// - getBit returns the value of ith bit for a given number.
+// - setBit sets the value of ith bit for a given number.
+// - clearBit clears the value of ith bit for a given number.
+// - clearBitMSBToI clears all bits from the most significant bit to ith bit
+// for a given number.
+// - clearBitIToLSB clears all bits from ith bit to the least significant bit
+// for a given number.
+// - updateBit updates the value of ith bit to either 1 or 0 for a given number.
 
 package ctci
 
