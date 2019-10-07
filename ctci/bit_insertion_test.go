@@ -6,7 +6,8 @@
 // Input: n = 10000000000, m = 10011, i = 2, j = 6
 // Output: n = 10001001100
 //
-// Solution: // Clear the bits j through i in n using a custom mask.
+// Solution:
+// Clear the bits j through i in n using a custom mask.
 // Shift m so that it lines up with bits j through i.
 // Merge them together.
 
