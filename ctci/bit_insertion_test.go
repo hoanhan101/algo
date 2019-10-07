@@ -2,7 +2,8 @@
 // Given two numbers, m and n, and two bit positions, i and j, insert m into n
 // such that m starts at bit j and ends at bit i.
 //
-// Example: // Input: n = 10000000000, m = 10011, i = 2, j = 6
+// Example:
+// Input: n = 10000000000, m = 10011, i = 2, j = 6
 // Output: n = 10001001100
 //
 // Solution:
