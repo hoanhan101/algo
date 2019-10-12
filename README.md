@@ -72,6 +72,7 @@
 - **[Practical Algorithms and Data Structures](https://bradfieldcs.com/algos/)**
 - **[LeetCode](https://leetcode.com/)**
   - Array/String
+    - [Two Sum](https://github.com/hoanhan101/algo/blob/master/leetcode/two_sum_test.go)
   - Math
   - Linked list
   - Binary tree
