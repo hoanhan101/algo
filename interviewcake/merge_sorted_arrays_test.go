@@ -58,7 +58,7 @@ func TestMergeSortedArray(t *testing.T) {
 func mergeSortedArray(a1, a2 []int) []int {
 	out := []int{}
 
-	// keep two "pointer" at index 0 and move up accordingly as one get
+	// keep two "pointers" at index 0 and move up accordingly as one get
 	// merged in.
 	i, j := 0, 0
 	for i < len(a1) && j < len(a2) {
