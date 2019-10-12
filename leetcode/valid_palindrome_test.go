@@ -3,7 +3,10 @@
 // alphanumeric characters and ignoring cases.
 //
 // Example:
-// Input: "A man, a plan, a canal: Panama" // Output: true // Input: "race a car" // Output: false
+// Input: "A man, a plan, a canal: Panama"
+// Output: true
+// Input: "race a car"
+// Output: false
 //
 // Solution:
 // Use two pointers approach where one points to the start of the string while
