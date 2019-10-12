@@ -73,6 +73,7 @@
 - **[LeetCode](https://leetcode.com/)**
   - Array/String
     - [Two Sum I](https://github.com/hoanhan101/algo/blob/master/leetcode/two_sum_i_test.go)
+    - [Two Sum II](https://github.com/hoanhan101/algo/blob/master/leetcode/two_sum_ii_test.go)
   - Math
   - Linked list
   - Binary tree
