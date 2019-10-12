@@ -78,7 +78,7 @@
   - Linked list
   - Binary tree
   - Bit manipulation
-    - [Single Number](https://github.com/hoanhan101/algo/blob/master/interviewcake/stolen_breakfast_drone_test.go)
+    - [Single Number I](https://github.com/hoanhan101/algo/blob/master/interviewcake/stolen_breakfast_drone_test.go)
     - [Single Number II](https://github.com/hoanhan101/algo/blob/master/leetcode/single_number_ii_test.go)
   - Misc
   - Stack
