@@ -18,9 +18,10 @@
 It is a work in progress.
 
 The current number of questions and solutions in total is **45**. It is
-increased by 4-6 questions every week.
+increased by **4-6** questions every week.
 
-I am hoping to get to several hundreds and reduce it to the top 100 critical ones.
+I am hoping to get to several hundreds and reduce it to the **top 100 critical ones**.
+The goal is to build a solid foundation for one's next coding interview.
 
 ## Table of Contents 
 - **[Interview Cake](https://www.interviewcake.com/)**
