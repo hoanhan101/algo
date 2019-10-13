@@ -25,7 +25,6 @@
 package other
 
 import (
-	"reflect"
 	"testing"
 
 	"github.com/hoanhan101/algo/common"
@@ -74,10 +73,8 @@ func TestIsBalanced(t *testing.T) {
 	for _, tt := range tests {
 		h := height(tt.in)
 		b := isBalanced(tt.in)
-		if !reflect.DeepEqual(h, tt.height) && !reflect.DeepEqual(b, tt.balanced) {
-			t.Errorf("should be %v instead %v", tt.height, h)
-			t.Errorf("should be %v instead %v", tt.balanced, b)
-		}
+		common.Equal(t, tt.height, h)
+		common.Equal(t, tt.balanced, b)
 	}
 }
 

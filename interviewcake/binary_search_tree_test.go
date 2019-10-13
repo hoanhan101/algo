@@ -29,8 +29,9 @@ package interviewcake
 
 import (
 	"math"
-	"reflect"
 	"testing"
+
+	"github.com/hoanhan101/algo/common"
 )
 
 func TestIsBinarySearchTree(t *testing.T) {
@@ -78,9 +79,7 @@ func TestIsBinarySearchTree(t *testing.T) {
 
 	for _, tt := range tests {
 		result := isBinarySearchTree(tt.in)
-		if !reflect.DeepEqual(result, tt.expected) {
-			t.Errorf("should be %v instead %v", tt.expected, result)
-		}
+		common.Equal(t, tt.expected, result)
 	}
 }
 

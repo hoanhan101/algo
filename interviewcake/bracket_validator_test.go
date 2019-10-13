@@ -39,7 +39,8 @@ func TestValidateBracket(t *testing.T) {
 	}
 
 	for _, tt := range tests {
-		common.Equal(t, tt.expected, validateBracket(tt.sentence))
+		result := validateBracket(tt.sentence)
+		common.Equal(t, tt.expected, result)
 	}
 }
 

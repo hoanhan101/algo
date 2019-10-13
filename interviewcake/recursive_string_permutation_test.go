@@ -17,9 +17,10 @@
 package interviewcake
 
 import (
-	"reflect"
 	"strings"
 	"testing"
+
+	"github.com/hoanhan101/algo/common"
 )
 
 func TestPermuteString(t *testing.T) {
@@ -35,9 +36,7 @@ func TestPermuteString(t *testing.T) {
 
 	for _, tt := range tests {
 		result := permuteString(tt.in)
-		if !reflect.DeepEqual(result, tt.expected) {
-			t.Errorf("should be %v instead %v", tt.expected, result)
-		}
+		common.Equal(t, tt.expected, result)
 	}
 }
 

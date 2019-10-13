@@ -29,7 +29,6 @@
 package interviewcake
 
 import (
-	"reflect"
 	"testing"
 
 	"github.com/hoanhan101/algo/common"
@@ -83,9 +82,7 @@ func TestIsSuperBalanced(t *testing.T) {
 
 	for _, tt := range tests {
 		result := isSuperBalanced(tt.in)
-		if !reflect.DeepEqual(result, tt.expected) {
-			t.Errorf("should be %v instead %v", tt.expected, result)
-		}
+		common.Equal(t, tt.expected, result)
 	}
 }
 

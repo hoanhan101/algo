@@ -21,7 +21,6 @@
 package interviewcake
 
 import (
-	"reflect"
 	"testing"
 
 	"github.com/hoanhan101/algo/common"
@@ -132,9 +131,7 @@ func TestColorGraph(t *testing.T) {
 			result = append(result, g.color)
 		}
 
-		if !reflect.DeepEqual(result, tt.expected) {
-			t.Errorf("should be %v instead %v", tt.expected, result)
-		}
+		common.Equal(t, tt.expected, result)
 	}
 }
 

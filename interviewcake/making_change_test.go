@@ -25,8 +25,9 @@
 package interviewcake
 
 import (
-	"reflect"
 	"testing"
+
+	"github.com/hoanhan101/algo/common"
 )
 
 func TestMakeChange(t *testing.T) {
@@ -82,14 +83,8 @@ func TestMakeChange(t *testing.T) {
 
 	for _, tt := range tests {
 		r1, r2 := makeChange(tt.in1, tt.in2)
-
-		if !reflect.DeepEqual(r1, tt.expected1) {
-			t.Errorf("should be %v instead %v", tt.expected1, r1)
-		}
-
-		if !reflect.DeepEqual(r2, tt.expected2) {
-			t.Errorf("should be %v instead %v", tt.expected2, r2)
-		}
+		common.Equal(t, tt.expected1, r1)
+		common.Equal(t, tt.expected2, r2)
 	}
 }
 
