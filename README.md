@@ -13,6 +13,14 @@
 
 > [Thank you for your support!](https://www.buymeacoffee.com/aHjIWu6Ck)
 
+## Project status
+
+It is a work in progress.
+
+The current number of questions and solutions in total is **45**. It is
+increased by 4-6 questions every week.
+
+I am hoping to get to several hundreds and reduce it to the top 100 critical ones.
 
 ## Table of Contents 
 - **[Interview Cake](https://www.interviewcake.com/)**
