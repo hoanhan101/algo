@@ -1,6 +1,6 @@
 // Problem:
 // Given a sorted array of integers, return indices of the two numbers such
-// that they add up to a specific target
+// that they add up to a specific target.
 //
 // Example:
 // Input: nums = []int{2, 5, 4}, target = 6
