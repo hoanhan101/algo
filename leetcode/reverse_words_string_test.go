@@ -33,6 +33,8 @@ func TestReverseWordsString(t *testing.T) {
 	}{
 		{"", ""},
 		{"a", "a"},
+		{" a", "a"},
+		{"a ", "a"},
 		{"b a", "a b"},
 		{"c b a", "a b c"},
 		{"d c b a", "a b c d"},
@@ -46,8 +48,22 @@ func TestReverseWordsString(t *testing.T) {
 }
 
 func reverseWordsString(in string) string {
+	// if the input is an empty string, return itself.
+	if in == "" {
+		return in
+	}
+
 	// slice input string into a list of words separated by spaces.
 	words := strings.Split(in, " ")
+
+	// clean up leading and trailing space if there is any.
+	if words[0] == "" {
+		words = words[1:]
+	}
+
+	if words[len(words)-1] == "" {
+		words = words[:len(words)-1]
+	}
 
 	// start reversing the order of words by first initializing the start and
 	// end index pointer.
