@@ -1,6 +1,6 @@
 // Problem:
 // Given a list of string that is made up of word but in reverse, return the
-// correct order.
+// correct order in-place.
 //
 // Example:
 // Given:  []string{"w", "o", "r", "l", "d", "", "h", "e", "l", "l", "o", "", "s", "a", "y"}
