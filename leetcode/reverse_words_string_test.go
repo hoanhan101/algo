@@ -2,8 +2,8 @@
 // Given a string, reverse it word by word.
 //
 // Example:
-// Input: "coding interview does not have to have so hard"
-// Output: "hard so have to have not does interview coding"
+// Input: "hard so be to have not does interview coding"
+// Output: "coding interview does not have to be so hard"
 //
 // Solution:
 // Approach with a two-pass solution.
@@ -33,10 +33,10 @@ func TestReverseWordsString(t *testing.T) {
 	}{
 		{"", ""},
 		{"a", "a"},
-		{"a b", "b a"},
-		{"a b c", "c b a"},
-		{"a b c d", "d c b a"},
-		{"coding interview does not have to be so hard", "hard so be to have not does interview coding"},
+		{"b a", "a b"},
+		{"c b a", "a b c"},
+		{"d c b a", "a b c d"},
+		{"hard so be to have not does interview coding", "coding interview does not have to be so hard"},
 	}
 
 	for _, tt := range tests {
