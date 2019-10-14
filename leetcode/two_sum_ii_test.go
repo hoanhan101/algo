@@ -3,7 +3,7 @@
 // that they add up to a specific target
 //
 // Example:
-// Input: nums = []int{2, 5, 4}, target = 6
+// Input: nums = []int{2, 3, 4}, target = 6
 // Output: [0, 2] since nums[0] + nums[2] = 2 + 4 = 6
 //
 // Solution:
@@ -36,7 +36,7 @@ func TestTwoSumII(t *testing.T) {
 		{[]int{1}, 6, []int{0, 0}},
 		{[]int{2, 4}, 6, []int{0, 1}},
 		{[]int{2, 5}, 6, []int{0, 0}},
-		{[]int{2, 5, 4}, 6, []int{0, 2}},
+		{[]int{2, 3, 4}, 6, []int{0, 2}},
 		{[]int{2, 5, 8}, 6, []int{0, 0}},
 	}
 
