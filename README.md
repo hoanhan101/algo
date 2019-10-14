@@ -17,7 +17,7 @@
 
 It is a work in progress.
 
-The current number of questions and solutions in total is **45**. It is
+The current number of questions and solutions in total is **46**. It is
 increased by **4-6** questions every week.
 
 I am hoping to get to several hundreds and reduce it to the **top 100 critical ones**.
@@ -84,6 +84,7 @@ The goal is to build a solid foundation for one's next coding interview.
     - [Two Sum I](https://github.com/hoanhan101/algo/blob/master/leetcode/two_sum_i_test.go)
     - [Two Sum II](https://github.com/hoanhan101/algo/blob/master/leetcode/two_sum_ii_test.go)
     - [Valid Palindrome](https://github.com/hoanhan101/algo/blob/master/leetcode/valid_palindrome_test.go)
+    - [Implement strstr()](https://github.com/hoanhan101/algo/blob/master/leetcode/strstr_test.go)
   - Math
   - Linked list
   - Binary tree
