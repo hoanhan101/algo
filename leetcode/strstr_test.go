@@ -48,8 +48,8 @@ func TestStrstr(t *testing.T) {
 func strstr(haystack string, needle string) int {
 	for i := 0; i < len(haystack); i++ {
 		for j := 0; j < len(haystack); j++ {
-			// if the needle matches the haystack, meaning the pointer reach
-			// the end of the needle, return the pointer.
+			// if the needle matches the haystack, meaning the index pointer
+			// reaches the end of the needle, return the index pointer.
 			if j == len(needle) {
 				return i
 			}
