@@ -15,7 +15,6 @@
 //                 11
 //               9   12
 // Output: 12
-
 //
 // Solution:
 // The largest item in a binary search tree is the rightmost item. Can
