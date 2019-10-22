@@ -11,7 +11,9 @@
 
 > [Subscribe for the newsletter here →](https://www.getrevue.co/profile/hoanhan101)
 
-> [Thank you for your support!](https://www.buymeacoffee.com/aHjIWu6Ck)
+> [Quizlet flashcard →](https://quizlet.com/hoanhan/folders/algo/sets)
+
+> [Buy me a coffee!](https://www.buymeacoffee.com/aHjIWu6Ck)
 
 ## Project status
 
