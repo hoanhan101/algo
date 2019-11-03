@@ -1,21 +1,29 @@
-// Problem:
-// Given a string, determine if it is a palindrome, considering only
-// alphanumeric characters and ignoring cases.
-//
-// Example:
-// Input: "A man, a plan, a canal: Panama"
-// Output: true
-// Input: "race a car"
-// Output: false
-//
-// Solution:
-// Use two pointers approach where one points to the start of the string while
-// the other points at the end.
-// Move them toward each other and compare if they're the same characters while
-// skipping on-alphanumeric characters and ignoring cases.
-//
-// Cost:
-// O(n) time, O(1) space.
+/*
+Problem:
+- Given a string, determine if it is a palindrome, considering only
+  alphanumeric characters and ignoring cases.
+
+Example:
+- Input: "A man, a plan, a canal: Panama"
+  Output: true
+- Input: "race a car"
+  Output: false
+
+Approach:
+- Use two pointers approach that have one point to the start of the string and
+  the other point at the end.
+- Move them toward each other and compare if they're the same characters while
+  skipping non-alphanumeric characters and ignoring cases.
+
+Solution:
+- Have a pointer point to the start of the string and the other point at the end.
+- Make the string lower case.
+- While the start one is less the end one, ignore non-alphanumeric characters
+  and move them toward each other.
+
+Cost:
+- O(n) time, O(1) space.
+*/
 
 package leetcode
 

@@ -1,21 +1,23 @@
-// Problem:
-// Given a string, reverse it word by word.
-//
-// Example:
-// Input: "hard so be to have not does interview coding"
-// Output: "coding interview does not have to be so hard"
-//
-// Solution:
-// Approach with a two-pass solution.
-// The first pass is to split the string into an array of words separated by
-// spaces.
-// The second pass is to reverse the order of words in the array by using
-// two-pointer approach: swap two values on both ends as we move toward the
-// middle.
-// Concatenate the values of ordered array to create a final string.
-//
-// Cost:
-// O(n) time, O(n) space.
+/*
+Problem:
+- Given a string, reverse it word by word.
+
+Example:
+- Input: "hard so be to have not does interview coding"
+  Output: "coding interview does not have to be so hard"
+
+Approach:
+- Approach with a two-pass solution.
+- The first pass is to split the string into an array of words separated by
+  spaces.
+- The second pass is to reverse the order of words in the array by using
+  two-pointer approach: swap two values on both ends as we move toward the
+  middle.
+- Concatenate the values of ordered array to create a final string.
+
+Cost:
+- O(n) time, O(n) space.
+*/
 
 package leetcode
 

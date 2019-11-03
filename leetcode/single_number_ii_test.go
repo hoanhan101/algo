@@ -1,20 +1,33 @@
-// Problem:
-// Given a list of integer where every element appears three time except for
-// one, find that unique one in O(1) space.
-//
-// Example:
-// Input: []int{1, 1, 2, 4, 2, 6, 4, 2, 1, 4}
-// Return: 6, because 6 appears 1 time only.
-//
-// Solution:
-// Use 3 bitmask values to represent the number that appears 1 time, 2 times and
-// 3 times.
-// When the element appears for the third times, clear it of both the
-// 1-time-appeared and 2-time-appeared bitmask values.
-// The final result of 1-time-appeared bitmask value is the unique one.
-//
-// Cost:
-// O(n) time, O(1) space.
+/*
+Problem:
+- Given a list of integer where every element appears three time except for
+  one, find that unique one in O(1) space.
+
+Example:
+- Input: []int{1, 1, 2, 4, 2, 6, 4, 2, 1, 4}
+  Output: 6, because 6 appears 1 time only.
+
+Approach:
+- Use 3 bitmask values to represent the number that appears 1 time, 2 times and
+  3 times.
+- When the element appears for the third times, clear it of both the
+  1-time-appeared and 2-time-appeared bitmask values.
+- The final result of 1-time-appeared bitmask value is the unique one.
+
+Solution:
+- Initialize 3 bitmask values (ones, twos, threes) to represent the number that
+  appears 1 time, 2 times and 3 times.
+- Iterate through the list and update these values accordingly:
+  - twos can be calculated by AND-ing ones and the current value.
+  - XOR the current value with the previous ones to keep track of the
+	number that appears 1 time only.
+  - when the current value appears for the third times, clear it of both
+	ones and twos.
+- Return unique ones.
+
+Cost:
+- O(n) time, O(1) space.
+*/
 
 package leetcode
 

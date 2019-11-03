@@ -1,21 +1,23 @@
-// Problem:
-// Implement strstr() that finds the first occurrence of the substring
-// needle in the string haystack. It returns -1 if needle is not part of the
-// haystack.
-//
-// Example:
-// Input: haystack = "aaabacd", needle = "ba"
-// Output: 3, because needle "ba" starts at index 3 in the haystack.
-//
-// Solution:
-// Scan the needle with the haystack from its first position and start matching
-// all subsequent letters one by one.
-// If one letter does not match, start again with the next position in the
-// haystack.
-//
-// Cost:
-// O(nm) time, O(1) space, where n is the length of haystack while m is the
-// length of needle.
+/*
+Problem:
+- Implement strstr() that finds the first occurrence of the substring
+  needle in the string haystack. It returns -1 if needle is not part of the
+  haystack.
+
+Example:
+- Input: haystack = "aaabacd", needle = "ba"
+  Output: 3, because needle "ba" starts at index 3 in the haystack.
+
+Approach:
+- Scan the needle with the haystack from its first position and start matching
+  all subsequent letters one by one.
+- If one letter does not match, start again with the next position in the
+  haystack.
+
+Cost:
+- O(nm) time, O(1) space, where n is the length of haystack while m is the
+  length of needle.
+*/
 
 package leetcode
 
