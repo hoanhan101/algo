@@ -1,17 +1,27 @@
-// Problem:
-// Given an integer n, write a function to return the nth Fibonacci
-// number. Assume that n is a positive integer.
-//
-// Example:
-// Input: 4
-// Output: 3, because the 4th Fibonacci of the sequence [0, 1, 1, 2, 3] is 3
-//
-// Solution:
-// Instead of using a recursive approach, use a bottom-up approach and
-// iteratively compute subsequent numbers until we get to n.
-//
-// Cost:
-// O(n) time, O(1) space.
+/*
+Problem:
+- Given an integer n, write a function to return the nth Fibonacci
+  number. Assume that n is a positive integer.
+
+Example:
+- Input: 4
+  Output: 3, because the 4th Fibonacci of the sequence [0, 1, 1, 2, 3] is 3
+
+Approach:
+- Instead of using a recursive approach, use a bottom-up approach and
+  iteratively compute subsequent numbers until we get to n.
+
+Solution:
+- Initialize a value that holds the nth Fibonacci number.
+- Initialize two values that hold two previous numbers' values of the series.
+- Iterate from 0 to n and update these 3 values at each step where:
+  - the current value is equal to the sum of two previous numbers.
+  - one the previous number is equal to the one that is next to it while
+  the other is equal to the current Fibonacci number.
+
+Cost:
+- O(n) time, O(1) space.
+*/
 
 package interviewcake
 

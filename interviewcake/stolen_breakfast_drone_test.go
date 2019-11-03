@@ -1,19 +1,21 @@
-// Problem:
-// Given a list of integer where every element appears even number of time
-// except for one, find that unique one in O(1) space.
-//
-// Example:
-// Input: []int{1, 1, 2, 4, 2, 1, 4, 6, 1}
-// Return: 6, because 6 appears 1 time only.
-//
-// Solution:
-// Bitwise XOR all integers in the list.
-// Since XOR-ing a number with itself is zero, we could cancel out all the even
-// duplicates.
-// That leaves us the one that appears one time only.
-//
-// Cost:
-// O(n) time, O(1) space.
+/*
+Problem:
+- Given a list of integer where every element appears even number of time
+  except for one, find that unique one in O(1) space.
+
+Example:
+- Input: []int{1, 1, 2, 4, 2, 1, 4, 6, 1}
+  Output: 6, because 6 appears 1 time only.
+
+Approach:
+- Bitwise XOR all integers in the list.
+- Since XOR-ing a number with itself is zero, we could cancel out all the even
+  duplicates.
+- That leaves us the one that appears one time only.
+
+Cost:
+- O(n) time, O(1) space.
+*/
 
 package interviewcake
 

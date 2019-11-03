@@ -1,26 +1,36 @@
-// Problem:
-// Given an amount of money and a list of coin denominations, compute the
-// number of ways to make that amount with these available coins.
-//
-// Example:
-// Input: amount = 4, denominators = []int{1, 2, 3}
-// Output: 4, because there are 4 ways to calculate 4 as such:
-// 4 = 1 + 1 + 1 + 1
-//   = 1 + 2 + 2
-//   = 1 + 3
-//   = 2 + 2
-//
-// Solution:
-// Use a bottom-up approach to build a table of ways for calculating the amount
-// using our denominations: the index is the amount, the value at each index
-// is the number of ways to get that amount.
-// The number of new ways we can make a higher amount when we account for a new
-// coin is ways of calculating the difference between the higher amount and
-// current coin.
-//
-// Cost:
-// O(n*m) time, O(n) space, where n is the amount of money, m is the number of
-// potential denominations.
+/*
+Problem:
+Given an amount of money and a list of coin denominations, compute the
+number of ways to make that amount with these available coins.
+
+Example:
+Input: amount = 4, denominators = []int{1, 2, 3}
+Output: 4, because there are 4 ways to calculate 4 as such:
+4 = 1 + 1 + 1 + 1
+  = 1 + 2 + 2
+  = 1 + 3
+  = 2 + 2
+
+Approach:
+- Use a bottom-up approach to build a table of ways for calculating the amount
+  using our denominations: the index is the amount, the value at each index
+  is the number of ways to get that amount.
+- The number of new ways we can make a higher amount when we account for a new
+  coin is ways of calculating the difference between the higher amount and
+  current coin.
+
+Solution:
+- Make a list of ways of calculating the amount, where the index is the
+  amount, the value at each index is the number of ways to get that amount.
+- Start with the base case that there is one way to calculate 0.
+- The number of new ways we can make a higher amount when we account for a
+  new coin is ways[higher amount - coin], where the reminder is already
+  calculated as we are going bottom-up.
+
+Cost:
+O(n*m) time, O(n) space, where n is the amount of money, m is the number of
+potential denominations.
+*/
 
 package interviewcake
 

@@ -1,16 +1,24 @@
-// Problem:
-// Given a list of integers, shuffle its location in-place.
-//
-// Example:
-// Given:  []int{1, 2, 3, 4, 5}
-// Return: []int{2, 1, 4, 3, 5}
-//
-// Solution:
-// Iterate through the list, swap current value with a value in a randomized
-// index that is between the current and last index.
-//
-// Cost:
-// O(n) time, O(1) space.
+/*
+Problem:
+- Given a list of integers, shuffle its location in-place.
+
+Example:
+- Input: []int{1, 2, 3, 4, 5}
+  Output: []int{2, 1, 4, 3, 5}
+
+Approach:
+- Iterate through the list, swap current value with a value in a randomized
+  index that is between the current and last index.
+
+Solution:
+- Cache the last index value of the list.
+- Iterate through the list, get a randomized index value between the
+  current index and the last index, then use it to swap the corresponding
+  values at these two indices.
+
+Cost:
+- O(n) time, O(1) space.
+*/
 
 package interviewcake
 

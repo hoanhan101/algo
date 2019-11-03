@@ -1,18 +1,30 @@
-// Problem:
-// Write a recursive function for generating all permutations of an input
-// string. Assume that every character in the string is unique.
-//
-// Example:
-// Input: "cat"
-// Output: []set{"cat", "cta", "act", "atc", "tca", "tac"}
-//
-// Solution:
-// Get all the permutations for all characters before the last one.
-// Put the last character in all possible position for each of these
-// permutations.
-//
-// Cost:
-// O(n) time, O(n) space.
+/*
+Problem:
+- Write a recursive function for generating all permutations of an input
+  string. Assume that every character in the string is unique.
+
+Example:
+- Input: "cat"
+  Output: []set{"cat", "cta", "act", "atc", "tca", "tac"}
+
+Approach:
+- Get all the permutations for all characters before the last one.
+- Put the last character in all possible position for each of these
+  permutations.
+
+Solution:
+- Initialize permutations as a set.
+- If there is only one character in a string (or less than), return it
+  immediately.
+- Get the last character and all the characters before it.
+- Get all permutations for all characters expect the last one.
+- Iterate through the list of permutations before the last character
+  and put the last character in all possible position for each of these
+  permutations.
+
+Cost:
+- O(n) time, O(n) space.
+*/
 
 package interviewcake
 

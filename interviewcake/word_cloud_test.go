@@ -1,20 +1,26 @@
-// Problem:
-// Given a sentence (string), return its word count map.
-//
-// Example:
-// Given: "Cliff finished his cake and paid the bill. Bill finished his cake at the edge of the cliff."
-// Return: map[string]int{"cliff": 1, "Cliff": 1, "finished": 2, "his": 2, "cake": 2, "and": 1, "paid": 1, "the": 3, "bill": 1, "Bill": 1, "at": 1, "edge": 1, "of": 1}
-//
-// Solution:
-// Get rid of special characters using regex then split the sentence by space.
-// Choose to count the uppercase word only if it is uppercase in the original
-// string. It's a reasonable approach, but not perfect one since proper nouns
-// like "Bill" and "bill" point to the same meaning and are placed in a
-// different place of a sentence - one in the front, other in the middle.
-// Use a hashmap to keep counts of words.
-//
-// Cost:
-// O(n) time, O(n) space.
+/*
+Problem:
+- Given a sentence (string), return its word count map.
+
+Example:
+- Input: "Cliff finished his cake and paid the bill. Bill finished his cake at the edge of the cliff."
+  Output: map[string]int{"cliff": 1, "Cliff": 1, "finished": 2, "his": 2, "cake": 2, "and": 1, "paid": 1, "the": 3, "bill": 1, "Bill": 1, "at": 1, "edge": 1, "of": 1}
+
+Approach:
+- First get rid of special characters, then use a hashmap to keep counts of words
+  as we iterate through the string.
+
+Solution:
+- Get rid of special characters using regex then split the sentence by space.
+- Choose to count the uppercase word only if it is uppercase in the original
+  string. It's a reasonable approach, but not perfect one since proper nouns
+  like "Bill" and "bill" point to the same meaning and are placed in a
+  different place of a sentence - one in the front, other in the middle.
+- Use a hashmap to keep counts of words.
+
+Cost:
+- O(n) time, O(n) space.
+*/
 
 package interviewcake
 

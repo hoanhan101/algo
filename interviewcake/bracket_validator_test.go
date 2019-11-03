@@ -1,23 +1,29 @@
-// Problem:
-// Given a string, determine if its brackets are properly nested.
-//
-// Example:
-// Input: "{[]()}"
-// Output: true
-// Input: "{[(])}"
-// Output: false
-// Input: "{[}"
-// Output: false
-//
-// Solution:
-// Iterate through the string, keep a stack to keep track of closing and
-// opening parenthesis.
-// If we see an opener, push it to the stack.
-// If we see an closer, pop from the stack if is the one for the opener at the
-// stop of stack.
-//
-// Cost:
-// O(n) time and O(n) space, where n is the number of operations.
+/*
+Problem:
+- Given a string, determine if its brackets are properly nested.
+
+Example:
+- Input: "{[]()}"
+  Output: true
+- Input: "{[(])}"
+  Output: false
+- Input: "{[}"
+  Output: false
+
+Approach:
+- Use a stack to keep track of matching parenthesis as we iterate
+  through the string.
+
+Solution:
+- Iterate through the string, keep a stack to keep track of closing and
+  opening parenthesis.
+- If we see an opener, push it to the stack.
+- If we see an closer, pop from the stack if is the one for the opener at the
+  stop of stack.
+
+Cost:
+- O(n) time and O(n) space, where n is the number of operations.
+*/
 
 package interviewcake
 

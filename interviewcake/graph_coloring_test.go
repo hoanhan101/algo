@@ -1,22 +1,30 @@
-// Problem:
-// Given an undirected graph, with maximum degree d, find a graph coloring
-// using at most d + 1 colors. Assume that there is no node with a loop.
-//
-// Example:
-// For a graph with degree 3, we could use at most 4 colors.
-//
-// Solution:
-// Use a greedy approach to iterate over the graph and assign each node the
-// first non-taken color that we found.
-//
-// Cost:
-// O(m) time and O(d) space, where m is sum of all the nodes and edges, d is
-// the number of all colors.
-// Even though it seems like we have an outer and inner loop, we carefully walk
-// through the graph one node at a time and stop checking for colors as soon as
-// we found one that is non-taken.
-// About the space complexity, it makes sense that we have to store all
-// available colors in the worst case. Hence it takes up O(d) space.
+/*
+Problem:
+- Given an undirected graph, with maximum degree d, find a graph coloring
+  using at most d + 1 colors. Assume that there is no node with a loop.
+
+Example:
+- For a graph with degree 3, we could use at most 4 colors.
+
+Approach:
+- Use a greedy approach to iterate over the graph and assign each node the
+  first non-taken color that we found.
+
+Solution:
+- Iterate through the node in the graph and get the current node's neighbors
+  colors to keep track of all colors that are already taken.
+- Iterate through the list of colors and assign the first color in the given
+  colors list that is not already taken.
+
+Cost:
+- O(m) time and O(d) space, where m is sum of all the nodes and edges, d is
+  the number of all colors.
+- Even though it seems like we have an outer and inner loop, we carefully walk
+  through the graph one node at a time and stop checking for colors as soon as
+  we found one that is non-taken.
+- About the space complexity, it makes sense that we have to store all
+  available colors in the worst case. Hence it takes up O(d) space.
+*/
 
 package interviewcake
 

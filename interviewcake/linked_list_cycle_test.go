@@ -1,15 +1,21 @@
-// Problem:
-// Determine if a singly-linked list has a cycle.
-//
-// Solution:
-// Keep two pointers starting at the first node such that: every time one moves
-// one node ahead, the other moves 2 nodes ahead.
-// If the linked list has a cycle, the faster one will catch up with the slow
-// one.
-// Otherwise, the faster one will each the end.
-//
-// Cost:
-// O(n) time and O(1) space.
+/*
+Problem:
+- Determine if a singly-linked list has a cycle.
+
+Approach:
+- Keep two pointers starting at the first node such that: every time one moves
+  one node ahead, the other moves 2 nodes ahead.
+- If the linked list has a cycle, the faster one will catch up with the slow
+  one. Otherwise, the faster one will each the end.
+
+Solution:
+- Keep two pointers, a slow one and a fast one, at the beginning.
+- Traverse the list and move the fast one 2 nodes once the slow one move a node.
+- If the fast one catches the slow one, there exists a cycle.
+
+Cost:
+- O(n) time and O(1) space.
+*/
 
 package interviewcake
 

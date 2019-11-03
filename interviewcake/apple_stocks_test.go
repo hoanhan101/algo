@@ -1,17 +1,27 @@
-// Problem:
-// Given a list of stock prices (integer) in chronological order, return the
-// max profit from buying at earlier time and selling at later time.
-//
-// Example:
-// Given:  []int{10, 7, 5, 8, 11, 9}
-// Return: 6, because one can buy at 5 and sell at 11
-//
-// Solution:
-// Use a greedy approach to keep track of the minimum price and the maximum
-// profit for each value while iterating through the list.
-//
-// Cost:
-// O(n) time, O(1) space.
+/*
+Problem:
+- Given a list of stock prices (integer) in chronological order, return the
+  max profit from buying at earlier time and selling at later time.
+
+Example:
+- Input: []int{10, 7, 5, 8, 11, 9}
+  Output: 6, because one can buy at 5 and sell at 11
+
+Approach:
+- Use a greedy approach to keep track of the minimum price and the maximum
+  profit for each value while iterating through the list.
+
+Solution:
+- Initialize a minimum price to be the first price in the list and a maximum
+  profit to be the first possible profit that we could trade.
+- Iterate through the list and keep track of the current price, the potential
+  profit (current price - minimum price), the maximum profit between the
+  potential one and the maximum one, and the minimum price vs the current price.
+- Return the maximum profit we found in the end.
+
+Cost:
+- O(n) time, O(1) space.
+*/
 
 package interviewcake
 

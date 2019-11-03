@@ -1,12 +1,20 @@
-// Problem:
-// Delete a node from a singly-linked list, given only a pointer to that node.
-//
-// Solution:
-// Since we don't have access to the previous node, simply copy the value and
-// pointer of the next node and copy them into the current node.
-//
-// Cost:
-// O(1) time and O(1) space.
+/*
+Problem:
+- Delete a node from a singly-linked list, given only a pointer to that node.
+
+Approach:
+- Since we don't have access to the previous node, simply copy the value and
+  pointer of the next node and copy them into the current node.
+
+Solution:
+- Cache the next node.
+- If the next node is nil, it's the last node. Just simply return.
+- Copy the current node's value to the next node's value
+- Copy the node's pointer to the next node's pointer.
+
+Cost:
+- O(1) time and O(1) space.
+*/
 
 package interviewcake
 

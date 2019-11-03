@@ -1,19 +1,27 @@
-// Problem:
-// Given a list of integers, return a corresponding list where every index
-// holds the product of every other values except the value in that index.
-// And, you can't use division!
-//
-// Example:
-// Given:  []int{1, 7, 3, 4}
-// Return: []int{84, 12, 28, 21}
-//
-// Solution:
-// Iterate through the list and at each step, calculate the product of all
-// the integers before each index and the product of all the integers after
-// each index.
-//
-// Cost:
-// O(n) time, O(n) space.
+/*
+Problem:
+- Given a list of integers, return a corresponding list where every index
+  holds the product of every other values except the value in that index.
+  And, you can't use division!
+
+Example:
+- Input: []int{1, 7, 3, 4}
+  Output: []int{84, 12, 28, 21}
+
+Approach:
+- Iterate through the list and at each step, calculate the product of all
+  the integers before each index and the product of all the integers after
+  each index.
+
+Solution:
+- Iterate through the list from left to right and get the product of all
+  other numbers before their indices.
+- Iterate through the list from right to left and get the product of all
+  other numbers after their indices.
+
+Cost:
+- O(n) time, O(n) space.
+*/
 
 package interviewcake
 

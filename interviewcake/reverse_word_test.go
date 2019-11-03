@@ -1,18 +1,30 @@
-// Problem:
-// Given a list of string that is made up of word but in reverse, return the
-// correct order in-place.
-//
-// Example:
-// Given:  []string{"w", "o", "r", "l", "d", "", "h", "e", "l", "l", "o", "", "s", "a", "y"}
-// Return: []string{"s", "a", "y", "", "h", "e", "l", "l", "o", "", "w", "o", "r", "l", "d"}
-//
-// Solution:
-// In the first pass, we reverse all characters so that we end up with a list of
-// words in the right order, but not its characters.
-// In the second pass, we reverse the order of its characters.
-//
-// Cost:
-// O(n) time, O(1) space.
+/*
+Problem:
+- Given a list of string that is made up of word but in reverse, return the
+  correct order in-place.
+
+Example:
+- Input: []string{"w", "o", "r", "l", "d", "", "h", "e", "l", "l", "o", "", "s", "a", "y"}
+  Output: []string{"s", "a", "y", "", "h", "e", "l", "l", "o", "", "w", "o", "r", "l", "d"}
+
+Approach:
+- Similar to reversing string, use the same idea to reverse all the characters
+  in the list first so that we could have a list of words in the right order, not
+  its characters.
+- Iterate through the list again the reverse its characters.
+
+Solution:
+- Reverse all the characters to get a list of words in the right order using
+  same idea as reversing a string.
+- Iterate through the list again the reverse its characters by first keeping
+  track of the start index for each word since they are separated by an empty
+  string.
+- Once we fine an empty string, update the start word index and use the same
+  idea to reverse the characters order.
+
+Cost:
+- O(n) time, O(1) space.
+*/
 
 package interviewcake
 
