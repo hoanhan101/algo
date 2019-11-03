@@ -1,26 +1,28 @@
-// Problem:
-// Determine if a binary tree is height-balanced.
-//
-// Example:
-// Input:
-//        1
-//     2     3
-//   4
-// Output: true
-//
-// Input:
-//        1
-//     2     3
-//   4
-//     5
-// Output: false
-//
-// Solution:
-// A binary is balanced if
-// - its left subtree if balanced
-// - its right subtree if balanced
-// - the difference between the heights of left subtree and right subtree is
-// not more than 1.
+/*
+Problem:
+- Determine if a binary tree is height-balanced.
+
+Example:
+- Input:
+         1
+      2     3
+    4
+  Output: true
+
+- Input:
+         1
+      2     3
+    4
+      5
+  Output: false
+
+Approach:
+A binary is balanced if
+- its left subtree if balanced
+- its right subtree if balanced
+- the difference between the heights of left subtree and right subtree is
+not more than 1.
+*/
 
 package other
 

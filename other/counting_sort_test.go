@@ -1,12 +1,14 @@
-// Problem:
-// Implement counting sort.
-//
-// Mechanic:
-// Iterate through the input, count the number of times each item occurs, use
-// these counts to compute each item's index in the final sorted array.
-//
-// Cost:
-// O(n) time and O(n) space.
+/*
+Problem:
+- Implement counting sort.
+
+Approach:
+- Iterate through the input, count the number of times each item occurs, use
+  these counts to compute each item's index in the final sorted array.
+
+Cost:
+- O(n) time and O(n) space.
+*/
 
 package other
 

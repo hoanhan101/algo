@@ -1,13 +1,15 @@
-// Problem:
-// Implement quicksort.
-//
-// Mechanic:
-// Recursively divide the input into two smaller arrays around a pivot, where
-// one half has items smaller than the pivot, other half has items bigger than
-// the pivot.
-//
-// Cost:
-// O(nlogn) time and O(nlogn) space.
+/*
+Problem:
+- Implement quicksort.
+
+Approach:
+- Recursively divide the input into two smaller arrays around a pivot, where
+  one half has items smaller than the pivot, other half has items bigger than
+  the pivot.
+
+Cost:
+- O(nlogn) time and O(nlogn) space.
+*/
 
 package other
 

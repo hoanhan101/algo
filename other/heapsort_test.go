@@ -1,12 +1,14 @@
-// Problem:
-// Implement heapsort.
-//
-// Mechanic:
-// Similar to selection sort, repeatedly choose the largest item and move it to
-// the end of the array using a max heap.
-//
-// Cost:
-// O(nlogn) time and O(1) space.
+/*
+Problem:
+- Implement heapsort.
+
+Approach:
+- Similar to selection sort, repeatedly choose the largest item and move it to
+  the end of the array using a max heap.
+
+Cost:
+- O(nlogn) time and O(1) space.
+*/
 
 package other
 

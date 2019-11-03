@@ -1,12 +1,14 @@
-// Problem:
-// Implement merge sort.
-//
-// Mechanic:
-// Split the input in half, recursively sorts each half, then merge the
-// sorted halves back together.
-//
-// Cost:
-// O(nlogn) time and O(n) space.
+/*
+Problem:
+- Implement merge sort.
+
+Approach:
+- Split the input in half, recursively sorts each half, then merge the
+  sorted halves back together.
+
+Cost:
+- O(nlogn) time and O(n) space.
+*/
 
 package other
 

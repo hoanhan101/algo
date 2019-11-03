@@ -1,12 +1,14 @@
-// Problem:
-// Implement bubble sort.
-//
-// Mechanic:
-// Repeatedly swap the adjacent elements if they are in the wrong order in the
-// array, one item at a time.
-//
-// Cost:
-// O(n^2) time and O(1) space.
+/*
+Problem:
+- Implement bubble sort.
+
+Approach:
+- Repeatedly swap the adjacent elements if they are in the wrong order in the
+  array, one item at a time.
+
+Cost:
+- O(n^2) time and O(1) space.
+*/
 
 package other
 

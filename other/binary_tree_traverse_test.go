@@ -1,8 +1,11 @@
-// Problem:
-// Implement binary tree's depth first search (inorder, preorder, postorder)
-// and breath-first search (levelorder).
-//
-// The solution uses a channel to send value over as we traverse the tree.
+/*
+Problem:
+- Implement binary tree's depth first search (inorder, preorder, postorder)
+  and breath-first search (levelorder).
+
+Approach:
+- The solution uses a channel to send value over as we traverse the tree.
+*/
 
 package other
 

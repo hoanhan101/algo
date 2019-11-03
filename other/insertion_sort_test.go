@@ -1,12 +1,14 @@
-// Problem:
-// Implement insertion sort.
-//
-// Mechanic:
-// Insert elements from an unsorted array into a sorted subsection of the
-// array, one item at a time.
-//
-// Cost:
-// O(n^2) time and O(1) space.
+/*
+Problem:
+- Implement insertion sort.
+
+Approach:
+- Insert elements from an unsorted array into a sorted subsection of the
+  array, one item at a time.
+
+Cost:
+- O(n^2) time and O(1) space.
+*/
 
 package other
 

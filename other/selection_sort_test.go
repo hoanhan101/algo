@@ -1,12 +1,14 @@
-// Problem:
-// Implement selection sort.
-//
-// Mechanic:
-// Repeatedly select the next smallest element from the unsorted array and
-// move it to the front.
-//
-// Cost:
-// O(n^2) time and O(1) space.
+/*
+Problem:
+- Implement selection sort.
+
+Approach:
+- Repeatedly select the next smallest element from the unsorted array and
+  move it to the front.
+
+Cost:
+- O(n^2) time and O(1) space.
+*/
 
 package other
 

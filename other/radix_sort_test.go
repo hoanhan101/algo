@@ -1,11 +1,13 @@
-// Problem:
-// Implement radix sort.
-//
-// Mechanic:
-// Sort the input numbers one digit at a time.
-//
-// Cost:
-// O(n) time and O(n) space.
+/*
+Problem:
+- Implement radix sort.
+
+Approach:
+- Sort the input numbers one digit at a time.
+
+Cost:
+- O(n) time and O(n) space.
+*/
 
 package other
 
