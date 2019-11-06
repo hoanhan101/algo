@@ -1,12 +1,12 @@
 /*
 Problem:
-Given an amount of money and a list of coin denominations, compute the
-number of ways to make that amount with these available coins.
+- Given an amount of money and a list of coin denominations, compute the
+  number of ways to make that amount with these available coins.
 
 Example:
-Input: amount = 4, denominators = []int{1, 2, 3}
-Output: 4, because there are 4 ways to calculate 4 as such:
-4 = 1 + 1 + 1 + 1
+- Input: amount = 4, denominators = []int{1, 2, 3}
+  Output: 4, because there are 4 ways to calculate 4 as such:
+  4 = 1 + 1 + 1 + 1
   = 1 + 2 + 2
   = 1 + 3
   = 2 + 2
@@ -28,8 +28,8 @@ Solution:
   calculated as we are going bottom-up.
 
 Cost:
-O(n*m) time, O(n) space, where n is the amount of money, m is the number of
-potential denominations.
+- O(n*m) time, O(n) space, where n is the amount of money, m is the number of
+  potential denominations.
 */
 
 package interviewcake
