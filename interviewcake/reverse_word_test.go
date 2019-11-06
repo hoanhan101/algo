@@ -11,7 +11,7 @@ Approach:
 - Similar to reversing string, use the same idea to reverse all the characters
   in the list first so that we could have a list of words in the right order, not
   its characters.
-- Iterate through the list again the reverse its characters.
+- Iterate through the list again and reverse its characters.
 
 Solution:
 - Reverse all the characters to get a list of words in the right order using
