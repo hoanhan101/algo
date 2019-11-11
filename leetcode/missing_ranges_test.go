@@ -67,6 +67,7 @@ func TestGetRange(t *testing.T) {
 		{-1, 100, "0-99"},
 		{0, 99, "1-98"},
 		{1, 98, "2-97"},
+		{6, 66, "7-65"},
 	}
 
 	for _, tt := range tests {
@@ -82,6 +83,7 @@ func findMissingRanges(list []int) []string {
 	p1 := 0
 	p2 := p1 + 1
 
+	// check edge case where the list is empty.
 	if len(list) == 0 {
 		return out
 	}
