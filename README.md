@@ -17,7 +17,7 @@
 
 It is a work in progress.
 
-The current number of questions and solutions in total is **47**. It is
+The current number of questions and solutions in total is **49**. It is
 increased by **4-6** questions every week.
 
 I am hoping to get to several hundreds and reduce it to the **top 100 critical ones**.
