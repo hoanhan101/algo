@@ -86,6 +86,7 @@ The goal is to build a solid foundation for one's next coding interview.
     - [Valid Palindrome](https://github.com/hoanhan101/algo/blob/master/leetcode/valid_palindrome_test.go)
     - [Implement strstr()](https://github.com/hoanhan101/algo/blob/master/leetcode/strstr_test.go)
     - [Reverse words in string](https://github.com/hoanhan101/algo/blob/master/leetcode/reverse_words_string_test.go)
+    - [Longest substring without repeating characters](https://github.com/hoanhan101/algo/blob/master/leetcode/longest_substring_test.go)
   - Math
   - Linked list
   - Binary tree
