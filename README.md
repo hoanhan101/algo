@@ -87,6 +87,8 @@ The goal is to build a solid foundation for one's next coding interview.
     - [Implement strstr()](https://github.com/hoanhan101/algo/blob/master/leetcode/strstr_test.go)
     - [Reverse words in string](https://github.com/hoanhan101/algo/blob/master/leetcode/reverse_words_string_test.go)
     - [Longest substring without repeating characters](https://github.com/hoanhan101/algo/blob/master/leetcode/longest_substring_test.go)
+      - *TODO: read more about sliding windows problem
+        [here](https://medium.com/leetcode-patterns/leetcode-pattern-2-sliding-windows-for-strings-e19af105316b)*
   - Math
   - Linked list
   - Binary tree
