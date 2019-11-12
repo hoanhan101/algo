@@ -17,7 +17,7 @@
 
 It is a work in progress.
 
-The current number of questions and solutions in total is **50**. It is
+The current number of questions and solutions in total is **51**. It is
 increased by **4-6** questions every week.
 
 I am hoping to get to several hundreds and reduce it to the **top 100 critical ones**.
@@ -92,6 +92,7 @@ The goal is to build a solid foundation for one's next coding interview.
     - [Missing ranges](https://github.com/hoanhan101/algo/blob/master/leetcode/missing_ranges_test.go)
     - [One edit distance](https://github.com/hoanhan101/algo/blob/master/leetcode/one_edit_distance_test.go)
   - Math
+    - [Reverse integer](https://github.com/hoanhan101/algo/blob/master/leetcode/reverse_integer_test.go)
   - Linked list
   - Binary tree
   - Bit manipulation
