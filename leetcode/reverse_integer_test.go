@@ -1,6 +1,11 @@
 /*
 Problem:
 - Given a 64-bit integer, reverse its digits.
+
+Assumption:
+- Negative numbers are also valid.
+- Must handle the case where the reversed integer is overflow.
+
 Example:
 - Input: 123
   Output: 321
