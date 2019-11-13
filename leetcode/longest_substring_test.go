@@ -38,7 +38,7 @@ import (
 	"github.com/hoanhan101/algo/common"
 )
 
-func TestLongestSubstring(t *testing.T) {
+func TestCalculateLongestSubstring(t *testing.T) {
 	tests := []struct {
 		in       string
 		expected int
@@ -50,12 +50,12 @@ func TestLongestSubstring(t *testing.T) {
 	}
 
 	for _, tt := range tests {
-		result := longestSubstring(tt.in)
+		result := calculateLongestSubstring(tt.in)
 		common.Equal(t, tt.expected, result)
 	}
 }
 
-func longestSubstring(s string) int {
+func calculateLongestSubstring(s string) int {
 	// m maps characters to their indices.
 	m := map[string]int{}
 
