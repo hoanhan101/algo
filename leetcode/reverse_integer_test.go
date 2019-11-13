@@ -11,9 +11,9 @@ Example:
   Output: 321
 - Input: -123
   Output: -321
-- Input: 1000000003
-  Output: 8085774586302733229
-  Explanation: The reversed integer 9223372036854775808 overflows by 1.
+- Input: 8085774586302733229
+  Output: 0
+  Explanation: The reversed integer 9223372036854775808 overflows by 1 so we return 0.
 
 Approach:
 - Use modulo by 10 to get a digit at ones' place of the input and
