@@ -17,7 +17,7 @@
 
 It is a work in progress.
 
-The current number of questions and solutions in total is **52**. It is
+The current number of questions and solutions in total is **53**. It is
 increased by **4-6** questions every week.
 
 I am hoping to get to several hundreds and reduce it to the **top 100 critical ones**.
@@ -94,6 +94,7 @@ The goal is to build a solid foundation for one's next coding interview.
   - Math
     - [Reverse integer](https://github.com/hoanhan101/algo/blob/master/leetcode/reverse_integer_test.go)
     - [Plus one](https://github.com/hoanhan101/algo/blob/master/leetcode/plus_one_test.go)
+    - [Palindrome Number](https://github.com/hoanhan101/algo/blob/master/leetcode/palindrome_number_test.go)
   - Linked list
   - Binary tree
   - Bit manipulation
