@@ -26,34 +26,28 @@ import (
 
 func TestDeleteNode(t *testing.T) {
 	// define test input.
-	t1 := &LinkedList{1, nil}
-	t1.next = &LinkedList{2, nil}
-	t1.next.next = &LinkedList{3, nil}
-	t1.next.next.next = &LinkedList{4, nil}
-	t1.next.next.next.next = &LinkedList{5, nil}
-	t1.next.next.next.next.next = &LinkedList{6, nil}
+	t1 := &common.ListNode{1, nil}
+	t1.Next = &common.ListNode{2, nil}
+	t1.Next.Next = &common.ListNode{3, nil}
+	t1.Next.Next.Next = &common.ListNode{4, nil}
+	t1.Next.Next.Next.Next = &common.ListNode{5, nil}
+	t1.Next.Next.Next.Next.Next = &common.ListNode{6, nil}
 
 	// deletes node 4.
-	deleteNode(t1.next.next.next)
+	deleteNode(t1.Next.Next.Next)
 	common.Equal(t, []int{1, 2, 3, 5, 6}, linkedListToSlice(t1))
 
 	// deletes node 3.
-	deleteNode(t1.next.next)
+	deleteNode(t1.Next.Next)
 	common.Equal(t, []int{1, 2, 5, 6}, linkedListToSlice(t1))
 
 	// deletes node 5.
-	deleteNode(t1.next.next)
+	deleteNode(t1.Next.Next)
 	common.Equal(t, []int{1, 2, 6}, linkedListToSlice(t1))
 }
 
-// LinkedList represents a node in a linked list.
-type LinkedList struct {
-	value int
-	next  *LinkedList
-}
-
-func deleteNode(node *LinkedList) {
-	nextNode := node.next
+func deleteNode(node *common.ListNode) {
+	nextNode := node.Next
 
 	// if the next node is nil, it's the last node. this implementation does
 	// not work.
@@ -61,16 +55,16 @@ func deleteNode(node *LinkedList) {
 		return
 	}
 
-	node.value = nextNode.value
-	node.next = nextNode.next
+	node.Value = nextNode.Value
+	node.Next = nextNode.Next
 }
 
 // linkedListToSlice converts a linked list into an array of integer.
-func linkedListToSlice(node *LinkedList) []int {
+func linkedListToSlice(node *common.ListNode) []int {
 	out := []int{}
 
-	for n := node; n != nil; n = n.next {
-		out = append(out, n.value)
+	for n := node; n != nil; n = n.Next {
+		out = append(out, n.Value)
 	}
 
 	return out

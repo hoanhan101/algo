@@ -27,18 +27,18 @@ import (
 
 func TestContainCycle(t *testing.T) {
 	// define tests input.
-	t1 := &LinkedList{1, nil}
-	t1.next = &LinkedList{2, nil}
-	t1.next.next = &LinkedList{3, nil}
+	t1 := &common.ListNode{1, nil}
+	t1.Next = &common.ListNode{2, nil}
+	t1.Next.Next = &common.ListNode{3, nil}
 
-	t2 := &LinkedList{1, nil}
-	t2.next = &LinkedList{2, nil}
-	t2.next.next = &LinkedList{3, nil}
-	t2.next.next.next = t2
+	t2 := &common.ListNode{1, nil}
+	t2.Next = &common.ListNode{2, nil}
+	t2.Next.Next = &common.ListNode{3, nil}
+	t2.Next.Next.Next = t2
 
 	// define tests output.
 	tests := []struct {
-		in       *LinkedList
+		in       *common.ListNode
 		expected bool
 	}{
 		{t1, false},
@@ -50,18 +50,18 @@ func TestContainCycle(t *testing.T) {
 	}
 }
 
-func containCycle(node *LinkedList) bool {
+func containCycle(node *common.ListNode) bool {
 	// keep two pointers at the beginning.
 	slow := node
 	fast := node
 
 	// traverse until it hit the end of the list.
-	for fast != nil && fast.next != nil && fast.next.next != nil {
-		slow = slow.next
-		fast = fast.next.next
+	for fast != nil && fast.Next != nil && fast.Next.Next != nil {
+		slow = slow.Next
+		fast = fast.Next.Next
 
 		// if the fast pointer catches the slow one, there exists a cycle.
-		if fast.value == slow.value {
+		if fast.Value == slow.Value {
 			return true
 		}
 	}

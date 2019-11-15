@@ -33,25 +33,25 @@ import (
 func TestKthToLast(t *testing.T) {
 	// define tests input.
 
-	t1 := &LinkedList{1, nil}
+	t1 := &common.ListNode{1, nil}
 
-	t2 := &LinkedList{1, nil}
-	t2.next = &LinkedList{2, nil}
+	t2 := &common.ListNode{1, nil}
+	t2.Next = &common.ListNode{2, nil}
 
-	t3 := &LinkedList{1, nil}
-	t3.next = &LinkedList{2, nil}
-	t3.next.next = &LinkedList{3, nil}
+	t3 := &common.ListNode{1, nil}
+	t3.Next = &common.ListNode{2, nil}
+	t3.Next.Next = &common.ListNode{3, nil}
 
-	t4 := &LinkedList{1, nil}
-	t4.next = &LinkedList{2, nil}
-	t4.next.next = &LinkedList{3, nil}
-	t4.next.next.next = &LinkedList{4, nil}
-	t4.next.next.next.next = &LinkedList{5, nil}
-	t4.next.next.next.next.next = &LinkedList{6, nil}
+	t4 := &common.ListNode{1, nil}
+	t4.Next = &common.ListNode{2, nil}
+	t4.Next.Next = &common.ListNode{3, nil}
+	t4.Next.Next.Next = &common.ListNode{4, nil}
+	t4.Next.Next.Next.Next = &common.ListNode{5, nil}
+	t4.Next.Next.Next.Next.Next = &common.ListNode{6, nil}
 
 	// define tests output.
 	tests := []struct {
-		in1      *LinkedList
+		in1      *common.ListNode
 		in2      int
 		expected int
 	}{
@@ -71,23 +71,23 @@ func TestKthToLast(t *testing.T) {
 
 	for _, tt := range tests {
 		node := kthToLast(tt.in1, tt.in2)
-		common.Equal(t, tt.expected, node.value)
+		common.Equal(t, tt.expected, node.Value)
 	}
 }
 
-func kthToLast(node *LinkedList, k int) *LinkedList {
+func kthToLast(node *common.ListNode, k int) *common.ListNode {
 	// start both node in the beginning.
 	left, right := node, node
 
 	// move the right one to the kth node.
 	for i := 0; i < k-1; i++ {
-		right = right.next
+		right = right.Next
 	}
 
 	// move both pointers until the right one hits the end.
-	for right.next != nil {
-		left = left.next
-		right = right.next
+	for right.Next != nil {
+		left = left.Next
+		right = right.Next
 	}
 
 	return left

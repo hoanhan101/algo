@@ -18,20 +18,20 @@ import (
 
 func TestReverseLinkedList(t *testing.T) {
 	// define tests input.
-	t1 := &LinkedList{}
+	t1 := &common.ListNode{}
 
-	t2 := &LinkedList{1, nil}
+	t2 := &common.ListNode{1, nil}
 
-	t3 := &LinkedList{1, nil}
-	t3.next = &LinkedList{2, nil}
+	t3 := &common.ListNode{1, nil}
+	t3.Next = &common.ListNode{2, nil}
 
-	t4 := &LinkedList{1, nil}
-	t4.next = &LinkedList{2, nil}
-	t4.next.next = &LinkedList{3, nil}
+	t4 := &common.ListNode{1, nil}
+	t4.Next = &common.ListNode{2, nil}
+	t4.Next.Next = &common.ListNode{3, nil}
 
 	// define tests output.
 	tests := []struct {
-		in       *LinkedList
+		in       *common.ListNode
 		expected []int
 	}{
 		{t1, []int{0}},
@@ -46,16 +46,16 @@ func TestReverseLinkedList(t *testing.T) {
 	}
 }
 
-func reverseLinkedList(node *LinkedList) *LinkedList {
+func reverseLinkedList(node *common.ListNode) *common.ListNode {
 	current := node
-	var previous, next *LinkedList
+	var previous, next *common.ListNode
 
 	for current != nil {
 		// copy a pointer to the next element.
-		next = current.next
+		next = current.Next
 
 		// reverse the next pointer.
-		current.next = previous
+		current.Next = previous
 
 		// step forward in the list.
 		previous = current
