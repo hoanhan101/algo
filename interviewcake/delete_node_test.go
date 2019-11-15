@@ -35,15 +35,15 @@ func TestDeleteNode(t *testing.T) {
 
 	// deletes node 4.
 	deleteNode(t1.Next.Next.Next)
-	common.Equal(t, []int{1, 2, 3, 5, 6}, linkedListToSlice(t1))
+	common.Equal(t, []int{1, 2, 3, 5, 6}, common.LinkedListToSlice(t1))
 
 	// deletes node 3.
 	deleteNode(t1.Next.Next)
-	common.Equal(t, []int{1, 2, 5, 6}, linkedListToSlice(t1))
+	common.Equal(t, []int{1, 2, 5, 6}, common.LinkedListToSlice(t1))
 
 	// deletes node 5.
 	deleteNode(t1.Next.Next)
-	common.Equal(t, []int{1, 2, 6}, linkedListToSlice(t1))
+	common.Equal(t, []int{1, 2, 6}, common.LinkedListToSlice(t1))
 }
 
 func deleteNode(node *common.ListNode) {
@@ -57,15 +57,4 @@ func deleteNode(node *common.ListNode) {
 
 	node.Value = nextNode.Value
 	node.Next = nextNode.Next
-}
-
-// linkedListToSlice converts a linked list into an array of integer.
-func linkedListToSlice(node *common.ListNode) []int {
-	out := []int{}
-
-	for n := node; n != nil; n = n.Next {
-		out = append(out, n.Value)
-	}
-
-	return out
 }

@@ -42,7 +42,7 @@ func TestReverseLinkedList(t *testing.T) {
 
 	for _, tt := range tests {
 		node := reverseLinkedList(tt.in)
-		common.Equal(t, tt.expected, linkedListToSlice(node))
+		common.Equal(t, tt.expected, common.LinkedListToSlice(node))
 	}
 }
 
