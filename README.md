@@ -99,7 +99,10 @@ The goal is to build a solid foundation for one's next coding interview.
     - [Merge sorted linked list](https://github.com/hoanhan101/algo/blob/master/leetcode/merge_sorted_linked_list_test.go)
     - [Add two numbers](https://github.com/hoanhan101/algo/blob/master/leetcode/add_two_numbers_test.go)
     - [Swap nodes in pairs](https://github.com/hoanhan101/algo/blob/master/leetcode/swap_nodes_in_pairs_test.go)
+    - Merge k sorted linked list
+    - Copy list with random pointer
   - Binary tree
+    - Validate binary search tree
   - Bit manipulation
     - [Single Number I](https://github.com/hoanhan101/algo/blob/master/interviewcake/stolen_breakfast_drone_test.go)
     - [Single Number II](https://github.com/hoanhan101/algo/blob/master/leetcode/single_number_ii_test.go)
