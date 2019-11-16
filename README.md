@@ -13,15 +13,12 @@
 
 > [Buy me a coffee!](https://www.buymeacoffee.com/aHjIWu6Ck)
 
-## Project status
+## Problems and solutions' counter: **57**
 
-It is a work in progress.
-
-The current number of questions and solutions in total is **57**. It is
-increased by **4-6** questions every week.
-
-I am hoping to get to several hundreds and reduce it to the **top 100 critical ones**.
-The goal is to build a solid foundation for one's next coding interview.
+- *It is a work in progress.*
+- **4-6** questions and solutions are added every week.
+- I am hoping to get to several hundreds and reduce it to the **top 100 critical ones**.
+  The goal is to build a solid foundation for one's next coding interview.
 
 ## Table of Contents 
 - **[Interview Cake](https://www.interviewcake.com/)**
