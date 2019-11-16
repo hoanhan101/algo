@@ -17,7 +17,7 @@
 
 It is a work in progress.
 
-The current number of questions and solutions in total is **56**. It is
+The current number of questions and solutions in total is **57**. It is
 increased by **4-6** questions every week.
 
 I am hoping to get to several hundreds and reduce it to the **top 100 critical ones**.
@@ -98,11 +98,11 @@ The goal is to build a solid foundation for one's next coding interview.
   - Linked list
     - [Merge sorted linked list](https://github.com/hoanhan101/algo/blob/master/leetcode/merge_sorted_linked_list_test.go)
     - [Add two numbers](https://github.com/hoanhan101/algo/blob/master/leetcode/add_two_numbers_test.go)
-    - [Swap nodes in pairs](https://github.com/hoanhan101/algo/blob/master/leetcode/swap_nodes_in_pairs_test.go)
+    - [Swap nodes in pairs](h)
     - Merge k sorted linked list
     - Copy list with random pointer
   - Binary tree
-    - Validate binary search tree
+    - [Validate binary search tree](https://github.com/hoanhan101/algo/blob/master/leetcode/valid_bst_test.go)
   - Bit manipulation
     - [Single Number I](https://github.com/hoanhan101/algo/blob/master/interviewcake/stolen_breakfast_drone_test.go)
     - [Single Number II](https://github.com/hoanhan101/algo/blob/master/leetcode/single_number_ii_test.go)
