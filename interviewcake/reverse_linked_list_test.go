@@ -18,26 +18,26 @@ import (
 
 func TestReverseLinkedList(t *testing.T) {
 	// define tests input.
-	t1 := &common.ListNode{}
+	t0 := common.NewListNode(0)
 
-	t2 := &common.ListNode{1, nil}
+	t1 := common.NewListNode(1)
 
-	t3 := &common.ListNode{1, nil}
-	t3.Next = &common.ListNode{2, nil}
+	t2 := common.NewListNode(1)
+	t2.AddNext(2)
 
-	t4 := &common.ListNode{1, nil}
-	t4.Next = &common.ListNode{2, nil}
-	t4.Next.Next = &common.ListNode{3, nil}
+	t3 := common.NewListNode(1)
+	t3.AddNext(2)
+	t3.AddNext(3)
 
 	// define tests output.
 	tests := []struct {
 		in       *common.ListNode
 		expected []int
 	}{
-		{t1, []int{0}},
-		{t2, []int{1}},
-		{t3, []int{2, 1}},
-		{t4, []int{3, 2, 1}},
+		{t0, []int{0}},
+		{t1, []int{1}},
+		{t2, []int{2, 1}},
+		{t3, []int{3, 2, 1}},
 	}
 
 	for _, tt := range tests {

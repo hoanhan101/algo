@@ -27,13 +27,13 @@ import (
 
 func TestContainCycle(t *testing.T) {
 	// define tests input.
-	t1 := &common.ListNode{1, nil}
-	t1.Next = &common.ListNode{2, nil}
-	t1.Next.Next = &common.ListNode{3, nil}
+	t1 := common.NewListNode(1)
+	t1.AddNext(2)
+	t1.AddNext(3)
 
-	t2 := &common.ListNode{1, nil}
-	t2.Next = &common.ListNode{2, nil}
-	t2.Next.Next = &common.ListNode{3, nil}
+	t2 := common.NewListNode(1)
+	t2.AddNext(2)
+	t2.AddNext(3)
 	t2.Next.Next.Next = t2
 
 	// define tests output.

@@ -33,21 +33,19 @@ import (
 func TestKthToLast(t *testing.T) {
 	// define tests input.
 
-	t1 := &common.ListNode{1, nil}
+	t1 := common.NewListNode(1)
 
-	t2 := &common.ListNode{1, nil}
-	t2.Next = &common.ListNode{2, nil}
+	t2 := common.NewListNode(1)
+	t2.AddNext(2)
 
-	t3 := &common.ListNode{1, nil}
-	t3.Next = &common.ListNode{2, nil}
-	t3.Next.Next = &common.ListNode{3, nil}
+	t3 := common.NewListNode(1)
+	t3.AddNext(2)
+	t3.AddNext(3)
 
-	t4 := &common.ListNode{1, nil}
-	t4.Next = &common.ListNode{2, nil}
-	t4.Next.Next = &common.ListNode{3, nil}
-	t4.Next.Next.Next = &common.ListNode{4, nil}
-	t4.Next.Next.Next.Next = &common.ListNode{5, nil}
-	t4.Next.Next.Next.Next.Next = &common.ListNode{6, nil}
+	t4 := common.NewListNode(1)
+	for i := 2; i <= 6; i++ {
+		t4.AddNext(i)
+	}
 
 	// define tests output.
 	tests := []struct {

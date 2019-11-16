@@ -26,12 +26,10 @@ import (
 
 func TestDeleteNode(t *testing.T) {
 	// define test input.
-	t1 := &common.ListNode{1, nil}
-	t1.Next = &common.ListNode{2, nil}
-	t1.Next.Next = &common.ListNode{3, nil}
-	t1.Next.Next.Next = &common.ListNode{4, nil}
-	t1.Next.Next.Next.Next = &common.ListNode{5, nil}
-	t1.Next.Next.Next.Next.Next = &common.ListNode{6, nil}
+	t1 := common.NewListNode(1)
+	for i := 2; i <= 6; i++ {
+		t1.AddNext(i)
+	}
 
 	// deletes node 4.
 	deleteNode(t1.Next.Next.Next)
