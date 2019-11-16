@@ -6,6 +6,22 @@ type ListNode struct {
 	Next  *ListNode
 }
 
+// NewListNode returns a new list node.
+func NewListNode(v int) *ListNode {
+	return &ListNode{v, nil}
+}
+
+// AddNext adds a next node to the end of list.
+func (l *ListNode) AddNext(v int) {
+	for n := l; n != nil; n = n.Next {
+		if n.Next == nil {
+			new := NewListNode(v)
+			n.Next = new
+			break
+		}
+	}
+}
+
 // LinkedListToSlice converts a linked list into an array of integer.
 func LinkedListToSlice(node *ListNode) []int {
 	out := []int{}
