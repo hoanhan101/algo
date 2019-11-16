@@ -34,19 +34,17 @@ import (
 )
 
 func TestSwapPairs(t *testing.T) {
-	t11 := &common.ListNode{1, nil}
-	t11.Next = &common.ListNode{2, nil}
-	t11.Next.Next = &common.ListNode{3, nil}
-	t11.Next.Next.Next = &common.ListNode{4, nil}
-	t11.Next.Next.Next.Next = &common.ListNode{5, nil}
-	t11.Next.Next.Next.Next.Next = &common.ListNode{6, nil}
+	t11 := common.NewListNode(1)
+	for i := 2; i <= 6; i++ {
+		t11.AddNext(i)
+	}
 
-	t12 := &common.ListNode{2, nil}
-	t12.Next = &common.ListNode{1, nil}
-	t12.Next.Next = &common.ListNode{4, nil}
-	t12.Next.Next.Next = &common.ListNode{3, nil}
-	t12.Next.Next.Next.Next = &common.ListNode{6, nil}
-	t12.Next.Next.Next.Next.Next = &common.ListNode{5, nil}
+	t12 := common.NewListNode(2)
+	t12.AddNext(1)
+	t12.AddNext(4)
+	t12.AddNext(3)
+	t12.AddNext(6)
+	t12.AddNext(5)
 
 	tests := []struct {
 		in       *common.ListNode

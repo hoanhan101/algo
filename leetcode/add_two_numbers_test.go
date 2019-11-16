@@ -35,26 +35,26 @@ import (
 )
 
 func TestAddTwoNumbers(t *testing.T) {
-	t11 := &common.ListNode{1, nil}
-	t11.Next = &common.ListNode{6, nil}
-	t11.Next.Next = &common.ListNode{4, nil}
+	t11 := common.NewListNode(1)
+	t11.AddNext(6)
+	t11.AddNext(4)
 
-	t12 := &common.ListNode{2, nil}
-	t12.Next = &common.ListNode{4, nil}
-	t12.Next.Next = &common.ListNode{1, nil}
+	t12 := common.NewListNode(2)
+	t12.AddNext(4)
+	t12.AddNext(1)
 
-	t13 := &common.ListNode{3, nil}
-	t13.Next = &common.ListNode{0, nil}
-	t13.Next.Next = &common.ListNode{6, nil}
+	t13 := common.NewListNode(3)
+	t13.AddNext(0)
+	t13.AddNext(6)
 
-	t21 := &common.ListNode{9, nil}
-	t21.Next = &common.ListNode{9, nil}
+	t21 := common.NewListNode(9)
+	t21.AddNext(9)
 
-	t22 := &common.ListNode{1, nil}
+	t22 := common.NewListNode(1)
 
-	t23 := &common.ListNode{0, nil}
-	t23.Next = &common.ListNode{0, nil}
-	t23.Next.Next = &common.ListNode{1, nil}
+	t23 := common.NewListNode(0)
+	t23.AddNext(0)
+	t23.AddNext(1)
 
 	tests := []struct {
 		in1      *common.ListNode

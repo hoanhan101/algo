@@ -32,20 +32,18 @@ import (
 )
 
 func TestMergeSortedLinkedList(t *testing.T) {
-	t11 := &common.ListNode{1, nil}
-	t11.Next = &common.ListNode{3, nil}
-	t11.Next.Next = &common.ListNode{5, nil}
+	t11 := common.NewListNode(1)
+	t11.AddNext(3)
+	t11.AddNext(5)
 
-	t12 := &common.ListNode{2, nil}
-	t12.Next = &common.ListNode{4, nil}
-	t12.Next.Next = &common.ListNode{6, nil}
+	t12 := common.NewListNode(2)
+	t12.AddNext(4)
+	t12.AddNext(6)
 
-	t13 := &common.ListNode{1, nil}
-	t13.Next = &common.ListNode{2, nil}
-	t13.Next.Next = &common.ListNode{3, nil}
-	t13.Next.Next.Next = &common.ListNode{4, nil}
-	t13.Next.Next.Next.Next = &common.ListNode{5, nil}
-	t13.Next.Next.Next.Next.Next = &common.ListNode{6, nil}
+	t13 := common.NewListNode(1)
+	for i := 2; i <= 6; i++ {
+		t13.AddNext(i)
+	}
 
 	tests := []struct {
 		in1      *common.ListNode
