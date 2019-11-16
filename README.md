@@ -13,7 +13,7 @@
 
 > [Buy me a coffee!](https://www.buymeacoffee.com/aHjIWu6Ck)
 
-## Total questions with solutions: 57
+## Total questions with solutions: 58
 
 - It is a work in progress, where **4-6** questions and solutions are added every week.
 - I am hoping to get to several hundreds and reduce it to the **top 100 critical ones**.
@@ -77,9 +77,9 @@
 - **[Practical Algorithms and Data Structures](https://bradfieldcs.com/algos/)**
 - **[LeetCode](https://leetcode.com/)**
   - Array/String
-    - [Two Sum I](https://github.com/hoanhan101/algo/blob/master/leetcode/two_sum_i_test.go)
-    - [Two Sum II](https://github.com/hoanhan101/algo/blob/master/leetcode/two_sum_ii_test.go)
-    - [Valid Palindrome](https://github.com/hoanhan101/algo/blob/master/leetcode/valid_palindrome_test.go)
+    - [Two sum I](https://github.com/hoanhan101/algo/blob/master/leetcode/two_sum_i_test.go)
+    - [Two sum II](https://github.com/hoanhan101/algo/blob/master/leetcode/two_sum_ii_test.go)
+    - [Valid palindrome](https://github.com/hoanhan101/algo/blob/master/leetcode/valid_palindrome_test.go)
     - [Implement strstr()](https://github.com/hoanhan101/algo/blob/master/leetcode/strstr_test.go)
     - [Reverse words in string](https://github.com/hoanhan101/algo/blob/master/leetcode/reverse_words_string_test.go)
     - [Longest substring without repeating characters](https://github.com/hoanhan101/algo/blob/master/leetcode/longest_substring_test.go)
@@ -99,9 +99,10 @@
     - Copy list with random pointer
   - Binary tree
     - [Validate binary search tree](https://github.com/hoanhan101/algo/blob/master/leetcode/valid_bst_test.go)
+    - [Maximum depth of binary tree](https://github.com/hoanhan101/algo/blob/master/leetcode/max_depth_binary_tree_test.go)
   - Bit manipulation
-    - [Single Number I](https://github.com/hoanhan101/algo/blob/master/interviewcake/stolen_breakfast_drone_test.go)
-    - [Single Number II](https://github.com/hoanhan101/algo/blob/master/leetcode/single_number_ii_test.go)
+    - [Single number I](https://github.com/hoanhan101/algo/blob/master/interviewcake/stolen_breakfast_drone_test.go)
+    - [Single number II](https://github.com/hoanhan101/algo/blob/master/leetcode/single_number_ii_test.go)
   - Misc
   - Stack
   - Dynamic programming
