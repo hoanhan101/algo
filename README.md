@@ -13,7 +13,7 @@
 
 > [Buy me a coffee!](https://www.buymeacoffee.com/aHjIWu6Ck)
 
-## Total questions with solutions: 60
+## Total questions with solutions: 61
 
 - It is a work in progress, where **4-6** questions and solutions are added every week.
 - I am hoping to get to several hundreds and reduce it to the **top 100 critical ones**.
@@ -104,6 +104,7 @@
     - [Balanced binary tree](https://github.com/hoanhan101/algo/blob/master/leetcode/balanced_binary_tree_test.go)
     - Convert sorted array to balanced binary search tree
     - Convert sorted linked list to balanced binary search tree
+    - [Binary tree maximum path sum](https://github.com/hoanhan101/algo/blob/master/leetcode/binary_tree_max_path_sum_test.go)
   - Bit manipulation
     - [Single number I](https://github.com/hoanhan101/algo/blob/master/interviewcake/stolen_breakfast_drone_test.go)
     - [Single number II](https://github.com/hoanhan101/algo/blob/master/leetcode/single_number_ii_test.go)
