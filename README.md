@@ -94,7 +94,7 @@
   - Linked list
     - [Merge sorted linked list](https://github.com/hoanhan101/algo/blob/master/leetcode/merge_sorted_linked_list_test.go)
     - [Add two numbers](https://github.com/hoanhan101/algo/blob/master/leetcode/add_two_numbers_test.go)
-    - [Swap nodes in pairs](h)
+    - [Swap nodes in pairs](https://github.com/hoanhan101/algo/blob/master/leetcode/swap_nodes_in_pairs_test.go)
     - Merge k sorted linked list
     - Copy list with random pointer
   - Binary tree
