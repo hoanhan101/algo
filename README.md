@@ -141,12 +141,39 @@
     - [Counting Sort](https://github.com/hoanhan101/algo/blob/master/other/counting_sort_test.go)
     - Radix Sort
 
-## Testing
+## Developing
+
+Clean up, lint source files, run tests and be ready for a push:
+```
+make push-ready
+```
+
+Test only:
 ```
 make test
 ```
 
-For more information,
+Test and report:
+```
+make cover
+```
+
+Test verbose:
+```
+make test-verbose
+```
+
+Lint:
+```
+make lint
+```
+
+Clean up:
+```
+make clean
+```
+
+For more information:
 ```
 make help
 ```
