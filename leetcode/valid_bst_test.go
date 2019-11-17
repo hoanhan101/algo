@@ -1,6 +1,6 @@
 /*
 Problem:
-- Given a binary tree, determine if it is a valid binary search tree (BST).
+- Given a binary tree, determine if it is a valid binary search tree.
 
 Approach:
 - Traverse the tree and apply recursion to check at each step if:
