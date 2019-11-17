@@ -102,6 +102,8 @@
     - [Maximum depth of binary tree](https://github.com/hoanhan101/algo/blob/master/leetcode/max_depth_binary_tree_test.go)
     - [Minimum depth of binary tree](https://github.com/hoanhan101/algo/blob/master/leetcode/min_depth_binary_tree_test.go)
     - [Balanced binary tree](https://github.com/hoanhan101/algo/blob/master/leetcode/balanced_binary_tree_test.go)
+    - Convert sorted array to balanced binary search tree
+    - Convert sorted linked list to balanced binary search tree
   - Bit manipulation
     - [Single number I](https://github.com/hoanhan101/algo/blob/master/interviewcake/stolen_breakfast_drone_test.go)
     - [Single number II](https://github.com/hoanhan101/algo/blob/master/leetcode/single_number_ii_test.go)
