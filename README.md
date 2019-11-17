@@ -90,7 +90,7 @@
   - Math
     - [Reverse integer](https://github.com/hoanhan101/algo/blob/master/leetcode/reverse_integer_test.go)
     - [Plus one](https://github.com/hoanhan101/algo/blob/master/leetcode/plus_one_test.go)
-    - [Palindrome Number](https://github.com/hoanhan101/algo/blob/master/leetcode/palindrome_number_test.go)
+    - [Palindrome number](https://github.com/hoanhan101/algo/blob/master/leetcode/palindrome_number_test.go)
   - Linked list
     - [Merge sorted linked list](https://github.com/hoanhan101/algo/blob/master/leetcode/merge_sorted_linked_list_test.go)
     - [Add two numbers](https://github.com/hoanhan101/algo/blob/master/leetcode/add_two_numbers_test.go)
