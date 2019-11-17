@@ -97,8 +97,7 @@ func maxDepth(t *common.TreeNode) int {
 	}
 
 	if math.Abs(float64(maxLeft-maxRight)) <= 1 {
-		_, max := common.Mimax(maxLeft, maxRight)
-		return max + 1
+		return common.Max(maxLeft, maxRight) + 1
 	}
 
 	return -1

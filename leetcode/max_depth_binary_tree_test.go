@@ -80,6 +80,5 @@ func getMaxDepth(t *common.TreeNode) int {
 	maxRight := getMaxDepth(t.Right)
 
 	// the max depth of the tree is the greater one plus one.
-	_, max := common.Mimax(maxLeft, maxRight)
-	return max + 1
+	return common.Max(maxLeft, maxRight) + 1
 }

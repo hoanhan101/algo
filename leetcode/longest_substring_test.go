@@ -73,7 +73,7 @@ func calculateLongestSubstring(s string) int {
 		m[string(s[end])] = end
 
 		// similar to greedy approach, update max length at each step.
-		_, maxLength = common.Mimax(end-start+1, maxLength)
+		maxLength = common.Max(end-start+1, maxLength)
 	}
 
 	return maxLength

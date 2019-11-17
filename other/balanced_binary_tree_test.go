@@ -105,6 +105,5 @@ func height(t *BinaryTree) int {
 		return 0
 	}
 
-	_, max := common.Mimax(height(t.left), height(t.right))
-	return max + 1
+	return common.Max(height(t.left), height(t.right)) + 1
 }
