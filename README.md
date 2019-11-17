@@ -20,6 +20,7 @@
   The goal is to build a solid foundation for one's next coding interview.
 
 ## Table of Contents 
+
 - **[Interview Cake](https://www.interviewcake.com/)**
   - Array and string manipulation
     - [Merge meeting times](https://github.com/hoanhan101/algo/blob/master/interviewcake/merge_meetings_test.go)
@@ -180,8 +181,12 @@ make help
 ```
 
 ## References
+
 - [Sorting algorithm cheat sheet](https://www.interviewcake.com/sorting-algorithm-cheat-sheet)
 - [LeetCode patterns](https://medium.com/leetcode-patterns)
+- LeetCode's 50 common interview questions
+- [Bitwise operators cheat sheet](https://www.getrevue.co/profile/hoanhan101/issues/bitwise-operators-cheat-sheet-theory-and-practice-9-202494)
 
 ## Stargazers over time
+
 [![Stargazers over time](https://starchart.cc/hoanhan101/algo.svg)](https://starchart.cc/hoanhan101/algo)
