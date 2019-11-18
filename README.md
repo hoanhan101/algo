@@ -13,7 +13,7 @@
 
 > [Buy me a coffee!](https://www.buymeacoffee.com/aHjIWu6Ck)
 
-## Total questions with solutions: 61
+## Total questions with solutions: 62
 
 - It is a work in progress, where **4-6** questions and solutions are added every week.
 - I am hoping to get to several hundreds and reduce it to the **top 100 critical ones**.
@@ -114,7 +114,7 @@
     - [Single number I](https://github.com/hoanhan101/algo/blob/master/interviewcake/stolen_breakfast_drone_test.go)
     - [Single number II](https://github.com/hoanhan101/algo/blob/master/leetcode/single_number_ii_test.go)
   - Misc
-    - Spiral matrix
+    - [Spiral matrix](https://github.com/hoanhan101/algo/blob/master/leetcode/spiral_matrix_test.go)
     - Integer to roman
     - Roman to integer
     - Clone graph
