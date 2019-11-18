@@ -13,7 +13,7 @@
 
 > [Buy me a coffee!](https://www.buymeacoffee.com/aHjIWu6Ck)
 
-## Total questions with solutions: 62
+## Total questions with solutions: 63
 
 - It is a work in progress, where **4-6** questions and solutions are added every week.
 - I am hoping to get to several hundreds and reduce it to the **top 100 critical ones**.
@@ -119,7 +119,7 @@
     - Roman to integer
     - Clone graph
   - Stack
-    - Min stack
+    - [Min stack](https://github.com/hoanhan101/algo/blob/master/leetcode/min_stack_test.go)
     - Evaluate reverse polish notation
     - Valid parenthesis
   - Dynamic programming
