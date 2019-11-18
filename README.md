@@ -83,11 +83,14 @@
     - [Valid palindrome](https://github.com/hoanhan101/algo/blob/master/leetcode/valid_palindrome_test.go)
     - [Implement strstr()](https://github.com/hoanhan101/algo/blob/master/leetcode/strstr_test.go)
     - [Reverse words in string](https://github.com/hoanhan101/algo/blob/master/leetcode/reverse_words_string_test.go)
+    - String to integer
+    - Valid number
     - [Longest substring without repeating characters](https://github.com/hoanhan101/algo/blob/master/leetcode/longest_substring_test.go)
       - *TODO: read more about sliding windows problem
         [here](https://medium.com/leetcode-patterns/leetcode-pattern-2-sliding-windows-for-strings-e19af105316b)*
     - [Missing ranges](https://github.com/hoanhan101/algo/blob/master/leetcode/missing_ranges_test.go)
     - [One edit distance](https://github.com/hoanhan101/algo/blob/master/leetcode/one_edit_distance_test.go)
+    - Read n characters given Read4
   - Math
     - [Reverse integer](https://github.com/hoanhan101/algo/blob/master/leetcode/reverse_integer_test.go)
     - [Plus one](https://github.com/hoanhan101/algo/blob/master/leetcode/plus_one_test.go)
@@ -111,9 +114,23 @@
     - [Single number I](https://github.com/hoanhan101/algo/blob/master/interviewcake/stolen_breakfast_drone_test.go)
     - [Single number II](https://github.com/hoanhan101/algo/blob/master/leetcode/single_number_ii_test.go)
   - Misc
+    - Spiral matrix
+    - Integer to roman
+    - Roman to integer
+    - Clone graph
   - Stack
+    - Min stack
+    - Evaluate reverse polish notation
+    - Valid parenthesis
   - Dynamic programming
+    - Climbing stairs
+    - Unique paths
+    - Maximum sum subarray
+    - Maximum product max array
+    - Coins in a line
   - Binary search
+    - Search insert position
+    - Find minimum in sorted rotated array
 - **Cracking the Coding Interviews**
   - Bit manipulation
     - [Bit operation](https://github.com/hoanhan101/algo/blob/master/ctci/bit_operation_test.go)
