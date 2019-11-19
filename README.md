@@ -13,7 +13,7 @@
 
 > [Buy me a coffee!](https://www.buymeacoffee.com/aHjIWu6Ck)
 
-## Total questions with solutions: 64
+## Total questions with solutions: 65
 
 - It is a work in progress, where **4-6** questions and solutions are added every week.
 - I am hoping to get to several hundreds and reduce it to the **top 100 critical ones**.
@@ -123,7 +123,7 @@
     - Evaluate reverse polish notation
     - [Valid parenthesis](https://github.com/hoanhan101/algo/blob/master/leetcode/valid_parentheses_test.go)
   - Dynamic programming
-    - Climbing stairs
+    - [Climbing stairs](https://github.com/hoanhan101/algo/blob/master/leetcode/climbing_stairs_test.go)
     - Unique paths
     - Maximum sum subarray
     - Maximum product max array
