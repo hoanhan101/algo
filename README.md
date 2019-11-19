@@ -15,7 +15,7 @@
 
 ## Total questions with solutions: 65
 
-- It is a work in progress, where **4-6** questions and solutions are added every week.
+- It is a work in progress, where **3-6** questions and solutions are added every week.
 - I am hoping to get to several hundreds and reduce it to the **top 100 critical ones**.
   The goal is to build a solid foundation for one's next coding interview.
 
