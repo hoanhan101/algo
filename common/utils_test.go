@@ -91,6 +91,37 @@ func TestContain(t *testing.T) {
 	}
 }
 
+func TestAbs(t *testing.T) {
+	tests := []struct {
+		in       int
+		expected int
+	}{
+		{0, 0},
+		{1, 1},
+		{-1, 1},
+	}
+
+	for _, tt := range tests {
+		Equal(t, tt.expected, Abs(tt.in))
+	}
+}
+
+func TestAbsDiff(t *testing.T) {
+	tests := []struct {
+		in1      int
+		in2      int
+		expected int
+	}{
+		{1, 1, 0},
+		{1, 2, 1},
+		{1, 3, 2},
+	}
+
+	for _, tt := range tests {
+		Equal(t, tt.expected, AbsDiff(tt.in1, tt.in2))
+	}
+}
+
 func TestIsMoreThan1Apart(t *testing.T) {
 	tests := []struct {
 		in1      int

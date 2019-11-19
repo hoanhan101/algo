@@ -13,7 +13,6 @@ Cost:
 package leetcode
 
 import (
-	"math"
 	"testing"
 
 	"github.com/hoanhan101/algo/common"
@@ -96,7 +95,7 @@ func maxDepth(t *common.TreeNode) int {
 		return -1
 	}
 
-	if math.Abs(float64(maxLeft-maxRight)) <= 1 {
+	if common.IsLessThan1Apart(maxLeft, maxRight) {
 		return common.Max(maxLeft, maxRight) + 1
 	}
 

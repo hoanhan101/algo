@@ -32,7 +32,6 @@ Cost:
 package leetcode
 
 import (
-	"math"
 	"testing"
 
 	"github.com/hoanhan101/algo/common"
@@ -62,7 +61,7 @@ func isOneDistanceApart(s1, s2 string) bool {
 
 	// if the difference between lengths is more than 1, they can't be at one
 	// distance.
-	if math.Abs(float64(m-n)) > 1 {
+	if common.IsMoreThan1Apart(m, n) {
 		return false
 	}
 

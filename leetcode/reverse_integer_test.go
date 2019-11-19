@@ -11,8 +11,7 @@ Example:
   Output: 321
 - Input: -123
   Output: -321
-- Input: 8085774586302733229
-  Output: 0
+- Input: 8085774586302733229 Output: 0
   Explanation: The reversed integer 9223372036854775808 overflows by 1 so we return 0.
 
 Approach:
@@ -65,7 +64,8 @@ func reverseInteger(in int64) int64 {
 
 	for in != 0 {
 		// check for overflow/underflow before multiplying by 10.
-		if int64(math.Abs(float64(out))) > math.MaxInt64/10 {
+		// if common.Abs(int(out)) > math.MaxInt64/10 {
+		if common.Abs(int(out)) > math.MaxInt64/10 {
 			return 0
 		}
 

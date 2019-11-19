@@ -92,9 +92,19 @@ func ContainString(s []string, target string) bool {
 	return false
 }
 
+// Abs returns the absolute value for a given integer.
+func Abs(a int) int {
+	return int(math.Abs(float64(a)))
+}
+
+// AbsDiff returns the absolute value of the difference between two integers.
+func AbsDiff(a, b int) int {
+	return Abs(a - b)
+}
+
 // IsMoreThan1Apart checks if two integers are more than 1 apart.
 func IsMoreThan1Apart(a, b int) bool {
-	if math.Abs(float64(a)-float64(b)) > 1 {
+	if AbsDiff(a, b) > 1 {
 		return true
 	}
 
@@ -103,7 +113,7 @@ func IsMoreThan1Apart(a, b int) bool {
 
 // IsLessThan1Apart checks if two integers are less or equal than 1 apart.
 func IsLessThan1Apart(a, b int) bool {
-	if math.Abs(float64(a)-float64(b)) <= 1 {
+	if AbsDiff(a, b) <= 1 {
 		return true
 	}
 
