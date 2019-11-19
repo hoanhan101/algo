@@ -1,3 +1,6 @@
+# Mac caches
+.DS_Store
+
 # Binaries for programs and plugins
 *.exe
 *.exe~
