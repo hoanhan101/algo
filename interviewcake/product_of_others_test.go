@@ -19,6 +19,12 @@ Solution:
 - Iterate through the list from right to left and get the product of all
   other numbers after their indices.
 
+Example walkthrough:
+- After the first iteration, we end up with:
+  []int{1*1, 1*1, 1*7, 1*7*3} or []int{1, 1, 7, 21}
+- After the second iteration, we end up with:
+  []int{1*4*3*7, 1*4*3, 7*4, 21*1} or []{84, 12, 28, 21}
+
 Cost:
 - O(n) time, O(n) space.
 */
