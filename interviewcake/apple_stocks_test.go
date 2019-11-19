@@ -14,9 +14,11 @@ Approach:
 Solution:
 - Initialize a minimum price to be the first price in the list and a maximum
   profit to be the first possible profit that we could trade.
-- Iterate through the list and keep track of the current price, the potential
-  profit (current price - minimum price), the maximum profit between the
-  potential one and the maximum one, and the minimum price vs the current price.
+- Iterate through the list and keep track of:
+  - the current price
+  - the potential profit: current price - minimum price
+  - the maximum profit: the larger profit between the current maximum and the potential one
+  - the minimum price: the smaller price between the current minimum and the current price.
 - Return the maximum profit we found in the end.
 
 Cost:
