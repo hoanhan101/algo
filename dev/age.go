@@ -13,7 +13,7 @@ import (
 )
 
 func main() {
-	fmt.Print("Enter a graduation year: ")
+	fmt.Print("Enter yo graduation year: ")
 
 	// initialize a scanner to read from stdin.
 	scanner := bufio.NewScanner(os.Stdin)
@@ -35,5 +35,5 @@ func main() {
 	}
 
 	age := time.Now().Year() - (gradYear - 22)
-	fmt.Println(age)
+	fmt.Println("Yo age is", age)
 }
