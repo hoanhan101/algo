@@ -1,3 +1,7 @@
+/*
+read from stdin.
+*/
+
 package main
 
 import (
@@ -7,7 +11,7 @@ import (
 )
 
 func main() {
-	// initialize a scanner to read form stdin.
+	// initialize a scanner to read from stdin.
 	scanner := bufio.NewScanner(os.Stdin)
 
 	// scan then print out the output.
