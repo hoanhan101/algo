@@ -1,4 +1,4 @@
-# Weekly coding interview problems with detailed solutions
+# Master Algorithms and Data Structures
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/hoanhan101/algo)
 ](https://goreportcard.com/report/github.com/hoanhan101/algo)
@@ -11,13 +11,16 @@
 
 > [Subscribe for the newsletter here →](https://www.getrevue.co/profile/hoanhan101)
 
+> [Ultimate Go study guide →](https://github.com/hoanhan101/ultimate-go)
+
 > [Buy me a coffee!](https://www.buymeacoffee.com/aHjIWu6Ck)
 
 ## Total questions with solutions: 65
 
-- It is a work in progress, where **3-6** questions and solutions are added every week.
-- I am hoping to get to several hundreds and reduce it to the **top 100 critical ones**.
-  The goal is to build a solid foundation for one's next coding interview.
+- Every week, I send out 4-6 programming problems with detailed solutions, test
+  cases, and program analysis, all in Go. 
+- The goal is to help you get good at algorithms and data structures so that
+  you can prepare better for your next coding interviews.
 
 ## Table of Contents 
 
