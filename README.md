@@ -1,4 +1,4 @@
-# Master Algorithms and Data Structures
+# Master Coding Interview Problems
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/hoanhan101/algo)
 ](https://goreportcard.com/report/github.com/hoanhan101/algo)
