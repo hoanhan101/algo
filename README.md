@@ -203,6 +203,7 @@ make help
 - [LeetCode patterns](https://medium.com/leetcode-patterns)
 - LeetCode's 50 common interview questions
 - [Bitwise operators cheat sheet](https://www.getrevue.co/profile/hoanhan101/issues/bitwise-operators-cheat-sheet-theory-and-practice-9-202494)
+- [Practical Algorithms and Data Structures](https://bradfieldcs.com/algos/)
 
 ## Stargazers over time
 
