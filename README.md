@@ -15,7 +15,7 @@
 
 > [Buy me a coffee!](https://www.buymeacoffee.com/aHjIWu6Ck)
 
-## Total questions with solutions: 67
+## Total questions with solutions: 68
 
 - Every week, I send out 4-6 programming problems with detailed solutions, test
   cases, and program analysis, all in Go. 
@@ -143,6 +143,7 @@
   - Sliding Window
     - [Average of any contiguous subarray of size k](gtci/avg_subarray_test.go)
     - [Maximum sum of any contiguous subarray of size k](gtci/max_subarray_test.go)
+    - [Smallest contiguous subarray](gtci/min_subarray_test.go)
 - **Other**
   - Data structures
     - Linked List

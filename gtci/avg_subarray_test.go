@@ -46,7 +46,7 @@ func TestAvgSubarray(t *testing.T) {
 func avgSubarray(a []int, k int) []float64 {
 	out := []float64{}
 
-	// sum keeps track of the sum of each window while start keeps track of
+	// sum keeps track of the sum of a window while start keeps track of
 	// its start index.
 	sum, start := 0, 0
 

@@ -53,7 +53,7 @@ func TestMaxSubarray(t *testing.T) {
 func maxSubarray(a []int, k int) int {
 	max := 0
 
-	// sum keeps track of the sum of each window while start keeps track of
+	// sum keeps track of the sum of a window while start keeps track of
 	// its start index.
 	sum, start := 0, 0
 
