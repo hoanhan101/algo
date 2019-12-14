@@ -7,6 +7,7 @@ Example:
 - Input: int{2, 1, 5, 1, 3, 2}, k=3
   Output: 9
   Explanation: Subarray with maximum sum is [5, 1, 3].
+
 Approach:
 - View each contiguous subarray as a sliding window of k elements.
 - As we move to the next subarray, slide the window by one element to
