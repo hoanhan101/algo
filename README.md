@@ -15,7 +15,7 @@
 
 > [Buy me a coffee!](https://www.buymeacoffee.com/aHjIWu6Ck)
 
-## Total questions with solutions: 65
+## Total questions with solutions: 66
 
 - Every week, I send out 4-6 programming problems with detailed solutions, test
   cases, and program analysis, all in Go. 
@@ -139,6 +139,9 @@
     - [Bit operation](https://github.com/hoanhan101/algo/blob/master/ctci/bit_operation_test.go)
     - [Bit insertion](https://github.com/hoanhan101/algo/blob/master/ctci/bit_insertion_test.go)
 - **Elements of Programming Interviews**
+- **[Grokking the Coding Interview: Patterns for Coding Questions](https://www.educative.io/courses/grokking-the-coding-interview)**
+  - Sliding Window
+    - [Average of contiguous subarrays](https://github.com/hoanhan101/algo/blob/master/gtci/avg_subarray_test.go)
 - **Other**
   - Data structures
     - Linked List
