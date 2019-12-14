@@ -7,10 +7,10 @@ Example:
 - Input: int{2, 1, 5, 1, 3, 2}, k=3
   Output: 9
   Explanation: Subarray with maximum sum is [5, 1, 3].
-Approach: Sliding Window
+Approach:
 - View each contiguous subarray as a sliding window of k elements.
 - As we move to the next subarray, slide the window by one element to
-  reuse the sum from previous array.
+  reuse the sum from previous array and update the maximum sum.
 
 Cost:
 - O(n) time, O(1) space.
