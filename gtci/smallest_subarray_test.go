@@ -13,7 +13,7 @@ Approach:
 - The difference between the previous problem and this one is that the size of
   the sliding window is not fixed.
 - Can still use the similar strategy to add up elements until their sum is greater
-  than equal to s.
+  than equal to s and view them as our sliding window.
 - Shrink the window until the window's sum is smaller than s again while keep
   updating the minimum length.
 
@@ -51,9 +51,7 @@ func TestMinSubarray(t *testing.T) {
 }
 
 func minSubarray(a []int, s int) int {
-	// min keeps track of the minimum length for a subarray. initialize it to
-	// be the max int as a starter.
-	min := math.MaxInt64
+	minLength := math.MaxInt64
 
 	// sum keeps track of the sum of a window while start keeps track of
 	// its start index.
@@ -66,7 +64,7 @@ func minSubarray(a []int, s int) int {
 		// target sum.
 		for sum >= s {
 			// update the minimum length at each step.
-			min = common.Min(min, end-start+1)
+			minLength = common.Min(minLength, end-start+1)
 
 			// subtract the start element and increase the start index to move
 			// the window ahead by one element.
@@ -76,9 +74,9 @@ func minSubarray(a []int, s int) int {
 	}
 
 	// let min=0 if there is no such subarray exists.
-	if min == math.MaxInt64 {
-		min = 0
+	if minLength == math.MaxInt64 {
+		minLength = 0
 	}
 
-	return min
+	return minLength
 }
