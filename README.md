@@ -15,7 +15,7 @@
 
 > [Buy me a coffee!](https://www.buymeacoffee.com/aHjIWu6Ck)
 
-## Total questions with solutions: 70
+## Total questions with solutions: 71
 
 - Every week, I send out 4-6 programming problems with detailed solutions, test
   cases, and program analysis, all in Go. 
@@ -146,6 +146,7 @@
     - [Smallest subarray with a given sum](gtci/smallest_subarray_test.go)
     - [Longest substring with k distinct characters](gtci/longest_substring_test.go)
     - [Fruits into baskets](gtci/fruits_baskets_test.go)
+    - [Longest substring without repeating characters](gtci/no_repeat_substring_test.go)
 - **Other**
   - Data structures
     - Linked List

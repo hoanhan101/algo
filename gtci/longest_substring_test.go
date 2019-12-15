@@ -71,7 +71,6 @@ func longestSubstring(s string, k int) int {
 		// insert characters until we have k distinct characters.
 		endChar := string(s[end])
 		if _, ok := char[endChar]; !ok {
-
 			char[endChar] = 0
 		}
 		char[endChar]++
