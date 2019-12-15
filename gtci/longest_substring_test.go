@@ -22,7 +22,7 @@ Approach:
   updating the maximum window length at each step.
 
 Cost:
-- O(n) time, O(1) space.
+- O(n) time, O(k) space where k is the number of characters in the map.
 */
 
 package leetcode
