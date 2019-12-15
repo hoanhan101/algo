@@ -1,23 +1,16 @@
 /*
 Problem:
-- Given a string, if you are allowed to replace  no more than k letters with
-  any letter, find the length of the longest substring having the same letters
-  after replacement.
+- Given an array containing 0s and 1s, if you are allowed to replace no more
+  than k 0s with 1s, find the length of the longest contiguous subarray having all 1s.
 
 Example:
-- Input: string="aabccbb", k=2
-  Output: 5
-  Explanation: Longest substring is "bbbbb" after replacing 2 c with b.
-- Input: string="abbcb", k=1
-  Output: 4
-  Explanation: Longest substring is "bbbb" after replacing 1 c with b.
+- Input: []int{0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1}, k=2
+  Output: 6
+  Explanation: Have the longest subarray of 1s after replacing 0 at index 5 and 8
 
 Approach:
-- Use a hashmap to remember the frequency of each character we have seen.
-- As we iterate through the string and add character to the window, we
-  also keep track of the maximum repeating character count.
-- Shrink the window accordingly as we are not allowed to replace more than
-  k characters.
+- Similar to longest substring after k replacements problem, except we only have
+  1 and 0 in the array.
 
 Cost:
 - O(n) time, O(1) space since there are only 26 characters in the alphabet.
@@ -33,12 +26,17 @@ import (
 
 func TestLongestSubstringOnesReplacement(t *testing.T) {
 	tests := []struct {
-		in1      string
+		in1      []int
 		in2      int
 		expected int
 	}{
-		{"aabccbb", 2, 5},
-		{"abbcb", 1, 4},
+		{[]int{}, 1, 0},
+		{[]int{0}, 1, 1},
+		{[]int{0, 0}, 1, 1},
+		{[]int{0, 0, 1}, 1, 2},
+		{[]int{1, 0, 1}, 1, 3},
+		{[]int{0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1}, 2, 6},
+		{[]int{0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1}, 3, 9},
 	}
 
 	for _, tt := range tests {
@@ -50,28 +48,20 @@ func TestLongestSubstringOnesReplacement(t *testing.T) {
 	}
 }
 
-func longestSubstringOnesReplacement(s string, k int) int {
-	maxLength, start, maxRepeatCharCount := 0, 0, 0
+func longestSubstringOnesReplacement(arr []int, k int) int {
+	maxLength, start, maxOnesCount := 0, 0, 0
 
-	// char keeps track of characters' frequencies.
-	char := map[string]int{}
-
-	for end := range s {
-		// insert characters into the frequencies map.
-		endChar := string(s[end])
-		if _, ok := char[endChar]; !ok {
-			char[endChar] = 0
+	for end := range arr {
+		if arr[end] == 1 {
+			maxOnesCount++
 		}
-		char[endChar]++
 
-		// update max repeating character count.
-		maxRepeatCharCount = common.Max(maxRepeatCharCount, char[endChar])
+		// shrink ther window as we are not allowed to replace more than k 0s.
+		if end-start+1-maxOnesCount > k {
+			if arr[start] == 1 {
+				maxOnesCount--
+			}
 
-		// shrink the window as we are not allowed to replace more than k
-		// characters.
-		if end-start+1-maxRepeatCharCount > k {
-			startChar := string(s[start])
-			char[startChar]--
 			start++
 		}
 

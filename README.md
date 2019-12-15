@@ -148,6 +148,7 @@
     - [Fruits into baskets](gtci/fruits_baskets_test.go)
     - [Longest substring without repeating characters](gtci/no_repeat_substring_test.go)
     - [Longest substring after k replacements](gtci/longest_substring_k_replacement_test.go)
+    - [Longest substring after ones replacements](gtci/longest_substring_ones_replacement_test.go)
 - **Other**
   - Data structures
     - Linked List
