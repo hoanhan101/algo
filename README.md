@@ -15,7 +15,7 @@
 
 > [Buy me a coffee!](https://www.buymeacoffee.com/aHjIWu6Ck)
 
-## Total questions with solutions: 71
+## Total questions with solutions: 75
 
 - Every week, I send out 4-6 programming problems with detailed solutions, test
   cases, and program analysis, all in Go. 
@@ -173,6 +173,11 @@
     - Radix Sort
 
 ## Developing
+
+Count the number of questions:
+```
+make count
+```
 
 Clean up, lint source files, run tests and be ready for a push:
 ```

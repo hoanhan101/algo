@@ -1,6 +1,11 @@
 #
 # algo
 #
+#
+
+.PHONY: count
+count:  ## Count the number of questions
+	go run list.go
 
 .PHONY: clean
 clean:  ## Clean test cache
