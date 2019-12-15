@@ -12,10 +12,10 @@ Example:
 Approach:
 - The difference between the previous problem and this one is that the size of
   the sliding window is not fixed.
-- Can still use the similar strategy to calculate their sum and try to shrink the
-  window in such a way that:
-  - While the sum is greater or equal than the target sum, keep updating the
-    minimum value.
+- Can still use the similar strategy to add up elements until their sum is greater
+  than equal to s.
+- Shrink the window until the window's sum is smaller than s again while keep
+  updating the minimum length.
 
 Cost:
 - O(n) time, O(1) space.
@@ -51,6 +51,8 @@ func TestMinSubarray(t *testing.T) {
 }
 
 func minSubarray(a []int, s int) int {
+	// min keeps track of the minimum length for a subarray. initialize it to
+	// be the max int as a starter.
 	min := math.MaxInt64
 
 	// sum keeps track of the sum of a window while start keeps track of
