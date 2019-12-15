@@ -1,5 +1,7 @@
 /*
-	count.go counts the number of files in targeted directories..
+	count.go counts the number of files in given directories.
+	Since one file contains one problem, the program's output can also
+	tell how many questions that we have completed so far.
 */
 
 package main
