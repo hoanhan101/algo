@@ -143,7 +143,7 @@
   - Sliding Window
     - [Average of any contiguous subarray of size k](gtci/avg_subarray_test.go)
     - [Maximum sum of any contiguous subarray of size k](gtci/max_subarray_test.go)
-    - [Smallest contiguous subarray](gtci/min_subarray_test.go)
+    - [Smallest subarray with a given sum](gtci/min_subarray_test.go)
 - **Other**
   - Data structures
     - Linked List
