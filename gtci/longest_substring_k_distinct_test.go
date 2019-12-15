@@ -33,7 +33,7 @@ import (
 	"github.com/hoanhan101/algo/common"
 )
 
-func TestLongestSubstring(t *testing.T) {
+func TestLongestSubstringKDistinct(t *testing.T) {
 	tests := []struct {
 		in1      string
 		in2      int
@@ -56,12 +56,12 @@ func TestLongestSubstring(t *testing.T) {
 		common.Equal(
 			t,
 			tt.expected,
-			longestSubstring(tt.in1, tt.in2),
+			longestSubstringKDistinct(tt.in1, tt.in2),
 		)
 	}
 }
 
-func longestSubstring(s string, k int) int {
+func longestSubstringKDistinct(s string, k int) int {
 	maxLength, start := 0, 0
 
 	// char keeps track of characters' frequencies.
