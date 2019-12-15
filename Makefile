@@ -1,11 +1,10 @@
 #
-# algo
-#
+# algo cmd helpers
 #
 
 .PHONY: count
 count:  ## Count the number of questions
-	go run list.go
+	go run count.go
 
 .PHONY: clean
 clean:  ## Clean test cache

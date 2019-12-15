@@ -1,3 +1,7 @@
+/*
+	count.go counts the number of files in targeted directories..
+*/
+
 package main
 
 import (
