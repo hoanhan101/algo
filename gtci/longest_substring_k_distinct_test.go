@@ -15,7 +15,7 @@ Example:
   Explanation: Longest substring with no more than 3 distinct characters is "araac".
 
 Approach:
-- Use a hashmap to rememeber the frequency of each character we have seen.
+- Use a hashmap to remember the frequency of each character we have seen.
 - Insert characters until we have k distinct characters in the map to be consider a
   window.
 - Shrink the window until there is no more k distinct characters in the map and keep
