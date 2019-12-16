@@ -15,7 +15,7 @@
 
 > [Buy me a coffee!](https://www.buymeacoffee.com/aHjIWu6Ck)
 
-## Total questions with solutions: 75
+## Total questions with solutions: 76
 
 - Every week, I send out 4-6 programming problems with detailed solutions, test
   cases, and program analysis, all in Go. 
@@ -149,6 +149,7 @@
     - [Longest substring without repeating characters](gtci/no_repeat_substring_test.go)
     - [Longest substring after k replacements](gtci/longest_substring_k_replacement_test.go)
     - [Longest substring after ones replacements](gtci/longest_substring_ones_replacement_test.go)
+    - [Permutation in string](gtci/permutation_string_test.go)
 - **Other**
   - Data structures
     - Linked List
