@@ -27,8 +27,8 @@ test:  ## Run unit tests
 test-verbose:  ## Run tests verbosely
 	go test -v ./...
 
-.PHONY: push-ready
-push-ready: clean lint test  ## Clean up, lint source files, run tests and be ready for a push
+.PHONY: ready
+ready: clean lint test count  ## Clean up, lint source files, run tests and be ready for a push
 
 .PHONY: help
 help:  ## Print usage information
