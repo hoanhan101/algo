@@ -15,7 +15,7 @@
 
 > [Buy me a coffee!](https://www.buymeacoffee.com/aHjIWu6Ck)
 
-## Total questions with solutions: 81
+## Total questions with solutions: 82
 
 - Every week, I send out 4-6 programming problems with detailed solutions, test
   cases, and program analysis, all in Go. 
@@ -162,6 +162,8 @@
     - Triplet with smaller sum
     - Subarray with product less than a target
     - [Dutch national flag problem](gtci/dutch_flag_test.go)
+  - Fast and slow pointers
+    - [Linked list cycle](gtci/linked_list_cycle_test.go)
 - **Other**
   - Data structures
     - Linked List
