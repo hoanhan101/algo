@@ -156,6 +156,7 @@
   - Two pointers
     - [Pair with target sum](gtci/pair_target_sum_test.go)
     - [Remove duplicates](gtci/remove_duplicates_test.go)
+    - [Squaring a sorted array](gtci/square_sorted_array_test.go)
 - **Other**
   - Data structures
     - Linked List
