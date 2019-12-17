@@ -157,6 +157,11 @@
     - [Pair with target sum](gtci/pair_target_sum_test.go)
     - [Remove duplicates](gtci/remove_duplicates_test.go)
     - [Squaring a sorted array](gtci/square_sorted_array_test.go)
+    - Triplet sum to zero
+    - Triplet sum close to target
+    - Triplet with smaller sum
+    - Subarray with product less than a target
+    - Dutch national flag problem
 - **Other**
   - Data structures
     - Linked List

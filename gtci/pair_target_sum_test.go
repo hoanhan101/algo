@@ -14,7 +14,7 @@ Approach:
   them toward each other accordingly.
 
 Cost:
-- O(n) time, O(1) space.
+- O(n) time, O(n) space.
 */
 
 package leetcode

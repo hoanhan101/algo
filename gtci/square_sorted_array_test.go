@@ -15,7 +15,7 @@ Approach:
   right to left.
 
 Cost:
-- O(n) time, O(1) space.
+- O(n) time, O(n) space.
 */
 
 package leetcode
