@@ -15,7 +15,7 @@
 
 > [Buy me a coffee!](https://www.buymeacoffee.com/aHjIWu6Ck)
 
-## Total questions with solutions: 79
+## Total questions with solutions: 81
 
 - Every week, I send out 4-6 programming problems with detailed solutions, test
   cases, and program analysis, all in Go. 
@@ -161,7 +161,7 @@
     - Triplet sum close to target
     - Triplet with smaller sum
     - Subarray with product less than a target
-    - Dutch national flag problem
+    - [Dutch national flag problem](gtci/dutch_flag_test.go)
 - **Other**
   - Data structures
     - Linked List
@@ -195,7 +195,7 @@ make count
 
 Clean up, lint source files, run tests and be ready for a push:
 ```
-make push-ready
+make ready
 ```
 
 Test only:
