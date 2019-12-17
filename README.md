@@ -15,7 +15,7 @@
 
 > [Buy me a coffee!](https://www.buymeacoffee.com/aHjIWu6Ck)
 
-## Total questions with solutions: 77
+## Total questions with solutions: 78
 
 - Every week, I send out 4-6 programming problems with detailed solutions, test
   cases, and program analysis, all in Go. 
@@ -153,6 +153,8 @@
     - [String anagrams](gtci/string_anagrams_test.go)
     - Smallest window containing substring
     - Words concatenation
+  - Two pointers
+    - [Pair with target sum](gtci/pair_target_sum_test.go)
 - **Other**
   - Data structures
     - Linked List
