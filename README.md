@@ -151,6 +151,7 @@
     - [Longest substring after ones replacements](gtci/longest_substring_ones_replacement_test.go)
     - [Permutation in string](gtci/permutation_string_test.go)
     - [String anagrams](gtci/string_anagrams_test.go)
+    - Smallest window containing substring
 - **Other**
   - Data structures
     - Linked List
