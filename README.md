@@ -15,7 +15,7 @@
 
 > [Buy me a coffee!](https://www.buymeacoffee.com/aHjIWu6Ck)
 
-## Total questions with solutions: 85
+## Total questions with solutions: 86
 
 - Every week, I send out 4-6 programming problems with detailed solutions, test
   cases, and program analysis, all in Go. 
@@ -167,6 +167,7 @@
     - [Start of a linked list cycle](gtci/cycle_start_test.go)
     - [Happy number](gtci/happy_number_test.go)
     - [Middle of a linked list](gtci/middle_list_test.go)
+    - [Palindrome linked list](gtci/palindrome_list_test.go)
 - **Other**
   - Data structures
     - Linked List
