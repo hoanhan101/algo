@@ -15,7 +15,7 @@
 
 > [Buy me a coffee!](https://www.buymeacoffee.com/aHjIWu6Ck)
 
-## Total questions with solutions: 83
+## Total questions with solutions: 84
 
 - Every week, I send out 4-6 programming problems with detailed solutions, test
   cases, and program analysis, all in Go. 
@@ -165,6 +165,7 @@
   - Fast and slow pointers
     - [Linked list cycle](gtci/linked_list_cycle_test.go)
     - [Start of a linked list cycle](gtci/cycle_start_test.go)
+    - [Happy number](gtci/happy_number_test.go)
 - **Other**
   - Data structures
     - Linked List
