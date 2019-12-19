@@ -15,7 +15,7 @@
 
 > [Buy me a coffee!](https://www.buymeacoffee.com/aHjIWu6Ck)
 
-## Total questions with solutions: 87
+## Total questions with solutions: 88
 
 - Every week, I send out 4-6 programming problems with detailed solutions, test
   cases, and program analysis, all in Go. 
@@ -169,6 +169,9 @@
     - [Middle of a linked list](gtci/middle_list_test.go)
     - [Palindrome linked list](gtci/palindrome_list_test.go)
     - [Reorder a linked list](gtci/reorder_list_test.go)
+  - Merge intervals
+    - [Merge intervals](gtci/merge_intervals_test.go)
+
 - **Other**
   - Data structures
     - Linked List
