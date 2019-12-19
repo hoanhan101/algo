@@ -23,7 +23,7 @@ Cost:
 - O(n) time, O(1) space since there are only 26 characters in the alphabet.
 */
 
-package leetcode
+package gtci
 
 import (
 	"testing"

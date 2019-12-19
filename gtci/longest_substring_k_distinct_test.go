@@ -25,7 +25,7 @@ Cost:
 - O(n) time, O(k) space where k is the number of characters in the map.
 */
 
-package leetcode
+package gtci
 
 import (
 	"testing"

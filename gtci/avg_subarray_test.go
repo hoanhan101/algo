@@ -15,7 +15,7 @@ Cost:
 - O(n) time, O(k) space.
 */
 
-package leetcode
+package gtci
 
 import (
 	"testing"
