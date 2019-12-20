@@ -64,23 +64,23 @@ func mergeIntervals(intervals []interval) []interval {
 		return intervals[i].start < intervals[j].start
 	})
 
-	out := []interval{}
+	merged := []interval{}
 	for i := range intervals {
 		// push the first interval to the list so we can have a start.
 		if i == 0 {
-			out = append(out, intervals[i])
+			merged = append(merged, intervals[i])
 			continue
 		}
 
 		// if the last merged interval's end time is greater or equal than the current
 		// one's start time, merge them by using the larger ending time. else,
-		// leave them separate and push it to the output list.
-		if out[len(out)-1].end >= intervals[i].start {
-			out[len(out)-1].end = common.Max(intervals[i].end, out[len(out)-1].end)
+		// leave them separate and push it to the merged list.
+		if merged[len(merged)-1].end >= intervals[i].start {
+			merged[len(merged)-1].end = common.Max(intervals[i].end, merged[len(merged)-1].end)
 		} else {
-			out = append(out, intervals[i])
+			merged = append(merged, intervals[i])
 		}
 	}
 
-	return out
+	return merged
 }
