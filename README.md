@@ -1,4 +1,4 @@
-# Master Coding Interview Problems
+# 90+ Coding Interview Problems with Solutions
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/hoanhan101/algo)
 ](https://goreportcard.com/report/github.com/hoanhan101/algo)
@@ -23,8 +23,6 @@ one, I am including my thoughts of process on how to approach and solve it,
 adding well-documented solutions with test cases, time and space complexity
 analysis. My goal is to help you get good algorithms and data structures so
 that you can prepare better for your next coding interviews.
-
-### → Total number of questions and solutions: 90
 
 ## Table of Contents 
 
