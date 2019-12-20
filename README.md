@@ -15,7 +15,7 @@
 
 > [Buy me a coffee!](https://www.buymeacoffee.com/aHjIWu6Ck)
 
-## Total questions with solutions: 89
+## Total questions with solutions: 90
 
 - Every week, I send out 4-6 programming problems with detailed solutions, test
   cases, and program analysis, all in Go. 
@@ -172,6 +172,7 @@
   - Merge intervals
     - [Merge intervals](gtci/merge_intervals_test.go)
     - [Insert interval](gtci/insert_interval_test.go)
+    - [Intervals intersection](gtci/intervals_intersection_test.go)
 - **Other**
   - Data structures
     - Linked List
