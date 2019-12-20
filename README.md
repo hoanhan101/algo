@@ -15,7 +15,7 @@
 
 > [Buy me a coffee!](https://www.buymeacoffee.com/aHjIWu6Ck)
 
-## Total questions with solutions: 90
+## Total number of questions and solutions: 90
 
 ## Motivation
 
