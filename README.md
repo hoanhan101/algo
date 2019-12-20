@@ -24,9 +24,7 @@ adding well-documented solutions with test cases, time and space complexity
 analysis. My goal is to help you get good algorithms and data structures so
 that you can prepare better for your next coding interviews.
 
----
-### Total number of questions and solutions: 90
----
+### → Total number of questions and solutions: 90
 
 ## Table of Contents 
 
