@@ -15,8 +15,6 @@
 
 > [Buy me a coffee!](https://www.buymeacoffee.com/aHjIWu6Ck)
 
-## Total number of questions and solutions: 90
-
 ## Motivation
 
 I am building a database of most frequently appeared coding interview problems
@@ -25,6 +23,10 @@ one, I am including my thoughts of process on how to approach and solve it,
 adding well-documented solutions with test cases, time and space complexity
 analysis. My goal is to help you get good algorithms and data structures so
 that you can prepare better for your next coding interviews.
+
+---
+### Total number of questions and solutions: 90
+---
 
 ## Table of Contents 
 
