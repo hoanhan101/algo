@@ -1,4 +1,4 @@
-# 90+ Coding Interview Problems with Solutions
+# 91+ Coding Interview Problems with Solutions
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/hoanhan101/algo)
 ](https://goreportcard.com/report/github.com/hoanhan101/algo)
@@ -175,6 +175,7 @@ that you can prepare better for your next coding interviews.
     - [Merge intervals](gtci/merge_intervals_test.go)
     - [Insert interval](gtci/insert_interval_test.go)
     - [Intervals intersection](gtci/intervals_intersection_test.go)
+    - [Conflicting appointment](gtci/conflict_appointment_test.go)
 - **Other**
   - Data structures
     - Linked List
