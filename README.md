@@ -1,4 +1,4 @@
-# 93+ Coding Interview Problems with Solutions
+# 94+ Coding Interview Problems with Solutions
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/hoanhan101/algo)
 ](https://goreportcard.com/report/github.com/hoanhan101/algo)
@@ -178,6 +178,7 @@ that you can prepare better for your next coding interviews.
     - [Conflicting appointment](gtci/conflict_appointment_test.go)
     - [Cyclic start](gtci/cyclic_start_test.go)
     - [Missing number](gtci/missing_number_test.go)
+    - [Missing numbers](gtci/missing_numbers_test.go)
 - **Other**
   - Data structures
     - Linked List
