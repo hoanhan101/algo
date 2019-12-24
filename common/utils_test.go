@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestSwap(t *testing.T) {
+func TestSwapInt(t *testing.T) {
 	tests := []struct {
 		in       []int
 		expected []int
@@ -16,7 +16,24 @@ func TestSwap(t *testing.T) {
 	}
 
 	for i, tt := range tests {
-		Swap(tt.in, i, i+1)
+		SwapInt(tt.in, i, i+1)
+		Equal(t, tt.expected, tt.in)
+	}
+}
+
+func TestSwapString(t *testing.T) {
+	tests := []struct {
+		in       []string
+		expected []string
+	}{
+		{[]string{"a", "b", "c", "d", "e"}, []string{"b", "a", "c", "d", "e"}},
+		{[]string{"b", "a", "c", "d", "e"}, []string{"b", "c", "a", "d", "e"}},
+		{[]string{"b", "c", "a", "d", "e"}, []string{"b", "c", "d", "a", "e"}},
+		{[]string{"b", "c", "d", "a", "e"}, []string{"b", "c", "d", "e", "a"}},
+	}
+
+	for i, tt := range tests {
+		SwapString(tt.in, i, i+1)
 		Equal(t, tt.expected, tt.in)
 	}
 }

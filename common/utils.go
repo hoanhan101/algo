@@ -8,8 +8,15 @@ import (
 	"testing"
 )
 
-// Swap two array values given their indices.
-func Swap(a []int, i, j int) {
+// SwapInt two array values given their indices.
+func SwapInt(a []int, i, j int) {
+	tmp := a[i]
+	a[i] = a[j]
+	a[j] = tmp
+}
+
+// SwapString two array values given their indices.
+func SwapString(a []string, i, j int) {
 	tmp := a[i]
 	a[i] = a[j]
 	a[j] = tmp
