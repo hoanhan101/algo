@@ -53,7 +53,7 @@ func dutchFlagSort(a []int) {
 	for i <= end {
 		if a[i] == 0 {
 			// swap a[i] and a[start].
-			common.SwapInt(a, i, start)
+			common.Swap(a, i, start)
 
 			// increment start pointer and i.
 			i++
@@ -63,7 +63,7 @@ func dutchFlagSort(a []int) {
 			i++
 		} else if a[i] == 2 {
 			// swap a[i] and a[end].
-			common.SwapInt(a, i, end)
+			common.Swap(a, i, end)
 
 			// decrement end pointer only.
 			end--

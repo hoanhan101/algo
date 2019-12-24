@@ -8,6 +8,16 @@ import (
 	"testing"
 )
 
+// Swap two array values given their indices.
+func Swap(v interface{}, i, j int) {
+	switch a := v.(type) {
+	case []int:
+		SwapInt(a, i, j)
+	case []string:
+		SwapString(a, i, j)
+	}
+}
+
 // SwapInt two array values given their indices.
 func SwapInt(a []int, i, j int) {
 	tmp := a[i]

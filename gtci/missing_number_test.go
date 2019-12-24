@@ -51,7 +51,7 @@ func missingNumbers(nums []int) []int {
 	for i < len(nums) {
 		correctIndex := nums[i] - 1
 		if nums[i] != nums[correctIndex] {
-			common.SwapInt(nums, i, correctIndex)
+			common.Swap(nums, i, correctIndex)
 		} else {
 			i++
 		}

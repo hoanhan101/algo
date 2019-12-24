@@ -59,7 +59,7 @@ func reverseString(list []string) []string {
 
 	for start < end {
 		// swap 2 character using a temp variable.
-		common.SwapString(list, start, end)
+		common.Swap(list, start, end)
 
 		// move the cursor toward the middle.
 		start++

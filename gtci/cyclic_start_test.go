@@ -55,7 +55,7 @@ func cyclicSort(nums []int) {
 		// one that is at the correct index.
 		correctIndex := nums[i] - 1
 		if nums[i] != nums[correctIndex] {
-			common.SwapInt(nums, i, correctIndex)
+			common.Swap(nums, i, correctIndex)
 		} else {
 			i++
 		}

@@ -77,7 +77,7 @@ func reverseWord(list []string) []string {
 // reverseChar reverses the list of character for a given start and end index.
 func reverseChar(list []string, start int, end int) {
 	for start < end {
-		common.SwapString(list, start, end)
+		common.Swap(list, start, end)
 
 		start++
 		end--
