@@ -85,9 +85,7 @@ func bubbleDown(heap []int, heapSize int, index int) {
 		// if the current item is larger than both children, we're done.
 		// if not, swap with the larger child.
 		if heap[index] < heap[larger] {
-			tmp := heap[index]
-			heap[index] = heap[larger]
-			heap[larger] = tmp
+			common.SwapInt(heap, index, larger)
 		} else {
 			break
 		}

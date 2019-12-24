@@ -74,9 +74,7 @@ func reverseWordsString(in string) string {
 
 	for start < end {
 		// swap 2 character using a temp variable.
-		tmp := words[start]
-		words[start] = words[end]
-		words[end] = tmp
+		common.SwapString(words, start, end)
 
 		// move the cursor toward the middle.
 		start++

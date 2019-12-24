@@ -53,8 +53,6 @@ func selectionSort(in []int) {
 		}
 
 		// swap the minimum value with the first value.
-		tmp := in[i]
-		in[i] = in[minIndex]
-		in[minIndex] = tmp
+		common.SwapInt(in, i, minIndex)
 	}
 }

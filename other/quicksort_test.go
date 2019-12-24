@@ -75,15 +75,11 @@ func partition(in []int, start, end int) int {
 		// by swapping the item at left and right index, we move the item that
 		// is smaller than the pivot to the left half and vice versa.
 		if left < right {
-			tmp := in[left]
-			in[left] = in[right]
-			in[right] = tmp
+			common.SwapInt(in, left, right)
 		} else {
 			// once the partition is finished, move the pivot back to its final
 			// position by swapping the item at left and end index.
-			tmp := in[left]
-			in[left] = in[end]
-			in[end] = tmp
+			common.SwapInt(in, left, end)
 		}
 	}
 

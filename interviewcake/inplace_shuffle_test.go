@@ -57,9 +57,7 @@ func inplaceShuffle(list []int) []int {
 
 		// swap current value.
 		if i != randomIndex {
-			tmp := list[i]
-			list[i] = list[randomIndex]
-			list[randomIndex] = tmp
+			common.SwapInt(list, i, randomIndex)
 		}
 	}
 

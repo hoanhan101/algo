@@ -51,9 +51,7 @@ func bubbleSort(in []int) {
 		for j := 0; j < length-i-1; j++ {
 			// swap the adjacent elements if they are not in ascending order.
 			if in[j] > in[j+1] {
-				tmp := in[j]
-				in[j] = in[j+1]
-				in[j+1] = tmp
+				common.SwapInt(in, j, j+1)
 			}
 		}
 	}
