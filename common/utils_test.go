@@ -4,6 +4,23 @@ import (
 	"testing"
 )
 
+func TestSwap(t *testing.T) {
+	tests := []struct {
+		in       []int
+		expected []int
+	}{
+		{[]int{1, 2, 3, 4, 5}, []int{2, 1, 3, 4, 5}},
+		{[]int{2, 1, 3, 4, 5}, []int{2, 3, 1, 4, 5}},
+		{[]int{2, 3, 1, 4, 5}, []int{2, 3, 4, 1, 5}},
+		{[]int{2, 3, 4, 1, 5}, []int{2, 3, 4, 5, 1}},
+	}
+
+	for i, tt := range tests {
+		Swap(tt.in, i, i+1)
+		Equal(t, tt.expected, tt.in)
+	}
+}
+
 func TestMimax(t *testing.T) {
 	tests := []struct {
 		in       []int

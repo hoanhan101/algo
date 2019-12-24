@@ -8,6 +8,13 @@ import (
 	"testing"
 )
 
+// Swap two array values given their indices.
+func Swap(a []int, i, j int) {
+	tmp := a[i]
+	a[i] = a[j]
+	a[j] = tmp
+}
+
 // Mimax returns min and max from a list of integers.
 func Mimax(nums ...int) (int, int) {
 	min, max := nums[0], nums[0]
