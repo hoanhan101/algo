@@ -1,4 +1,4 @@
-# 96+ Coding Interview Problems with Solutions
+# 97+ Coding Interview Problems with Solutions
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/hoanhan101/algo)
 ](https://goreportcard.com/report/github.com/hoanhan101/algo)
@@ -181,6 +181,7 @@ that you can prepare better for your next coding interviews.
     - [Missing numbers](gtci/missing_numbers_test.go)
     - [Find duplicate](gtci/duplicate_test.go)
     - [Find duplicates](gtci/duplicates_test.go)
+    - [Find corrupt pair](gtci/corrupt_pair_test.go)
 - **Other**
   - Data structures
     - Linked List
