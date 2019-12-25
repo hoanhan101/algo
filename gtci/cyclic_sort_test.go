@@ -1,9 +1,9 @@
 /*
 Problem:
-- Given an array containing ‘n’ objects where each object, when created,
-  was assigned a unique number from 1 to ‘n’ based on their creation sequence.
-  This means that the object with sequence number ‘3’ was created just before
-  the object with sequence number ‘4’.
+- Given an array containing n objects where each object, when created,
+  was assigned a unique number from 1 to n based on their creation sequence.
+  This means that the object with sequence number 3 was created just before
+  the object with sequence number 4.
 - Write a function to sort the objects in-place on their creation sequence
   number in O(n) and without any extra space.
 
