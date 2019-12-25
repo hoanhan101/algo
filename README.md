@@ -177,7 +177,7 @@ that you can prepare better for your next coding interviews.
     - [Intervals intersection](gtci/intervals_intersection_test.go)
     - [Conflicting appointment](gtci/conflict_appointment_test.go)
   - Cyclic sort
-    - [Cyclic start](gtci/cyclic_start_test.go)
+    - [Cyclic sort](gtci/cyclic_sort_test.go)
     - [Missing number](gtci/missing_number_test.go)
     - [Missing numbers](gtci/missing_numbers_test.go)
     - [Find duplicate](gtci/duplicate_test.go)
