@@ -75,27 +75,27 @@ func traverse(root *common.TreeNode) [][]int {
 		return out
 	}
 
-	// initialize a queue by enqueuing the root.
-	queue := []*common.TreeNode{root}
+	// initialize a queue with the root.
+	queue := common.NewQueue()
+	queue.Push(root)
 
-	for len(queue) > 0 {
-		levelSize := len(queue)
+	for queue.Size() > 0 {
+		levelSize := queue.Size()
 		currentLevel := []int{}
 
 		for i := 0; i < levelSize; i++ {
-			// send the front of the queue and dequeue it.
-			current := queue[0]
+			// pop the queue and cache that value to its current level.
+			current := queue.Pop().(*common.TreeNode)
 			currentLevel = append(currentLevel, current.Value)
-			queue = queue[1:]
 
-			// enqueue its left child.
+			// push its left child.
 			if current.Left != nil {
-				queue = append(queue, current.Left)
+				queue.Push(current.Left)
 			}
 
-			// enqueue its right child.
+			// push its right child.
 			if current.Right != nil {
-				queue = append(queue, current.Right)
+				queue.Push(current.Right)
 			}
 		}
 

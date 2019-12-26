@@ -119,22 +119,22 @@ func levelorderTraverse(t *BinaryTree, ch chan int) {
 	}
 
 	// initialize a queue by enqueuing the root.
-	queue := []*BinaryTree{t}
+	queue := common.NewQueue()
+	queue.Push(t)
 
-	for len(queue) > 0 {
-		// send the front of the queue and dequeue it.
-		current := queue[0]
+	for queue.Size() > 0 {
+		// pop the queue and send that value to the channel.
+		current := queue.Pop().(*BinaryTree)
 		ch <- current.value
-		queue = queue[1:]
 
-		// enqueue its left child.
+		// push its left child.
 		if current.left != nil {
-			queue = append(queue, current.left)
+			queue.Push(current.left)
 		}
 
-		// enqueue its right child.
+		// push its right child.
 		if current.right != nil {
-			queue = append(queue, current.right)
+			queue.Push(current.right)
 		}
 	}
 }
