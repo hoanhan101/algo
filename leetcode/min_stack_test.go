@@ -22,10 +22,6 @@ import (
 func TestMinStack(t *testing.T) {
 	s := newMinStack()
 
-	// return -1 if there is nothing in the stack.
-	common.Equal(t, -1, s.pop())
-	common.Equal(t, -1, s.getMin())
-
 	s.push(4)
 	common.Equal(t, 4, s.getMin())
 
@@ -45,8 +41,6 @@ func TestMinStack(t *testing.T) {
 	common.Equal(t, 8, s.pop())
 	common.Equal(t, 4, s.getMin())
 	common.Equal(t, 4, s.pop())
-	common.Equal(t, -1, s.getMin())
-	common.Equal(t, -1, s.pop())
 }
 
 type minStack struct {
@@ -70,17 +64,17 @@ func (s *minStack) push(i int) {
 
 	// only push the item to the minStack if it smaller  or equal to the last
 	// item in minStack.
-	if s.minStack.Peek() == -1 || i <= s.minStack.Peek() {
+	if s.minStack.Size() == 0 || i <= s.minStack.Top().(int) {
 		s.minStack.Push(i)
 	}
 }
 
 func (s *minStack) pop() int {
 	// pop the item of our stack.
-	i := s.stack.Pop()
+	i := s.stack.Pop().(int)
 
 	// if popped item is the smallest item, also remove that from minStack.
-	if i == s.minStack.Peek() {
+	if i == s.minStack.Top().(int) {
 		s.minStack.Pop()
 	}
 
@@ -88,5 +82,5 @@ func (s *minStack) pop() int {
 }
 
 func (s *minStack) getMin() int {
-	return s.minStack.Peek()
+	return s.minStack.Top().(int)
 }

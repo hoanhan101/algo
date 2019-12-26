@@ -15,6 +15,9 @@ func TestQueue(t *testing.T) {
 
 	Equal(t, 3, q.Size())
 
+	Equal(t, 1, q.Front())
+	Equal(t, 3, q.Back())
+
 	Equal(t, 1, q.Pop())
 	Equal(t, 2, q.Pop())
 	Equal(t, 3, q.Pop())

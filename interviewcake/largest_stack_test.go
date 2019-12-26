@@ -25,10 +25,6 @@ import (
 func TestMaxStack(t *testing.T) {
 	s := newMaxStack()
 
-	// return -1 if there is nothing in the stack.
-	common.Equal(t, -1, s.pop())
-	common.Equal(t, -1, s.getMax())
-
 	s.push(2)
 	common.Equal(t, 2, s.getMax())
 
@@ -48,8 +44,6 @@ func TestMaxStack(t *testing.T) {
 	common.Equal(t, 6, s.pop())
 	common.Equal(t, 2, s.getMax())
 	common.Equal(t, 2, s.pop())
-	common.Equal(t, -1, s.getMax())
-	common.Equal(t, -1, s.pop())
 }
 
 type maxStack struct {
@@ -73,17 +67,17 @@ func (s *maxStack) push(i int) {
 
 	// only push the item to the maxStack if it greater or equal to the last
 	// item in maxStack.
-	if s.maxStack.Peek() == -1 || i >= s.maxStack.Peek() {
+	if s.maxStack.Size() == 0 || i >= s.maxStack.Top().(int) {
 		s.maxStack.Push(i)
 	}
 }
 
 func (s *maxStack) pop() int {
 	// pop the item of our stack.
-	i := s.stack.Pop()
+	i := s.stack.Pop().(int)
 
 	// if popped item is the largest item, also remove that from maxStack.
-	if i == s.maxStack.Peek() {
+	if i == s.maxStack.Top().(int) {
 		s.maxStack.Pop()
 	}
 
@@ -91,5 +85,5 @@ func (s *maxStack) pop() int {
 }
 
 func (s *maxStack) getMax() int {
-	return s.maxStack.Peek()
+	return s.maxStack.Top().(int)
 }

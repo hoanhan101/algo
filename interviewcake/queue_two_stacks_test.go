@@ -73,5 +73,5 @@ func (q *queueStack) dequeue() int {
 		}
 	}
 
-	return q.stack2.Pop()
+	return q.stack2.Pop().(int)
 }
