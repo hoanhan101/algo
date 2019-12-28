@@ -73,7 +73,7 @@ func (l *List) RemoveFront() interface{} {
 	return l.elements.Remove(l.elements.Front())
 }
 
-// RemoveFront removes an element at the front of the list.
+// RemoveBack removes an element at the back of the list.
 func (l *List) RemoveBack() interface{} {
 	return l.elements.Remove(l.elements.Back())
 }
