@@ -1,4 +1,4 @@
-# 99+ Coding Interview Problems with Solutions
+# 100+ Coding Interview Problems with Solutions
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/hoanhan101/algo)
 ](https://goreportcard.com/report/github.com/hoanhan101/algo)
@@ -187,6 +187,7 @@ that you can prepare better for your next coding interviews.
     - [Reverse a linked list](gtci/reverse_list_test.go)
   - Tree breath first search
     - [Binary tree level order traversal](gtci/level_order_traversal_test.go)
+    - [Zigzag traversal](gtci/zigzag_traversal_test.go)
 - **Other**
   - Data structures
     - Linked List
