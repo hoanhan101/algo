@@ -69,7 +69,7 @@ func reverseLevelOrderTraverse(root *common.TreeNode) []interface{} {
 	out := common.NewList()
 
 	if root == nil {
-		return []interface{}{}
+		return out.Slice()
 	}
 
 	// initialize a linked list with the root.
