@@ -1,4 +1,4 @@
-# 101+ Coding Interview Problems with Solutions
+# 101+ Coding Interview Problems with Detailed Solutions
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/hoanhan101/algo)
 ](https://goreportcard.com/report/github.com/hoanhan101/algo)
