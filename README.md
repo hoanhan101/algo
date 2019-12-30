@@ -1,4 +1,4 @@
-# 102+ Coding Interview Problems with Detailed Solutions
+# 103+ Coding Interview Problems with Detailed Solutions
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/hoanhan101/algo)
 ](https://goreportcard.com/report/github.com/hoanhan101/algo)
@@ -190,6 +190,7 @@ that you can prepare better for your next coding interviews.
     - [Reverse level order traversal](gtci/reverse_level_order_traversal_test.go)
     - [Zigzag traversal](gtci/zigzag_traversal_test.go)
     - [Level averages](gtci/level_avg_test.go)
+    - [Minimum depth](gtci/min_depth_test.go)
 - **Other**
   - Data structures
     - Linked List
