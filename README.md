@@ -1,4 +1,4 @@
-# 104+ Coding Interview Problems with Detailed Solutions
+# 105+ Coding Interview Problems with Detailed Solutions
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/hoanhan101/algo)
 ](https://goreportcard.com/report/github.com/hoanhan101/algo)
@@ -192,6 +192,7 @@ that you can prepare better for your next coding interviews.
     - [Level averages](gtci/level_avg_test.go)
     - [Minimum depth](gtci/min_depth_test.go)
     - [Maximum depth](gtci/max_depth_test.go)
+    - [Level order successor](gtci/level_order_successor_test.go)
 - **Other**
   - Data structures
     - Linked List
