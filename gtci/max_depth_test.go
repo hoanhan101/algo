@@ -1,7 +1,6 @@
 /*
 Problem:
-- Given a binary tree, find the minimum depth, aka the number of nodes along
-  the shortest path from the root node to the nearest leaf node.
+- Given a binary tree, find the maximum depth.
 
 Example:
 - Input:
@@ -10,12 +9,12 @@ Example:
   4       5
         6   7
       8
-  Output: 3
+  Output: 5
 
 Approach:
-- Similar to level order traversal problem, except we keep track of the minimum
-  depth at each level
-- Return it immediately once we find the leaf node.
+- Similar to minimum depth problem, we will keep traversing for all
+  levels, incrementing our maximum depth instead of returning as
+  soon as we find a leaf node.
 
 Cost:
 - O(n) time, O(n) space.
@@ -29,7 +28,7 @@ import (
 	"github.com/hoanhan101/algo/common"
 )
 
-func TestMinDepth(t *testing.T) {
+func TestMaxDepth(t *testing.T) {
 	t1 := &common.TreeNode{nil, 1, nil}
 
 	t2 := &common.TreeNode{nil, 1, nil}
@@ -63,19 +62,19 @@ func TestMinDepth(t *testing.T) {
 		{t2, 3},
 		{t3, 2},
 		{t4, 3},
-		{t5, 3},
+		{t5, 5},
 	}
 
 	for _, tt := range tests {
 		common.Equal(
 			t,
 			tt.expected,
-			minDepth(tt.in),
+			maxDepth(tt.in),
 		)
 	}
 }
 
-func minDepth(root *common.TreeNode) int {
+func maxDepth(root *common.TreeNode) int {
 	if root == nil {
 		return 0
 	}
@@ -85,22 +84,17 @@ func minDepth(root *common.TreeNode) int {
 	queue.Push(root)
 
 	// track the minimum depth.
-	minDepth := 0
+	maxDepth := 0
 
 	for queue.Size() > 0 {
-		// increase the min depth at each level.
-		minDepth++
+		// increase the max depth at each level.
+		maxDepth++
 
 		levelSize := queue.Size()
 
 		for i := 0; i < levelSize; i++ {
 			// pop the queue and cache that value to its current level.
 			current := queue.Pop().(*common.TreeNode)
-
-			// return the minimum depth if the current node is the leaf node.
-			if current.Left == nil && current.Right == nil {
-				return minDepth
-			}
 
 			// push its left child.
 			if current.Left != nil {
@@ -115,5 +109,5 @@ func minDepth(root *common.TreeNode) int {
 
 	}
 
-	return minDepth
+	return maxDepth
 }
