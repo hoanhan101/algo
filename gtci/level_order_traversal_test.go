@@ -8,7 +8,7 @@ Example:
       1
 	2   3
   4       5
-  Output: [][]int{[]int{1}, []int{2, 3}, []int{4, 5}}
+  Output: []interface{}{[]interface{}{1}, []interface{}{2, 3}, []interface{}{4, 5}}
 
 Approach:
 - Start by pushing the root node to the queue.
@@ -29,7 +29,7 @@ import (
 	"github.com/hoanhan101/algo/common"
 )
 
-func TestTraverse(t *testing.T) {
+func TestLevelOrderTraverse(t *testing.T) {
 	t1 := &common.TreeNode{}
 
 	t2 := &common.TreeNode{nil, 1, nil}
@@ -50,29 +50,29 @@ func TestTraverse(t *testing.T) {
 
 	tests := []struct {
 		in       *common.TreeNode
-		expected [][]int
+		expected []interface{}
 	}{
-		{t1, [][]int{[]int{0}}},
-		{t2, [][]int{[]int{1}}},
-		{t3, [][]int{[]int{1}, []int{2}, []int{3}}},
-		{t4, [][]int{[]int{1}, []int{2, 3}}},
-		{t5, [][]int{[]int{1}, []int{2, 3}, []int{4, 5}}},
+		{t1, []interface{}{[]interface{}{0}}},
+		{t2, []interface{}{[]interface{}{1}}},
+		{t3, []interface{}{[]interface{}{1}, []interface{}{2}, []interface{}{3}}},
+		{t4, []interface{}{[]interface{}{1}, []interface{}{2, 3}}},
+		{t5, []interface{}{[]interface{}{1}, []interface{}{2, 3}, []interface{}{4, 5}}},
 	}
 
 	for _, tt := range tests {
 		common.Equal(
 			t,
 			tt.expected,
-			traverse(tt.in),
+			levelOrderTraverse(tt.in),
 		)
 	}
 }
 
-func traverse(root *common.TreeNode) [][]int {
-	out := [][]int{}
+func levelOrderTraverse(root *common.TreeNode) []interface{} {
+	out := common.NewList()
 
 	if root == nil {
-		return out
+		return out.Slice()
 	}
 
 	// initialize a queue with the root.
@@ -81,12 +81,12 @@ func traverse(root *common.TreeNode) [][]int {
 
 	for queue.Size() > 0 {
 		levelSize := queue.Size()
-		currentLevel := []int{}
+		currentLevel := common.NewList()
 
 		for i := 0; i < levelSize; i++ {
 			// pop the queue and cache that value to its current level.
 			current := queue.Pop().(*common.TreeNode)
-			currentLevel = append(currentLevel, current.Value)
+			currentLevel.PushBack(current.Value)
 
 			// push its left child.
 			if current.Left != nil {
@@ -99,8 +99,8 @@ func traverse(root *common.TreeNode) [][]int {
 			}
 		}
 
-		out = append(out, currentLevel)
+		out.PushBack(currentLevel.Slice())
 	}
 
-	return out
+	return out.Slice()
 }
