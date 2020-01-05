@@ -1,12 +1,14 @@
-// Problem:
-// Reverse a linked list in-place.
-//
-// Solution:
-// Iterate through the list and point each node's next pointer to the previous
-// item.
-//
-// Cost:
-// O(n) time and O(1) space.
+/*
+Problem:
+- Reverse a linked list in-place.
+
+Approach:
+- Iterate through the list and point each node's next pointer to the previous
+  item.
+
+Cost:
+- O(n) time and O(1) space.
+*/
 
 package interviewcake
 
