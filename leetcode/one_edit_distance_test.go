@@ -1,6 +1,7 @@
 /*
 Problem:
 - Given two strings, determine if they are both one edit distance apart.
+
 Example:
 - Input: "abcde", "abXde"
   Output: true
