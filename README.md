@@ -24,6 +24,13 @@ adding well-documented solutions with test cases, time and space complexity
 analysis. My goal is to help you get good algorithms and data structures so
 that you can prepare better for your next coding interviews.
 
+These resources that I am looking at are:
+- [Interview Cake](https://www.interviewcake.com/)
+- [LeetCode](https://leetcode.com/)
+- Cracking the Coding Interviews
+- [Grokking the Coding Interview: Patterns for Coding Questions](https://www.educative.io/courses/grokking-the-coding-interview)
+- Elements of Programming Interviews
+
 ## Table of Contents 
 
 - **[Interview Cake](https://www.interviewcake.com/)**
