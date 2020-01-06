@@ -9,7 +9,7 @@
 [![r/compsci](https://img.shields.io/badge/r/compsci-310%2B-orange)](https://www.reddit.com/r/compsci/comments/ctyy0o/is_anyone_interested_in_weekly_coding_interview/?utm_source=share&utm_medium=web2x)
 [![r/golang](https://img.shields.io/badge/r/golang-92%2B-orange)](https://www.reddit.com/r/golang/comments/ctyw0l/is_anyone_interested_in_weekly_coding_interview/?utm_source=share&utm_medium=web2x)
 
-> [Subscribe for the newsletter here →](https://www.getrevue.co/profile/hoanhan101)
+> [Join my mail list to get latest updates here →](https://tinyletter.com/hoanhan)
 
 > [Ultimate Go study guide →](https://github.com/hoanhan101/ultimate-go)
 
@@ -274,7 +274,6 @@ make help
 - [Sorting algorithm cheat sheet](https://www.interviewcake.com/sorting-algorithm-cheat-sheet)
 - [LeetCode patterns](https://medium.com/leetcode-patterns)
 - LeetCode's 50 common interview questions
-- [Bitwise operators cheat sheet](https://www.getrevue.co/profile/hoanhan101/issues/bitwise-operators-cheat-sheet-theory-and-practice-9-202494)
 - [Practical Algorithms and Data Structures](https://bradfieldcs.com/algos/)
 
 ## Stargazers over time
