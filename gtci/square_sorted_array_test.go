@@ -2,7 +2,9 @@
 Problem:
 - Given a sorted array, create a new array containing squares of all the
   number of the input array in the sorted order.
-- Note that the input can have negative numbers.
+
+Assumption:
+- The input can have negative numbers.
 
 Example:
 - Input: []int{-2, -1, 0, 1, 2}
