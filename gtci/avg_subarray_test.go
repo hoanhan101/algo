@@ -55,7 +55,7 @@ func avgSubarray(a []int, k int) []float64 {
 
 		// slide the window once we hit its limit.
 		if end >= k-1 {
-			out = append(out, float64(sum)/5.0)
+			out = append(out, float64(sum)/float64(k))
 
 			// subtract the start element and increase the start index to move
 			// the window ahead by one element.
