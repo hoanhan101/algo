@@ -48,11 +48,6 @@ func TestReverseString(t *testing.T) {
 }
 
 func reverseString(list []string) []string {
-	// check edge cases.
-	if len(list) == 0 || len(list) == 1 {
-		return list
-	}
-
 	// initialize start and end index pointer.
 	start := 0
 	end := len(list) - 1
