@@ -44,6 +44,7 @@ func TestTwoSumII(t *testing.T) {
 		{[]int{2, 5}, 6, []int{0, 0}},
 		{[]int{2, 3, 4}, 6, []int{0, 2}},
 		{[]int{2, 5, 8}, 6, []int{0, 0}},
+		{[]int{2, 3, 4, 10}, 6, []int{0, 2}},
 	}
 
 	for _, tt := range tests {
@@ -58,7 +59,7 @@ func twoSumII(nums []int, target int) []int {
 	end := len(nums) - 1
 	out := make([]int, 2)
 
-	if start < end {
+	for start < end {
 		sum := nums[start] + nums[end]
 		if sum < target {
 			start++
@@ -67,6 +68,7 @@ func twoSumII(nums []int, target int) []int {
 		} else {
 			out[0] = start
 			out[1] = end
+			break
 		}
 	}
 
