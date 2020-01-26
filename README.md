@@ -1,5 +1,6 @@
 # 107+ Coding Interview Problems with Detailed Solutions
 
+[![Build Status](https://travis-ci.com/hoanhan101/algo.svg?branch=master)](https://travis-ci.com/hoanhan101/algo)
 [![Go Report Card](https://goreportcard.com/badge/github.com/hoanhan101/algo)
 ](https://goreportcard.com/report/github.com/hoanhan101/algo)
 ![](https://img.shields.io/github/stars/hoanhan101/algo)
