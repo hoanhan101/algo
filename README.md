@@ -30,6 +30,9 @@ These resources that I am looking at are:
 - [Grokking the Coding Interview: Patterns for Coding Questions](https://www.educative.io/courses/grokking-the-coding-interview)
 - Elements of Programming Interviews
 
+If you’re interested in getting updates for this, feel free to join my [mail
+list here →](https://tinyletter.com/hoanhan)
+
 ## Table of Contents 
 
 - **[Interview Cake](https://www.interviewcake.com/)**
