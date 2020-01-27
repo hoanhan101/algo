@@ -99,7 +99,7 @@ func addTwoNumbers(l1, l2 *common.ListNode) *common.ListNode {
 		carry = sum / 10
 
 		// add a next node the current node.
-		current.Next = &common.ListNode{digit, nil}
+		current.Next = &common.ListNode{Value: digit, Next: nil}
 		current = current.Next
 
 		// keep traversing as long as we have not reached the end.
@@ -114,7 +114,7 @@ func addTwoNumbers(l1, l2 *common.ListNode) *common.ListNode {
 	// if the sum have an extra carry at the end, simply make a new node and
 	// add it in the end.
 	if carry > 0 {
-		current.Next = &common.ListNode{carry, nil}
+		current.Next = &common.ListNode{Value: carry, Next: nil}
 	}
 
 	return dummyHead.Next

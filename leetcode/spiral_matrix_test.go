@@ -136,7 +136,7 @@ func spiralOrder(matrix [][]int) []int {
 	row := 0
 	col := -1
 
-	for true {
+	for {
 		// add all values in the row by keeping the row position and increasing
 		// the col position.
 		for i := 0; i < n; i++ {

@@ -95,7 +95,7 @@ func cycleLength(head *common.ListNode) int {
 	length := 0
 
 	current := head
-	for true {
+	for {
 		current = current.Next
 		length++
 

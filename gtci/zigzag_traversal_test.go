@@ -32,21 +32,21 @@ import (
 func TestZigzagTraverse(t *testing.T) {
 	t1 := &common.TreeNode{}
 
-	t2 := &common.TreeNode{nil, 1, nil}
+	t2 := &common.TreeNode{Left: nil, Value: 1, Right: nil}
 
-	t3 := &common.TreeNode{nil, 1, nil}
-	t3.Left = &common.TreeNode{nil, 2, nil}
-	t3.Left.Right = &common.TreeNode{nil, 3, nil}
+	t3 := &common.TreeNode{Left: nil, Value: 1, Right: nil}
+	t3.Left = &common.TreeNode{Left: nil, Value: 2, Right: nil}
+	t3.Left.Right = &common.TreeNode{Left: nil, Value: 3, Right: nil}
 
-	t4 := &common.TreeNode{nil, 1, nil}
-	t4.Left = &common.TreeNode{nil, 2, nil}
-	t4.Right = &common.TreeNode{nil, 3, nil}
+	t4 := &common.TreeNode{Left: nil, Value: 1, Right: nil}
+	t4.Left = &common.TreeNode{Left: nil, Value: 2, Right: nil}
+	t4.Right = &common.TreeNode{Left: nil, Value: 3, Right: nil}
 
-	t5 := &common.TreeNode{nil, 1, nil}
-	t5.Left = &common.TreeNode{nil, 2, nil}
-	t5.Right = &common.TreeNode{nil, 3, nil}
-	t5.Left.Left = &common.TreeNode{nil, 4, nil}
-	t5.Right.Right = &common.TreeNode{nil, 5, nil}
+	t5 := &common.TreeNode{Left: nil, Value: 1, Right: nil}
+	t5.Left = &common.TreeNode{Left: nil, Value: 2, Right: nil}
+	t5.Right = &common.TreeNode{Left: nil, Value: 3, Right: nil}
+	t5.Left.Left = &common.TreeNode{Left: nil, Value: 4, Right: nil}
+	t5.Right.Right = &common.TreeNode{Left: nil, Value: 5, Right: nil}
 
 	tests := []struct {
 		in       *common.TreeNode

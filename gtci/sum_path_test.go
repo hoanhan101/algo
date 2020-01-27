@@ -29,19 +29,19 @@ import (
 )
 
 func TestSumPath(t *testing.T) {
-	t1 := &common.TreeNode{nil, 1, nil}
-	t1.Left = &common.TreeNode{nil, 2, nil}
-	t1.Right = &common.TreeNode{nil, 3, nil}
-	t1.Left.Left = &common.TreeNode{nil, 4, nil}
-	t1.Left.Right = &common.TreeNode{nil, 5, nil}
-	t1.Right.Left = &common.TreeNode{nil, 6, nil}
-	t1.Right.Right = &common.TreeNode{nil, 7, nil}
+	t1 := &common.TreeNode{Left: nil, Value: 1, Right: nil}
+	t1.Left = &common.TreeNode{Left: nil, Value: 2, Right: nil}
+	t1.Right = &common.TreeNode{Left: nil, Value: 3, Right: nil}
+	t1.Left.Left = &common.TreeNode{Left: nil, Value: 4, Right: nil}
+	t1.Left.Right = &common.TreeNode{Left: nil, Value: 5, Right: nil}
+	t1.Right.Left = &common.TreeNode{Left: nil, Value: 6, Right: nil}
+	t1.Right.Right = &common.TreeNode{Left: nil, Value: 7, Right: nil}
 
-	t2 := &common.TreeNode{nil, 1, nil}
-	t2.Left = &common.TreeNode{nil, 2, nil}
-	t2.Right = &common.TreeNode{nil, 3, nil}
-	t2.Left.Left = &common.TreeNode{nil, 4, nil}
-	t2.Right.Right = &common.TreeNode{nil, 7, nil}
+	t2 := &common.TreeNode{Left: nil, Value: 1, Right: nil}
+	t2.Left = &common.TreeNode{Left: nil, Value: 2, Right: nil}
+	t2.Right = &common.TreeNode{Left: nil, Value: 3, Right: nil}
+	t2.Left.Left = &common.TreeNode{Left: nil, Value: 4, Right: nil}
+	t2.Right.Right = &common.TreeNode{Left: nil, Value: 7, Right: nil}
 
 	tests := []struct {
 		in       *common.TreeNode

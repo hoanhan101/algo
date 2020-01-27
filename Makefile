@@ -17,7 +17,7 @@ cover: test  ## Run unit tests and open the coverage report
 
 .PHONY: lint
 lint:  ## Lint source files
-	go get -u golang.org/x/lint/golint && golint -set_exit_status ./...
+	golangci-lint run
 
 .PHONY: test
 test:  ## Run unit tests

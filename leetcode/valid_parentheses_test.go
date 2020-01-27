@@ -60,11 +60,7 @@ func isValid(s []string) bool {
 		}
 	}
 
-	if stack.size() == 0 {
-		return true
-	}
-
-	return false
+	return stack.size() == 0
 }
 
 // stack represent a stack data structure.

@@ -53,7 +53,7 @@ func TestIsHappy(t *testing.T) {
 func isHappy(num int) bool {
 	slow, fast := num, num
 
-	for true {
+	for {
 		slow = squareSum(slow)
 		fast = squareSum(squareSum(fast))
 

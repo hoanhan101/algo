@@ -19,37 +19,36 @@ import (
 )
 
 func TestIsBalanced(t *testing.T) {
-	// define test cases' input.
-	t1 := &common.TreeNode{nil, 1, nil}
+	t1 := &common.TreeNode{Left: nil, Value: 1, Right: nil}
 
-	t2 := &common.TreeNode{nil, 1, nil}
-	t2.Right = &common.TreeNode{nil, 2, nil}
+	t2 := &common.TreeNode{Left: nil, Value: 1, Right: nil}
+	t2.Right = &common.TreeNode{Left: nil, Value: 2, Right: nil}
 
-	t3 := &common.TreeNode{nil, 1, nil}
-	t3.Right = &common.TreeNode{nil, 2, nil}
-	t3.Right.Right = &common.TreeNode{nil, 3, nil}
+	t3 := &common.TreeNode{Left: nil, Value: 1, Right: nil}
+	t3.Right = &common.TreeNode{Left: nil, Value: 2, Right: nil}
+	t3.Right.Right = &common.TreeNode{Left: nil, Value: 3, Right: nil}
 
-	t4 := &common.TreeNode{nil, 1, nil}
-	t4.Left = &common.TreeNode{nil, 2, nil}
-	t4.Right = &common.TreeNode{nil, 3, nil}
-	t4.Right.Right = &common.TreeNode{nil, 4, nil}
+	t4 := &common.TreeNode{Left: nil, Value: 1, Right: nil}
+	t4.Left = &common.TreeNode{Left: nil, Value: 2, Right: nil}
+	t4.Right = &common.TreeNode{Left: nil, Value: 3, Right: nil}
+	t4.Right.Right = &common.TreeNode{Left: nil, Value: 4, Right: nil}
 
-	t5 := &common.TreeNode{nil, 1, nil}
-	t5.Left = &common.TreeNode{nil, 2, nil}
-	t5.Right = &common.TreeNode{nil, 3, nil}
-	t5.Right.Right = &common.TreeNode{nil, 4, nil}
-	t5.Right.Right.Right = &common.TreeNode{nil, 5, nil}
+	t5 := &common.TreeNode{Left: nil, Value: 1, Right: nil}
+	t5.Left = &common.TreeNode{Left: nil, Value: 2, Right: nil}
+	t5.Right = &common.TreeNode{Left: nil, Value: 3, Right: nil}
+	t5.Right.Right = &common.TreeNode{Left: nil, Value: 4, Right: nil}
+	t5.Right.Right.Right = &common.TreeNode{Left: nil, Value: 5, Right: nil}
 
-	t6 := &common.TreeNode{nil, 1, nil}
-	t6.Left = &common.TreeNode{nil, 2, nil}
-	t6.Left.Left = &common.TreeNode{nil, 4, nil}
-	t6.Left.Right = &common.TreeNode{nil, 5, nil}
-	t6.Left.Right.Right = &common.TreeNode{nil, 6, nil}
-	t6.Right = &common.TreeNode{nil, 3, nil}
-	t6.Right.Right = &common.TreeNode{nil, 7, nil}
-	t6.Right.Right.Left = &common.TreeNode{nil, 8, nil}
-	t6.Right.Right.Right = &common.TreeNode{nil, 9, nil}
-	t6.Right.Right.Right.Right = &common.TreeNode{nil, 10, nil}
+	t6 := &common.TreeNode{Left: nil, Value: 1, Right: nil}
+	t6.Left = &common.TreeNode{Left: nil, Value: 2, Right: nil}
+	t6.Left.Left = &common.TreeNode{Left: nil, Value: 4, Right: nil}
+	t6.Left.Right = &common.TreeNode{Left: nil, Value: 5, Right: nil}
+	t6.Left.Right.Right = &common.TreeNode{Left: nil, Value: 6, Right: nil}
+	t6.Right = &common.TreeNode{Left: nil, Value: 3, Right: nil}
+	t6.Right.Right = &common.TreeNode{Left: nil, Value: 7, Right: nil}
+	t6.Right.Right.Left = &common.TreeNode{Left: nil, Value: 8, Right: nil}
+	t6.Right.Right.Right = &common.TreeNode{Left: nil, Value: 9, Right: nil}
+	t6.Right.Right.Right.Right = &common.TreeNode{Left: nil, Value: 10, Right: nil}
 
 	tests := []struct {
 		in       *common.TreeNode
@@ -73,11 +72,7 @@ func TestIsBalanced(t *testing.T) {
 }
 
 func isBalanced(t *common.TreeNode) bool {
-	if maxDepth(t) != -1 {
-		return true
-	}
-
-	return false
+	return maxDepth(t) != -1
 }
 
 func maxDepth(t *common.TreeNode) int {

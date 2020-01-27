@@ -69,9 +69,5 @@ func hasPalindromePermutation(in string) bool {
 	}
 
 	// if we're left with less or equal than a pair, we have a palindrome.
-	if len(m) <= 1 {
-		return true
-	}
-
-	return false
+	return len(m) <= 1
 }

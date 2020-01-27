@@ -128,20 +128,12 @@ func AbsDiff(a, b int) int {
 
 // IsMoreThan1Apart checks if two integers are more than 1 apart.
 func IsMoreThan1Apart(a, b int) bool {
-	if AbsDiff(a, b) > 1 {
-		return true
-	}
-
-	return false
+	return AbsDiff(a, b) > 1
 }
 
 // IsLessThan1Apart checks if two integers are less or equal than 1 apart.
 func IsLessThan1Apart(a, b int) bool {
-	if AbsDiff(a, b) <= 1 {
-		return true
-	}
-
-	return false
+	return AbsDiff(a, b) <= 1
 }
 
 // Log prints out the map of logging context and value.
