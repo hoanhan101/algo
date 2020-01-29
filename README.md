@@ -8,7 +8,7 @@
 [![hackernews](https://img.shields.io/badge/hackernews-300%2B-orange)](https://news.ycombinator.com/item?id=21975463)
 [![r/golang](https://img.shields.io/badge/r/golang-200%2B-orange)](https://www.reddit.com/r/golang/comments/el4vut/101_coding_interview_problems_with_detailed/)
 
-> [Join my mail list to get latest updates here →](https://tinyletter.com/hoanhan)
+> [Join my mailing list to get latest updates here →](https://tinyletter.com/hoanhan)
 
 > [Ultimate Go study guide →](https://github.com/hoanhan101/ultimate-go)
 
@@ -30,7 +30,7 @@ These resources that I am looking at are:
 - [Grokking the Coding Interview: Patterns for Coding Questions](https://www.educative.io/courses/grokking-the-coding-interview)
 - Elements of Programming Interviews
 
-If you’re interested in getting updates for this, feel free to join my [mail
+If you’re interested in getting updates for this, feel free to join my [mailing 
 list here →](https://tinyletter.com/hoanhan)
 
 ## Table of Contents 
