@@ -16,9 +16,9 @@ Approach:
   preceding numbers.
 
 Cost:
-- Brute-force approach: O(n^3) time, O(n) space.
-- Top-down approach: O(n) time, O(n) space.
-- Bottom-up approach: O(n) time, O(1) space.
+- Brute-force: O(n^3) time, O(n) space.
+- Top-down: O(n) time, O(n) space.
+- Bottom-up: O(n) time, O(1) space.
 */
 
 package gtci

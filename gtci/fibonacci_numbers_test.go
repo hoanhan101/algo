@@ -10,13 +10,10 @@ Example:
 - Input: 7
   Output: 13
 
-Top-down approach:
-- Use an array to cache the calculated values as we go down recursively.
-- Cost: O(n) time, O(n) space.
-
-Bottom-up approach:
-- Cache the last 2 numbers as we go up.
-- Cost: O(n) time, O(1) space.
+Cost:
+- Brute-force: O(n^2) time, O(n) space.
+- Top-down: O(n) time, O(n) space.
+- Bottom-up: O(n) time, O(1) space.
 */
 
 package gtci
@@ -27,7 +24,7 @@ import (
 	"github.com/hoanhan101/algo/common"
 )
 
-func TestFibonacciNumbers(t *testing.T) {
+func TestCalculateFibonacci(t *testing.T) {
 	tests := []struct {
 		in       int
 		expected int
@@ -42,32 +39,32 @@ func TestFibonacciNumbers(t *testing.T) {
 		common.Equal(
 			t,
 			tt.expected,
-			bruteForceFib(tt.in),
+			calculateFibBF(tt.in),
 		)
 
 		common.Equal(
 			t,
 			tt.expected,
-			topDownFib(tt.in),
+			calculateFibTD(tt.in),
 		)
 
 		common.Equal(
 			t,
 			tt.expected,
-			bottomUpFib(tt.in),
+			calculateFibBU(tt.in),
 		)
 	}
 }
 
-func bruteForceFib(n int) int {
+func calculateFibBF(n int) int {
 	if n < 2 {
 		return n
 	}
 
-	return bruteForceFib(n-1) + bruteForceFib(n-2)
+	return calculateFibBF(n-1) + calculateFibBF(n-2)
 }
 
-func topDownFib(n int) int {
+func calculateFibTD(n int) int {
 	// memo caches the calculated values in an array where each index represents
 	// the nth number and its index represents the calculated value.
 	memo := make([]int, n+1)
@@ -89,7 +86,7 @@ func memoRecur(memo []int, n int) int {
 	return memo[n]
 }
 
-func bottomUpFib(n int) int {
+func calculateFibBU(n int) int {
 	if n < 2 {
 		return n
 	}
