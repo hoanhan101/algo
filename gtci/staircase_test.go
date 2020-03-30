@@ -4,10 +4,10 @@ Problem:
   where at each step you can either take 1, 2 or 3 steps.
 
 Example:
-- Input: n=3
+- Input: 3
   Output: 4
   Explanation: 4 ways are 1-1-1, 1-2, 2-1, 3
-- Input: n=4
+- Input: 4
   Output: 7
   Explanation: 7 ways are 1-1-1-1, 1-1-2, 1-2-1, 2-1-1, 2-2, 1-3, 3-1
 
