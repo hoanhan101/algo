@@ -1,4 +1,4 @@
-# 109+ Coding Interview Problems with Detailed Solutions
+# 110+ Coding Interview Problems with Detailed Solutions
 
 [![Build Status](https://travis-ci.com/hoanhan101/algo.svg?branch=master)](https://travis-ci.com/hoanhan101/algo)
 [![Go Report Card](https://goreportcard.com/badge/github.com/hoanhan101/algo)
@@ -209,6 +209,7 @@ list here →](https://tinyletter.com/hoanhan)
   - Fibonacci numbers
     - [Fibonacci numbers](gtci/fibonacci_numbers_test.go)
     - [Staircase](gtci/staircase_test.go)
+    - [Number factors](gtci/number_factors_test.go)
 - **Other**
   - Data structures
     - Linked List
