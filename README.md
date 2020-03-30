@@ -1,4 +1,4 @@
-# 108+ Coding Interview Problems with Detailed Solutions
+# 109+ Coding Interview Problems with Detailed Solutions
 
 [![Build Status](https://travis-ci.com/hoanhan101/algo.svg?branch=master)](https://travis-ci.com/hoanhan101/algo)
 [![Go Report Card](https://goreportcard.com/badge/github.com/hoanhan101/algo)
@@ -208,6 +208,7 @@ list here →](https://tinyletter.com/hoanhan)
 - **[Grokking Dynamic Programming Patterns](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews)**
   - Fibonacci numbers
     - [Fibonacci numbers](gtci/fibonacci_numbers_test.go)
+    - [Staircase](gtci/staircase_test.go)
 - **Other**
   - Data structures
     - Linked List
