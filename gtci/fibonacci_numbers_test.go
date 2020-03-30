@@ -11,13 +11,12 @@ Example:
   Output: 13
 
 Top-down approach:
--
+- Use an array to cache the calculated values as we go down recursively.
+- Cost: O(n) time, O(n) space.
 
 Bottom-up approach:
--
-
-Cost:
-- O(n) time, O(1) space.
+- Cache the last 2 numbers as we go up.
+- Cost: O(n) time, O(1) space.
 */
 
 package gtci
