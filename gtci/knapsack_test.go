@@ -12,8 +12,7 @@ Example:
     & knapsack capacity = 5
   Output: banana & melon
   Explanation: banana and melon gives the maximum profit of 10 and weight exactly 5
-- Input:
-	weight :   1   |    6   |    10   |   16
+- Input: weight :   1   |    6   |    10   |   16
 	profit :   1   |    2   |    3    |   5
     & knapsack capacity = 7
   Output: 22
@@ -58,25 +57,19 @@ func TestKnapsack(t *testing.T) {
 			knapsackBF(tt.in1, tt.in2, tt.in3),
 		)
 
-		// common.Equal(
-		// 	t,
-		// 	tt.expected,
-		// 	knapsackTD(tt.in),
-		// )
-
-		// common.Equal(
-		// 	t,
-		// 	tt.expected,
-		// 	knapsackBU(tt.in),
-		// )
+		common.Equal(
+			t,
+			tt.expected,
+			knapsackTD(tt.in1, tt.in2, tt.in3),
+		)
 	}
 }
 
 func knapsackBF(profits, weights []int, capacity int) int {
-	return knapsackBFRecursive(profits, weights, capacity, 0)
+	return knapsackBFRecur(profits, weights, capacity, 0)
 }
 
-func knapsackBFRecursive(profits, weights []int, capacity, currentIndex int) int {
+func knapsackBFRecur(profits, weights []int, capacity, currentIndex int) int {
 	if capacity <= 0 || currentIndex >= len(profits) {
 		return 0
 	}
@@ -86,11 +79,44 @@ func knapsackBFRecursive(profits, weights []int, capacity, currentIndex int) int
 	// the remaining capacity and items.
 	profit1 := 0
 	if weights[currentIndex] <= capacity {
-		profit1 = profits[currentIndex] + knapsackBFRecursive(profits, weights, capacity-weights[currentIndex], currentIndex+1)
+		profit1 = profits[currentIndex] + knapsackBFRecur(profits, weights, capacity-weights[currentIndex], currentIndex+1)
 	}
 
 	// second, recursively process after excluding the item at the current index.
-	profit2 := knapsackBFRecursive(profits, weights, capacity, currentIndex+1)
+	profit2 := knapsackBFRecur(profits, weights, capacity, currentIndex+1)
+
+	return common.Max(profit1, profit2)
+}
+
+func knapsackTD(profits, weights []int, capacity int) int {
+	// since for each recursive call, only capacity and current index change,
+	// can have a 2D array for memoization.
+	memo := make([][]int, len(profits))
+	for i := range memo {
+		memo[i] = make([]int, capacity+1)
+	}
+
+	return knapsackTDMemo(memo, profits, weights, capacity, 0)
+}
+
+func knapsackTDMemo(memo [][]int, profits, weights []int, capacity, currentIndex int) int {
+	if capacity <= 0 || currentIndex >= len(profits) {
+		return 0
+	}
+
+	// return immediately if found in cache.
+	if memo[currentIndex][capacity] != 0 {
+		return memo[currentIndex][capacity]
+	}
+
+	// calculate the profit for the item at the current index.
+	profit1 := 0
+	if weights[currentIndex] <= capacity {
+		profit1 = profits[currentIndex] + knapsackTDMemo(memo, profits, weights, capacity-weights[currentIndex], currentIndex+1)
+	}
+
+	// process after excluding the item at the current index.
+	profit2 := knapsackTDMemo(memo, profits, weights, capacity, currentIndex+1)
 
 	return common.Max(profit1, profit2)
 }
