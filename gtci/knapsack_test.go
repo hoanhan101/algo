@@ -27,8 +27,8 @@ Brute-force approach:
 
 Cost:
 - Brute-force: O(2^n) time, O(n) space.
-- Top-down: TODO
-- Bottom-up: TODO
+- Top-down: O(n*c) time, O(n*c) space where n is the number of items, c is the knapsack capacity.
+- Bottom-up: O(n*c) time, O(n*c) space where n is the number of items, c is the knapsack capacity.
 */
 
 package gtci
@@ -46,8 +46,16 @@ func TestKnapsack(t *testing.T) {
 		in3      int
 		expected int
 	}{
-		{[]int{1, 6, 10, 16}, []int{1, 2, 3, 5}, 7, 22},
+		{[]int{1, 6, 10, 16}, []int{1, 2, 3, 5}, -1, 0},
+		{[]int{1, 6, 10, 16}, []int{1, 2, 3, 5}, 0, 0},
+		{[]int{1, 6, 10, 16}, []int{1, 2, 3, 5}, 1, 1},
+		{[]int{1, 6, 10, 16}, []int{1, 2, 3, 5}, 2, 6},
+		{[]int{1, 6, 10, 16}, []int{1, 2, 3, 5}, 3, 10},
+		{[]int{1, 6, 10, 16}, []int{1, 2, 3, 5}, 4, 11},
+		{[]int{1, 6, 10, 16}, []int{1, 2, 3, 5}, 5, 16},
 		{[]int{1, 6, 10, 16}, []int{1, 2, 3, 5}, 6, 17},
+		{[]int{1, 6, 10, 16}, []int{1, 2, 3, 5}, 7, 22},
+		{[]int{1, 6, 10, 16}, []int{1, 2, 3, 5}, 8, 26},
 	}
 
 	for _, tt := range tests {
@@ -61,6 +69,12 @@ func TestKnapsack(t *testing.T) {
 			t,
 			tt.expected,
 			knapsackTD(tt.in1, tt.in2, tt.in3),
+		)
+
+		common.Equal(
+			t,
+			tt.expected,
+			knapsackBU(tt.in1, tt.in2, tt.in3),
 		)
 	}
 }
@@ -119,4 +133,43 @@ func knapsackTDMemo(memo [][]int, profits, weights []int, capacity, currentIndex
 	profit2 := knapsackTDMemo(memo, profits, weights, capacity, currentIndex+1)
 
 	return common.Max(profit1, profit2)
+}
+
+func knapsackBU(profits, weights []int, capacity int) int {
+	n := len(profits)
+	if capacity <= 0 || n == 0 || len(weights) != n {
+		return 0
+	}
+
+	memo := make([][]int, n)
+	for i := range memo {
+		memo[i] = make([]int, capacity+1)
+	}
+
+	// if we have only one weight, we will take it if it is not more than the
+	// capacity.
+	for i := 0; i < capacity+1; i++ {
+		if weights[0] <= i {
+			memo[0][i] = profits[0]
+		}
+	}
+
+	for i := 1; i < n; i++ {
+		for c := 1; c < capacity+1; c++ {
+			profit1, profit2 := 0, 0
+
+			// include the item if it's not bigger than the capacity.
+			if weights[i] <= c {
+				profit1 = profits[i] + memo[i-1][c-weights[i]]
+			}
+
+			// exclude the item.
+			profit2 = memo[i-1][c]
+
+			// take the maximum.
+			memo[i][c] = common.Max(profit1, profit2)
+		}
+	}
+
+	return memo[n-1][capacity]
 }
