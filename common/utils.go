@@ -8,6 +8,16 @@ import (
 	"testing"
 )
 
+// SumInt returns the sum of all integers in a given slice.
+func SumInt(nums []int) int {
+	sum := 0
+	for _, v := range nums {
+		sum += v
+	}
+
+	return sum
+}
+
 // Swap two array values given their indices.
 func Swap(v interface{}, i, j int) {
 	switch a := v.(type) {

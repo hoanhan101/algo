@@ -4,6 +4,22 @@ import (
 	"testing"
 )
 
+func TestSumInt(t *testing.T) {
+	tests := []struct {
+		in       []int
+		expected int
+	}{
+		{[]int{0}, 0},
+		{[]int{0, 1}, 1},
+		{[]int{0, 1, 2}, 3},
+		{[]int{0, 1, 2, 3}, 6},
+	}
+
+	for _, tt := range tests {
+		Equal(t, tt.expected, SumInt(tt.in))
+	}
+}
+
 func TestSwapInt(t *testing.T) {
 	tests := []struct {
 		in       []int

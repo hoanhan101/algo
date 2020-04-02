@@ -64,7 +64,7 @@ func TestCanPartition(t *testing.T) {
 }
 
 func canPartitionBF(nums []int) bool {
-	sum := sumInt(nums)
+	sum := common.SumInt(nums)
 
 	// return false if the total sum is odd since we cannot have 2 subsets with equal sum.
 	if sum%2 != 0 {
@@ -94,7 +94,7 @@ func canPartitionBFRecur(nums []int, sum, currentIndex int) bool {
 }
 
 func canPartitionTD(nums []int) bool {
-	sum := sumInt(nums)
+	sum := common.SumInt(nums)
 
 	if sum%2 != 0 {
 		return false
@@ -134,7 +134,7 @@ func canPartitionTDMemo(memo [][]int, nums []int, sum, currentIndex int) int {
 
 // TODO - document the approach.
 func canPartitionBU(nums []int) bool {
-	sum := sumInt(nums)
+	sum := common.SumInt(nums)
 
 	if sum%2 != 0 {
 		return false
@@ -167,13 +167,4 @@ func canPartitionBU(nums []int) bool {
 	}
 
 	return tabu[n-1][sum]
-}
-
-func sumInt(nums []int) int {
-	sum := 0
-	for _, v := range nums {
-		sum += v
-	}
-
-	return sum
 }
