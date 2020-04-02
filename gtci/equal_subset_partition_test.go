@@ -1,34 +1,27 @@
 /*
-Problem: TODO
-- Given a set of items, each with a weight and a value, determine the number of
-  each item to include in a collection so that the total weight is less or equal
-  than a given limit and the total value is as large as possible.
+Problem:
+- Given a set of positive numbers, find if we can partition it into two subsets
+  such that the sum of elements in both the subsets is equal.
 
-Example: TODO
-- Input: a set of fruit items, with their weights and profits as follow
-    fruit  : apple | orange | banana | melon
-	weight :   2   |    3   |    1   |   4
-	profit :   4   |    5   |    3   |   7
-    & knapsack capacity = 5
-  Output: banana & melon
-  Explanation: banana and melon gives the maximum profit of 10 and weight exactly 5
-- Input: weight :   1   |    6   |    10   |   16
-	profit :   1   |    2   |    3    |   5
-    & knapsack capacity = 7
-  Output: 22
-  Explanation: 16+6 gives the largest profit and weights exactly 7
+Example:
+- Input: []int{1, 2, 3, 4}
+  Output: true
+  Explanation: The set can be partitioned into {1, 4} and {2, 3}
+- Input: []int{1, 1, 3, 4, 7}
+  Output: true
+  Explanation: The set can be partitioned into {1, 3, 4} and {1, 7}
+- Input: []int{2, 3, 4, 6}
+  Output: false
 
-Brute-force approach: TODO
-- First, calculate the profit for the item at the current index.
-- If the total weight does not exceed the capacity, recursively process
-  the remaining capacity and items.
-- Second, recursively process after excluding the item at the current index.
-- Return the higher profit between these two.
+Brute-force approach:
+- Assume if s is the total sum of all numbers, the two equal subset must have a sum of s/2.
+- Use Knapsack approach, create a set that includes i which does not exceed s/2 and a
+  set that does not.
 
-Cost: TODO
+Cost:
 - Brute-force: O(2^n) time, O(n) space.
-- Top-down: O(n*c) time, O(n*c) space where n is the number of items, c is the knapsack capacity.
-- Bottom-up: O(n*c) time, O(n*c) space where n is the number of items, c is the knapsack capacity.
+- Top-down: O(n*s) time, O(n*s) space where n is the number of items, s is the total sum of numbers.
+- Bottom-up: O(n*s) time, O(n*s) space where n is the number of items, s is the total sum of numbers.
 */
 
 package gtci
@@ -55,21 +48,30 @@ func TestCanPartition(t *testing.T) {
 			tt.expected,
 			canPartitionBF(tt.in),
 		)
+
+		common.Equal(
+			t,
+			tt.expected,
+			canPartitionTD(tt.in),
+		)
+
+		common.Equal(
+			t,
+			tt.expected,
+			canPartitionBU(tt.in),
+		)
 	}
 }
 
 func canPartitionBF(nums []int) bool {
-	s := 0
-	for _, v := range nums {
-		s += v
-	}
+	sum := sumInt(nums)
 
-	// return false if the total sum is odd.
-	if s%2 != 0 {
+	// return false if the total sum is odd since we cannot have 2 subsets with equal sum.
+	if sum%2 != 0 {
 		return false
 	}
 
-	return canPartitionBFRecur(nums, s/2, 0)
+	return canPartitionBFRecur(nums, sum/2, 0)
 }
 
 func canPartitionBFRecur(nums []int, sum, currentIndex int) bool {
@@ -91,74 +93,87 @@ func canPartitionBFRecur(nums []int, sum, currentIndex int) bool {
 	return canPartitionBFRecur(nums, sum, currentIndex+1)
 }
 
-// func knapsackTD(profits, weights []int, capacity int) int {
-// 	// since for each recursive call, only capacity and current index change,
-// 	// can have a 2D array for memoization.
-// 	memo := make([][]int, len(profits))
-// 	for i := range memo {
-// 		memo[i] = make([]int, capacity+1)
-// 	}
+func canPartitionTD(nums []int) bool {
+	sum := sumInt(nums)
 
-// 	return knapsackTDMemo(memo, profits, weights, capacity, 0)
-// }
+	if sum%2 != 0 {
+		return false
+	}
 
-// func knapsackTDMemo(memo [][]int, profits, weights []int, capacity, currentIndex int) int {
-// 	if capacity <= 0 || currentIndex >= len(profits) {
-// 		return 0
-// 	}
+	// initialize a 2D array to act as a memoization table, in which
+	// 1 is for true, 0 for false.
+	memo := make([][]int, len(nums))
+	for i := range memo {
+		memo[i] = make([]int, sum/2+1)
+	}
 
-// 	// return immediately if found in cache.
-// 	if memo[currentIndex][capacity] != 0 {
-// 		return memo[currentIndex][capacity]
-// 	}
+	return canPartitionTDMemo(memo, nums, sum/2, 0) == 1
+}
 
-// 	// calculate the profit for the item at the current index.
-// 	profit1 := 0
-// 	if weights[currentIndex] <= capacity {
-// 		profit1 = profits[currentIndex] + knapsackTDMemo(memo, profits, weights, capacity-weights[currentIndex], currentIndex+1)
-// 	}
+func canPartitionTDMemo(memo [][]int, nums []int, sum, currentIndex int) int {
+	if sum == 0 {
+		return 1
+	}
 
-// 	// process after excluding the item at the current index.
-// 	profit2 := knapsackTDMemo(memo, profits, weights, capacity, currentIndex+1)
+	n := len(nums)
+	if n == 0 || currentIndex >= n {
+		return 0
+	}
 
-// 	return common.Max(profit1, profit2)
-// }
+	if nums[currentIndex] <= sum {
+		if canPartitionTDMemo(memo, nums, sum-nums[currentIndex], currentIndex+1) == 1 {
+			memo[currentIndex][sum] = 1
+			return 1
+		}
+	}
 
-// func knapsackBU(profits, weights []int, capacity int) int {
-// 	n := len(profits)
-// 	if capacity <= 0 || n == 0 || len(weights) != n {
-// 		return 0
-// 	}
+	memo[currentIndex][sum] = canPartitionTDMemo(memo, nums, sum, currentIndex+1)
 
-// 	memo := make([][]int, n)
-// 	for i := range memo {
-// 		memo[i] = make([]int, capacity+1)
-// 	}
+	return memo[currentIndex][sum]
+}
 
-// 	// if we have only one weight, we will take it if it is not more than the
-// 	// capacity.
-// 	for i := 0; i < capacity+1; i++ {
-// 		if weights[0] <= i {
-// 			memo[0][i] = profits[0]
-// 		}
-// 	}
+// TODO - document the approach.
+func canPartitionBU(nums []int) bool {
+	sum := sumInt(nums)
 
-// 	for i := 1; i < n; i++ {
-// 		for c := 1; c < capacity+1; c++ {
-// 			profit1, profit2 := 0, 0
+	if sum%2 != 0 {
+		return false
+	}
 
-// 			// include the item if it's not bigger than the capacity.
-// 			if weights[i] <= c {
-// 				profit1 = profits[i] + memo[i-1][c-weights[i]]
-// 			}
+	sum = sum / 2
 
-// 			// exclude the item.
-// 			profit2 = memo[i-1][c]
+	n := len(nums)
+	tabu := make([][]bool, n)
+	for i := range tabu {
+		tabu[i] = make([]bool, sum+1)
+	}
 
-// 			// take the maximum.
-// 			memo[i][c] = common.Max(profit1, profit2)
-// 		}
-// 	}
+	for i := 0; i < n; i++ {
+		tabu[i][0] = true
+	}
 
-// 	return memo[n-1][capacity]
-// }
+	for i := 1; i < sum+1; i++ {
+		tabu[0][i] = nums[0] == i
+	}
+
+	for i := 1; i < n; i++ {
+		for j := 1; j < sum+1; j++ {
+			if tabu[i-1][j] {
+				tabu[i][j] = tabu[i-1][j]
+			} else if j >= nums[i] {
+				tabu[i][j] = tabu[i-1][j-nums[i]]
+			}
+		}
+	}
+
+	return tabu[n-1][sum]
+}
+
+func sumInt(nums []int) int {
+	sum := 0
+	for _, v := range nums {
+		sum += v
+	}
+
+	return sum
+}
