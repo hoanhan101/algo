@@ -1,9 +1,6 @@
 # Mac caches
 .DS_Store
 
-# tmp dir
-tmp/
-
 # Binaries for programs and plugins
 *.exe
 *.exe~
