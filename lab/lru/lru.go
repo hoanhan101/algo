@@ -14,7 +14,7 @@ import (
 
 // Cache implements an LRU cache.
 type Cache struct {
-	Size  int
+	size  int
 	list  *list.List
 	cache map[interface{}]*list.Element
 }
@@ -28,7 +28,7 @@ type entry struct {
 // New creates a new cache.
 func New(size int) *Cache {
 	return &Cache{
-		Size:  size,
+		size:  size,
 		list:  list.New(),
 		cache: make(map[interface{}]*list.Element),
 	}
@@ -56,7 +56,7 @@ func (c *Cache) Add(key, value interface{}) {
 
 	// if the cache is full, evict the least-frequently used item at the back of
 	// the list.
-	if c.Size != 0 && c.list.Len() > c.Size {
+	if c.size != 0 && c.list.Len() > c.size {
 		c.remove(c.list.Back())
 	}
 }
