@@ -1,4 +1,4 @@
-# 113+ Coding Interview Problems with Detailed Solutions
+# 114+ Coding Interview Problems with Detailed Solutions
 
 [![Build Status](https://travis-ci.com/hoanhan101/algo.svg?branch=master)](https://travis-ci.com/hoanhan101/algo)
 [![Go Report Card](https://goreportcard.com/badge/github.com/hoanhan101/algo)
@@ -205,7 +205,8 @@ list here →](https://tinyletter.com/hoanhan)
   - Tree depth first search
     - [Binary tree path sum](gtci/path_sum_test.go)
     - [Sum of path numbers](gtci/sum_path_test.go)
-
+  - Two Heaps
+    - [Find the median of a number stream](gtci/median_number_stream_test.go)
   - Subsets
     - [Subsets](gtci/subsets_test.go)
 - **[Grokking Dynamic Programming Patterns](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews)**
