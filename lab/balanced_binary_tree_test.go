@@ -24,7 +24,7 @@ A binary is balanced if
 not more than 1.
 */
 
-package other
+package lab
 
 import (
 	"testing"

@@ -19,7 +19,7 @@ func main() {
 	w.Init(os.Stdout, 0, 8, 0, '\t', 0)
 
 	total := 0
-	directories := []string{"ctci", "gtci", "interviewcake", "leetcode", "other"}
+	directories := []string{"ctci", "gtci", "interviewcake", "leetcode", "lab"}
 
 	for _, dir := range directories {
 		n := countFiles(dir)

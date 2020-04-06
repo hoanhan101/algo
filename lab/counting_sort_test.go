@@ -10,7 +10,7 @@ Cost:
 - O(n) time and O(n) space.
 */
 
-package other
+package lab
 
 import (
 	"testing"

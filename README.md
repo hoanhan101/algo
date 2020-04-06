@@ -1,4 +1,4 @@
-# 114+ Coding Interview Problems with Detailed Solutions
+# 115+ Coding Interview Problems with Detailed Solutions
 
 [![Build Status](https://travis-ci.com/hoanhan101/algo.svg?branch=master)](https://travis-ci.com/hoanhan101/algo)
 [![Go Report Card](https://goreportcard.com/badge/github.com/hoanhan101/algo)
@@ -217,28 +217,22 @@ list here →](https://tinyletter.com/hoanhan)
     - [Fibonacci numbers](gtci/fibonacci_numbers_test.go)
     - [Staircase](gtci/staircase_test.go)
     - [Number factors](gtci/number_factors_test.go)
-- **Other**
+- **Lab (to experiment with different ideas)**
   - Data structures
-    - Linked List
-    - Queue
-    - Stack
     - Tree
-      - [Balanced binary tree](other/balanced_binary_tree_test.go)
-      - [Binary tree traversals](other/binary_tree_traverse_test.go)
-    - Graph
-    - Trie
-    - Heap
+      - [Balanced binary tree](lab/balanced_binary_tree_test.go)
+      - [Binary tree traversals](lab/binary_tree_traverse_test.go)
     - Priority Queue
     - Bloom filter
-    - LRU cache
+    - [LRU cache](lab/lru_test.go)
   - Sorting
-    - [Bubble sort](other/bubble_sort_test.go)
-    - [Selection sort](other/selection_sort_test.go)
-    - [Insertion sort](other/insertion_sort_test.go)
-    - [Merge Sort](other/merge_sort_test.go)
-    - [Quicksort](other/quicksort_test.go)
-    - [Heapsort](other/heapsort_test.go)
-    - [Counting Sort](other/counting_sort_test.go)
+    - [Bubble sort](lab/bubble_sort_test.go)
+    - [Selection sort](lab/selection_sort_test.go)
+    - [Insertion sort](lab/insertion_sort_test.go)
+    - [Merge Sort](lab/merge_sort_test.go)
+    - [Quicksort](lab/quicksort_test.go)
+    - [Heapsort](lab/heapsort_test.go)
+    - [Counting Sort](lab/counting_sort_test.go)
     - Radix Sort
 
 ## Developing

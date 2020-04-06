@@ -1,16 +1,52 @@
 /*
+LRU Cache implementation.
 
 References:
 - https://github.com/golang/groupcache/blob/master/lru/lru.go
-
 */
 
-package main
+package lab
 
 import (
 	"container/list"
-	"fmt"
+	"testing"
+
+	"github.com/hoanhan101/algo/common"
 )
+
+func TestCache(t *testing.T) {
+	c := NewCache(3)
+
+	common.Equal(t, 0, c.Len())
+
+	for i := 0; i < 6; i++ {
+		c.Add(i, i)
+	}
+
+	common.Equal(t, 3, c.Len())
+
+	for i := 0; i < 3; i++ {
+		common.Equal(t, nil, c.Get(i))
+	}
+
+	for i := 3; i < 6; i++ {
+		common.Equal(t, i, c.Get(i))
+	}
+
+	c.Clear()
+
+	common.Equal(t, 0, c.Len())
+
+	for i := 3; i < 6; i++ {
+		common.Equal(t, nil, c.Get(i))
+	}
+
+	c.Add(6, 6)
+	common.Equal(t, 6, c.Get(6))
+	c.Remove(6)
+	common.Equal(t, nil, c.Get(6))
+	common.Equal(t, 0, c.Len())
+}
 
 // Cache implements an LRU cache.
 type Cache struct {
@@ -26,7 +62,7 @@ type entry struct {
 }
 
 // New creates a new cache.
-func New(size int) *Cache {
+func NewCache(size int) *Cache {
 	return &Cache{
 		size:  size,
 		list:  list.New(),
@@ -107,17 +143,4 @@ func (c *Cache) Clear() {
 func (c *Cache) remove(e *list.Element) {
 	c.list.Remove(e)
 	delete(c.cache, e.Value.(*entry).key)
-}
-
-func main() {
-	c := New(3)
-	c.Add(1, 1)
-	c.Add(2, 2)
-	c.Add(3, 3)
-	c.Add(4, 4)
-	fmt.Println(c.Get(1))
-	fmt.Println(c.Get(2))
-	fmt.Println(c.Get(3))
-	fmt.Println(c.Get(4))
-	fmt.Println(c.Get(5))
 }

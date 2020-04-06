@@ -1,16 +1,16 @@
 /*
 Problem:
-- Implement insertion sort.
+- Implement selection sort.
 
 Approach:
-- Insert elements from an unsorted array into a sorted subsection of the
-  array, one item at a time.
+- Repeatedly select the next smallest element from the unsorted array and
+  move it to the front.
 
 Cost:
 - O(n^2) time and O(1) space.
 */
 
-package other
+package lab
 
 import (
 	"testing"
@@ -18,7 +18,7 @@ import (
 	"github.com/hoanhan101/algo/common"
 )
 
-func TestInsertionSort(t *testing.T) {
+func TestSelectionSort(t *testing.T) {
 	tests := []struct {
 		in       []int
 		expected []int
@@ -36,24 +36,23 @@ func TestInsertionSort(t *testing.T) {
 	}
 
 	for _, tt := range tests {
-		insertionSort(tt.in)
+		selectionSort(tt.in)
 		common.Equal(t, tt.expected, tt.in)
 	}
 }
 
-func insertionSort(in []int) {
-	// iterate through the list from position 1.
-	for i := 1; i < len(in); i++ {
-		// shift each one to the left by swapping it with the one before until
-		// it's in the right spot.
-		current := in[i]
-		j := i - 1
-
-		for j >= 0 && current < in[j] {
-			in[j+1] = in[j]
-			j--
+func selectionSort(in []int) {
+	minIndex := 0
+	for i := 0; i < len(in)-1; i++ {
+		minIndex = i
+		// find the minimum in the rest of the array.
+		for j := i + 1; j < len(in); j++ {
+			if in[j] < in[minIndex] {
+				minIndex = j
+			}
 		}
 
-		in[j+1] = current
+		// swap the minimum value with the first value.
+		common.Swap(in, i, minIndex)
 	}
 }

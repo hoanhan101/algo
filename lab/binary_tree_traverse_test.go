@@ -7,7 +7,7 @@ Approach:
 - The solution uses a channel to send value over as we traverse the tree.
 */
 
-package other
+package lab
 
 import (
 	"testing"

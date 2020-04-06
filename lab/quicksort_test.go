@@ -11,7 +11,7 @@ Cost:
 - O(nlogn) time and O(nlogn) space.
 */
 
-package other
+package lab
 
 import (
 	"testing"
