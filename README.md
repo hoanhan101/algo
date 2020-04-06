@@ -41,13 +41,11 @@ list here →](https://tinyletter.com/hoanhan)
     - [Reverse string in place](interviewcake/reverse_string_test.go)
     - [Reverse words](interviewcake/reverse_word_test.go)
     - [Merge sorted arrays](interviewcake/merge_sorted_arrays_test.go)
-    - Single riffle shuffle
   - Hashing and hash tables
     - [In-flight entertainment](interviewcake/inflight_test.go)
     - [Permutation palindrome](interviewcake/permutation_palindrome_test.go)
     - [Word cloud data](interviewcake/word_cloud_test.go)
     - [Top scores](interviewcake/top_scores_test.go)
-    - Find duplicate files
   - Greedy algorithms
     - [Apple stocks](interviewcake/apple_stocks_test.go)
     - [Highest product of three](interviewcake/highest_product_of_three_test.go)
@@ -55,18 +53,15 @@ list here →](https://tinyletter.com/hoanhan)
     - [In-place shuffle](interviewcake/inplace_shuffle_test.go)
   - Sorting, searching, and logarithms
     - [Find rotation point](interviewcake/find_rotation_point_test.go)
-    - Find repeat
   - Trees and graphs
     - [Balanced binary tree](interviewcake/balanced_binary_tree_test.go)
     - [Binary search tree checker](interviewcake/binary_search_tree_test.go)
     - [2nd largest item in a binary search tree](interviewcake/2nd_largest_item_bst_test.go)
     - [Graph coloring](interviewcake/graph_coloring_test.go)
-    - MeshMessage
   - Dynamic programming and recursion
     - [Recursive string permutations](interviewcake/recursive_string_permutation_test.go)
     - [Compute nth Fibonacci number](interviewcake/fibonacci_number_test.go)
     - [Making change](interviewcake/making_change_test.go)
-    - The cake thief
   - Queues and stacks
     - [Largest stack](interviewcake/largest_stack_test.go)
     - [A queue with two stacks](interviewcake/queue_two_stacks_test.go)
@@ -77,19 +72,8 @@ list here →](https://tinyletter.com/hoanhan)
     - [Linked list has a cycle](interviewcake/linked_list_cycle_test.go)
     - [Reverse a linked list](interviewcake/reverse_linked_list_test.go)
     - [Kth to last node](interviewcake/kth_to_last_test.go)
-  - General programming
-    - Rectangular love
-    - Temperature tracker
   - Bit manipulation
     - [The stolen breakfast drone](interviewcake/stolen_breakfast_drone_test.go)
-  - Combinatorics, probability, and other math
-    - Which appears twice
-    - Find in ordered set
-    - Simulate 5-sided die
-    - Simulate 7-sided die
-    - Two egg problem
-  - *TODO: System Design*
-- **[Practical Algorithms and Data Structures](https://bradfieldcs.com/algos/)**
 - **[LeetCode](https://leetcode.com/)**
   - Array/String
     - [Two sum I](leetcode/two_sum_i_test.go)
@@ -97,14 +81,9 @@ list here →](https://tinyletter.com/hoanhan)
     - [Valid palindrome](leetcode/valid_palindrome_test.go)
     - [Implement strstr()](leetcode/strstr_test.go)
     - [Reverse words in string](leetcode/reverse_words_string_test.go)
-    - String to integer
-    - Valid number
     - [Longest substring without repeating characters](leetcode/longest_substring_test.go)
-      - *TODO: read more about sliding windows problem
-        [here](https://medium.com/leetcode-patterns/leetcode-pattern-2-sliding-windows-for-strings-e19af105316b)*
     - [Missing ranges](leetcode/missing_ranges_test.go)
     - [One edit distance](leetcode/one_edit_distance_test.go)
-    - Read n characters given Read4
   - Math
     - [Reverse integer](leetcode/reverse_integer_test.go)
     - [Plus one](leetcode/plus_one_test.go)
@@ -113,43 +92,26 @@ list here →](https://tinyletter.com/hoanhan)
     - [Merge sorted linked list](leetcode/merge_sorted_linked_list_test.go)
     - [Add two numbers](leetcode/add_two_numbers_test.go)
     - [Swap nodes in pairs](leetcode/swap_nodes_in_pairs_test.go)
-    - Merge k sorted linked list
-    - Copy list with random pointer
   - Binary tree
     - [Validate binary search tree](leetcode/valid_bst_test.go)
     - [Maximum depth of binary tree](leetcode/max_depth_binary_tree_test.go)
     - [Minimum depth of binary tree](leetcode/min_depth_binary_tree_test.go)
     - [Balanced binary tree](leetcode/balanced_binary_tree_test.go)
-    - Convert sorted array to balanced binary search tree
-    - Convert sorted linked list to balanced binary search tree
     - [Binary tree maximum path sum](leetcode/binary_tree_max_path_sum_test.go)
-    - Binary tree upside down
   - Bit manipulation
     - [Single number I](interviewcake/stolen_breakfast_drone_test.go)
     - [Single number II](leetcode/single_number_ii_test.go)
   - Misc
     - [Spiral matrix](leetcode/spiral_matrix_test.go)
-    - Integer to roman
-    - Roman to integer
-    - Clone graph
   - Stack
     - [Min stack](leetcode/min_stack_test.go)
-    - Evaluate reverse polish notation
     - [Valid parenthesis](leetcode/valid_parentheses_test.go)
   - Dynamic programming
     - [Climbing stairs](leetcode/climbing_stairs_test.go)
-    - Unique paths
-    - Maximum sum subarray
-    - Maximum product max array
-    - Coins in a line
-  - Binary search
-    - Search insert position
-    - Find minimum in sorted rotated array
 - **Cracking the Coding Interviews**
   - Bit manipulation
     - [Bit operation](ctci/bit_operation_test.go)
     - [Bit insertion](ctci/bit_insertion_test.go)
-- **Elements of Programming Interviews**
 - **[Grokking the Coding Interview: Patterns for Coding Questions](https://www.educative.io/courses/grokking-the-coding-interview)**
   - Sliding Window
     - [Average of any contiguous subarray of size k](gtci/avg_subarray_test.go)
@@ -162,16 +124,10 @@ list here →](https://tinyletter.com/hoanhan)
     - [Longest substring after ones replacements](gtci/longest_substring_ones_replacement_test.go)
     - [Permutation in string](gtci/permutation_string_test.go)
     - [String anagrams](gtci/string_anagrams_test.go)
-    - Smallest window containing substring
-    - Words concatenation
   - Two pointers
     - [Pair with target sum](gtci/pair_target_sum_test.go)
     - [Remove duplicates](gtci/remove_duplicates_test.go)
     - [Squaring a sorted array](gtci/square_sorted_array_test.go)
-    - Triplet sum to zero
-    - Triplet sum close to target
-    - Triplet with smaller sum
-    - Subarray with product less than a target
     - [Dutch national flag problem](gtci/dutch_flag_test.go)
   - Fast and slow pointers
     - [Linked list cycle](gtci/linked_list_cycle_test.go)
@@ -217,13 +173,15 @@ list here →](https://tinyletter.com/hoanhan)
     - [Fibonacci numbers](gtci/fibonacci_numbers_test.go)
     - [Staircase](gtci/staircase_test.go)
     - [Number factors](gtci/number_factors_test.go)
+- **[Practical Algorithms and Data Structures](https://bradfieldcs.com/algos/)**
+- **Elements of Programming Interviews**
 - **Lab (to experiment with different ideas)**
   - Data structures
     - Tree
       - [Balanced binary tree](lab/balanced_binary_tree_test.go)
       - [Binary tree traversals](lab/binary_tree_traverse_test.go)
-    - Priority Queue
-    - Bloom filter
+    - Priority Queue: *TODO*
+    - Bloom filter: *TODO*
     - [LRU cache](lab/lru_test.go)
   - Sorting
     - [Bubble sort](lab/bubble_sort_test.go)
@@ -233,7 +191,7 @@ list here →](https://tinyletter.com/hoanhan)
     - [Quicksort](lab/quicksort_test.go)
     - [Heapsort](lab/heapsort_test.go)
     - [Counting Sort](lab/counting_sort_test.go)
-    - Radix Sort
+    - Radix Sort: *TODO*
 
 ## Developing
 
