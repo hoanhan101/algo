@@ -235,13 +235,6 @@ For more information:
 make help
 ```
 
-## References
-
-- [Sorting algorithm cheat sheet](https://www.interviewcake.com/sorting-algorithm-cheat-sheet)
-- [LeetCode patterns](https://medium.com/leetcode-patterns)
-- LeetCode's 50 common interview questions
-- [Practical Algorithms and Data Structures](https://bradfieldcs.com/algos/)
-
 ## Stargazers over time
 
 [![Stargazers over time](https://starchart.cc/hoanhan101/algo.svg)](https://starchart.cc/hoanhan101/algo)
