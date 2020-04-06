@@ -1,8 +1,19 @@
 /*
-LRU Cache implementation.
+Problem:
+- Implement LRU cache implementation using a doubly linked list and a hashmap.
+  The cache should have these following methods:
+  - Set: put a key-value pair in the cache
+  - Get: get a key's value
+  - Len: return a number of items in the cache
+  - Remove: remove a key-value pair
+  - Clear: purge the cache
+
+Cost:
+- O(1) time, O(n) space.
 
 References:
 - https://github.com/golang/groupcache/blob/master/lru/lru.go
+- https://www.interviewcake.com/concept/java/lru-cache
 */
 
 package lab
