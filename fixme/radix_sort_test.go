@@ -9,7 +9,7 @@ Cost:
 - O(n) time and O(n) space.
 */
 
-package lab
+package fixme
 
 import (
 	"testing"
@@ -65,6 +65,7 @@ func TestGetBit(t *testing.T) {
 func radixSort(in []int) []int {
 	out := []int{}
 
+	// FIXME - modifying the range changes the result for some reasons.
 	for i := 0; i < 2; i++ {
 		// use counting sort to arrange the numbers, from least significant bit
 		// to most significant bit.

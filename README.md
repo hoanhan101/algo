@@ -1,4 +1,4 @@
-# 116+ Coding Interview Problems with Detailed Solutions
+# 115+ Coding Interview Problems with Detailed Solutions
 
 [![Build Status](https://travis-ci.com/hoanhan101/algo.svg?branch=master)](https://travis-ci.com/hoanhan101/algo)
 [![Go Report Card](https://goreportcard.com/badge/github.com/hoanhan101/algo)
