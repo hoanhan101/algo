@@ -1,4 +1,4 @@
-# 115+ Coding Interview Problems with Detailed Solutions
+# 116+ Coding Interview Problems with Detailed Solutions
 
 [![Build Status](https://travis-ci.com/hoanhan101/algo.svg?branch=master)](https://travis-ci.com/hoanhan101/algo)
 [![Go Report Card](https://goreportcard.com/badge/github.com/hoanhan101/algo)
@@ -166,6 +166,7 @@ list here →](https://tinyletter.com/hoanhan)
   - Subsets
     - [Subsets](gtci/subsets_test.go)
     - [Subsets with duplicates](gtci/subsets_duplicates_test.go)
+    - [Permutations](gtci/spermutations_test.go)
 - **[Grokking Dynamic Programming Patterns](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews)**
   - Knapsack
     - [0/1 Knapsack](gtci/knapsack_test.go)
