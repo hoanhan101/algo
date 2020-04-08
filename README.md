@@ -8,7 +8,7 @@
 [![hackernews](https://img.shields.io/badge/hackernews-300%2B-orange)](https://news.ycombinator.com/item?id=21975463)
 [![r/golang](https://img.shields.io/badge/r/golang-200%2B-orange)](https://www.reddit.com/r/golang/comments/el4vut/101_coding_interview_problems_with_detailed/)
 
-> [Join my mailing list to get latest updates here →](https://tinyletter.com/hoanhan)
+> [Join my mailing list to get the latest updates here →](https://tinyletter.com/hoanhan)
 
 > [Ultimate Go study guide →](https://github.com/hoanhan101/ultimate-go)
 
