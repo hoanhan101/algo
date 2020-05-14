@@ -51,6 +51,10 @@ func TestReverseInteger(t *testing.T) {
 		{123, 321},
 		{-123, -321},
 		{8085774586302733229, 0},
+		{7085774586302733229, 9223372036854775807},
+		{1085774586302733229, 9223372036854775801},
+		{-8085774586302733229, -9223372036854775808},
+		{-9085774586302733229, 0},
 	}
 
 	for _, tt := range tests {
@@ -60,16 +64,20 @@ func TestReverseInteger(t *testing.T) {
 }
 
 func reverseInteger(in int64) int64 {
-	var out int64
+	var out, remainder int64
 
 	for in != 0 {
+		remainder = in % 10
+
 		// check for overflow/underflow before multiplying by 10.
-		// if common.Abs(int(out)) > math.MaxInt64/10 {
-		if common.Abs(int(out)) > math.MaxInt64/10 {
+		if out > math.MaxInt64/10 || (out == math.MaxInt64/10 && remainder > 7) {
+			return 0
+		}
+		if out < math.MinInt64/10 || (out == math.MinInt64/10 && remainder < -8) {
 			return 0
 		}
 
-		out = out*10 + in%10
+		out = out*10 + remainder
 		in /= 10
 	}
 
