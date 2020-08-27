@@ -8,7 +8,7 @@
 [![hackernews](https://img.shields.io/badge/hackernews-300%2B-orange)](https://news.ycombinator.com/item?id=21975463)
 [![r/golang](https://img.shields.io/badge/r/golang-200%2B-orange)](https://www.reddit.com/r/golang/comments/el4vut/101_coding_interview_problems_with_detailed/)
 
-> [Get the The Ultimate Go Book →](https://gum.co/bpUYF)
+> [Ultimate Go Study Guide eBook version →](https://gum.co/bpUYF)
 
 > [Join my mailing list to get the latest updates here →](https://tinyletter.com/hoanhan)
 
