@@ -10,7 +10,7 @@
 
 > [The Ultimate Go Study Guide eBook version →](https://gum.co/bpUYF)
 
-> [Join my mailing list to get the latest updates here →](https://tinyletter.com/hoanhan)
+> [Join my mailing list to get the latest updates here →](https://mailchi.mp/579f9d6927dd/hoanhanco)
 
 ## Motivation
 
@@ -29,7 +29,7 @@ These resources that I am looking at are:
 - Elements of Programming Interviews
 
 If you’re interested in getting updates for this, feel free to join my [mailing 
-list here →](https://tinyletter.com/hoanhan)
+list here →](https://mailchi.mp/579f9d6927dd/hoanhanco)
 
 ## Table of Contents 
 
