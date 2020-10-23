@@ -33,6 +33,7 @@ func TestNoRepeatSubstring(t *testing.T) {
 		{"aa", 1},
 		{"ab", 2},
 		{"aba", 2},
+		{"abba", 2},
 		{"abb", 2},
 		{"abc", 3},
 		{"abccde", 3},
@@ -60,7 +61,7 @@ func noRepeatSubstring(s string) int {
 		// if we have seen the character before, update the start index to
 		// skip visited characters.
 		if _, ok := char[endChar]; ok {
-			start = char[endChar] + 1
+			start = common.Max(start, char[endChar]+1)
 		}
 
 		// cache the current character' index.
