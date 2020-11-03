@@ -68,7 +68,7 @@ func (s *mstream) insert(n int) {
 		s.minHeap.Push(n)
 	}
 
-	// reblancemaxHeap can have 1 more number than minHeap.
+	// maxHeap can have 1 more number than minHeap.
 	if s.maxHeap.Len() > s.minHeap.Len()+1 {
 		s.minHeap.Push(s.maxHeap.Pop())
 	} else if s.maxHeap.Len() < s.minHeap.Len() {
