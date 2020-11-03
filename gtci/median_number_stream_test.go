@@ -17,8 +17,10 @@ Example:
 Approach:
 - Divide the stream into 2 lists where one holds all numbers that are less
   than the median and vice versa.
-- Since the median is either be the largest of the smaller list or the smallest
-  one of the larger list, can use a min heap and max heap respectively.
+- Since the median is either be the largest of the smaller list (maxHeap) or
+  the smallest one of the larger list (minHeap), can use a min heap and max heap
+  respectively. That said, if the largest value of the smaller list is >= inserted
+  value, insert to the smaller list. Else, insert to the larger list.
 - At every insertion, balance the numbers in both heap.
 
 Cost:
