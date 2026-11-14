@@ -25,7 +25,7 @@ These resources that I am looking at are:
 - [Interview Cake](https://www.interviewcake.com/)
 - [LeetCode](https://leetcode.com/)
 - Cracking the Coding Interviews
-- [Grokking the Coding Interview: Patterns for Coding Questions](https://www.educative.io/courses/grokking-the-coding-interview)
+- [Grokking the Coding Interview: Patterns for Coding Questions](https://www.designgurus.io/course/grokking-the-coding-interview)
 - Elements of Programming Interviews
 
 If you’re interested in getting updates for this, feel free to join my [mailing 
@@ -110,7 +110,7 @@ list here →](https://mailchi.mp/579f9d6927dd/hoanhanco)
   - Bit manipulation
     - [Bit operation](ctci/bit_operation_test.go)
     - [Bit insertion](ctci/bit_insertion_test.go)
-- **[Grokking the Coding Interview: Patterns for Coding Questions](https://www.educative.io/courses/grokking-the-coding-interview)**
+- **[Grokking the Coding Interview: Patterns for Coding Questions](https://www.designgurus.io/course/grokking-the-coding-interview)**
   - Sliding Window
     - [Average of any contiguous subarray of size k](gtci/avg_subarray_test.go)
     - [Maximum sum of any contiguous subarray of size k](gtci/max_subarray_test.go)
@@ -165,7 +165,7 @@ list here →](https://mailchi.mp/579f9d6927dd/hoanhanco)
     - [Subsets](gtci/subsets_test.go)
     - [Subsets with duplicates](gtci/subsets_duplicates_test.go)
     - [Permutations](gtci/spermutations_test.go)
-- **[Grokking Dynamic Programming Patterns](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews)**
+- **[Grokking Dynamic Programming Patterns](https://www.designgurus.io/course/grokking-dynamic-programming)**
   - Knapsack
     - [0/1 Knapsack](gtci/knapsack_test.go)
     - [Equal subset sum partition](gtci/equal_subset_partition_test.go)
